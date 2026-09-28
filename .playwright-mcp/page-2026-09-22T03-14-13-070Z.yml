@@ -1,0 +1,73 @@
+- generic [active] [ref=f4e1]:
+  - generic [ref=f4e2]:
+    - link " PemlapTex" [ref=f4e3] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000/dashboard
+      - generic [ref=f4e4]: 
+      - generic [ref=f4e5]: PemlapTex
+    - generic [ref=f4e7]:
+      - generic [ref=f4e8]: Menu
+      - list [ref=f4e9]:
+        - listitem [ref=f4e10]:
+          - link " Dashboard" [ref=f4e11] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+            - generic [ref=f4e12]: 
+            - generic [ref=f4e13]: Dashboard
+        - listitem [ref=f4e14]:
+          - link " Verifikasi" [ref=f4e15] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/verifikasi
+            - generic [ref=f4e16]: 
+            - generic [ref=f4e17]: Verifikasi
+        - listitem [ref=f4e18]:
+          - link " Data Laptop" [ref=f4e19] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/laptop
+            - generic [ref=f4e20]: 
+            - generic [ref=f4e21]: Data Laptop
+    - generic [ref=f4e22]:
+      - img "Administrator" [ref=f4e23]
+      - generic [ref=f4e24]:
+        - generic [ref=f4e25]: Administrator
+        - generic [ref=f4e26]: admin
+  - generic [ref=f4e27]:
+    - banner [ref=f4e28]:
+      - generic [ref=f4e29]:
+        - text: 
+        - button "Toggle Navigation" [ref=f4e30] [cursor=pointer]:
+          - generic [ref=f4e31]: 
+      - generic [ref=f4e33]:
+        - generic [ref=f4e34]: 
+        - text: Sistem Peminjaman Laptop Sekolah
+      - generic [ref=f4e35]:
+        - button "Toggle Fullscreen" [ref=f4e36] [cursor=pointer]:
+          - generic [ref=f4e37]: 
+        - button "" [ref=f4e39] [cursor=pointer]
+        - generic [ref=f4e41]:
+          - button "Profile Administrator " [ref=f4e42] [cursor=pointer]:
+            - img "Profile" [ref=f4e43]
+            - generic [ref=f4e44]: Administrator
+            - generic [ref=f4e45]: 
+          - text: 
+    - generic [ref=f4e47]:
+      - heading "Verifikasi Pengembalian" [level=1] [ref=f4e48]
+      - paragraph [ref=f4e49]: Setujui atau tolak pengembalian laptop yang diajukan siswa.
+    - main [ref=f4e50]:
+      - generic [ref=f4e53]:
+        - generic [ref=f4e54]:
+          - heading "Antrian Verifikasi" [level=2] [ref=f4e55]
+          - generic [ref=f4e56]: 0 menunggu
+        - table [ref=f4e58]:
+          - rowgroup [ref=f4e59]:
+            - row [ref=f4e60]:
+              - columnheader "Laptop" [ref=f4e61]
+              - columnheader "Anggota" [ref=f4e62]
+              - columnheader "Diminta" [ref=f4e63]
+              - columnheader "Action" [ref=f4e64]
+          - rowgroup [ref=f4e65]:
+            - row [ref=f4e66]:
+              - cell "Tidak ada antrian verifikasi." [ref=f4e67]
+    - contentinfo [ref=f4e68]:
+      - generic [ref=f4e69]:
+        - generic [ref=f4e70]:
+          - generic [ref=f4e71]: 
+          - text: PemlapTex
+        - generic [ref=f4e72]: "|"
+        - generic [ref=f4e73]: © 2026 Peminjaman Laptop Sekolah

@@ -1,0 +1,307 @@
+- generic [active] [ref=f2e1]:
+  - generic [ref=f2e2]:
+    - link " PemlapTex" [ref=f2e3] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000/dashboard
+      - generic [ref=f2e4]: 
+      - generic [ref=f2e5]: PemlapTex
+    - generic [ref=f2e7]:
+      - generic [ref=f2e8]: Menu
+      - list [ref=f2e9]:
+        - listitem [ref=f2e10]:
+          - link " Dashboard" [ref=f2e11] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+            - generic [ref=f2e12]: 
+            - generic [ref=f2e13]: Dashboard
+        - listitem [ref=f2e14]:
+          - link " Verifikasi" [ref=f2e15] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/verifikasi
+            - generic [ref=f2e16]: 
+            - generic [ref=f2e17]: Verifikasi
+        - listitem [ref=f2e18]:
+          - link " Data Laptop" [ref=f2e19] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/laptop
+            - generic [ref=f2e20]: 
+            - generic [ref=f2e21]: Data Laptop
+        - listitem [ref=f2e22]:
+          - link " Data User" [ref=f2e23] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/user
+            - generic [ref=f2e24]: 
+            - generic [ref=f2e25]: Data User
+    - generic [ref=f2e26]:
+      - img "Putra Candra" [ref=f2e27]
+      - generic [ref=f2e28]:
+        - generic [ref=f2e29]: Putra Candra
+        - generic [ref=f2e30]: putracandra
+  - generic [ref=f2e31]:
+    - banner [ref=f2e32]:
+      - generic [ref=f2e33]:
+        - text: 
+        - button "Toggle Navigation" [ref=f2e34] [cursor=pointer]:
+          - generic [ref=f2e35]: 
+      - generic [ref=f2e37]:
+        - generic [ref=f2e38]: 
+        - text: Sistem Peminjaman Laptop Sekolah
+      - generic [ref=f2e39]:
+        - button "Toggle Fullscreen" [ref=f2e40] [cursor=pointer]:
+          - generic [ref=f2e41]: 
+        - button "" [ref=f2e43] [cursor=pointer]
+        - generic [ref=f2e45]:
+          - button "Profile Putra Candra " [ref=f2e46] [cursor=pointer]:
+            - img "Profile" [ref=f2e47]
+            - generic [ref=f2e48]: Putra Candra
+            - generic [ref=f2e49]: 
+          - text: 
+    - generic [ref=f2e51]:
+      - heading "Data User" [level=1] [ref=f2e52]
+      - paragraph [ref=f2e53]: Kelola akun siswa dan admin. Siswa login dengan akun yang dibuat Admin.
+    - main [ref=f2e54]:
+      - generic [ref=f2e55]:
+        - generic [ref=f2e56]:
+          - generic [ref=f2e57]:
+            - generic [ref=f2e58]: 
+            - textbox "Cari nama atau username..." [ref=f2e59]
+          - link " Tambah User" [ref=f2e61] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/user/create
+            - generic [ref=f2e62]: 
+            - text: Tambah User
+        - table [ref=f2e64]:
+          - rowgroup [ref=f2e65]:
+            - row [ref=f2e66]:
+              - columnheader "User" [ref=f2e67]
+              - columnheader "Username" [ref=f2e68]
+              - columnheader "Role" [ref=f2e69]
+              - columnheader "Kelas / Jurusan" [ref=f2e70]
+              - columnheader "Peminjaman Aktif" [ref=f2e71]
+              - columnheader "Aksi" [ref=f2e72]
+          - rowgroup [ref=f2e73]:
+            - row [ref=f2e74]:
+              - cell "Putra Candra Putra Candra Admin Panel" [ref=f2e75]:
+                - generic [ref=f2e76]:
+                  - img "Putra Candra" [ref=f2e77]
+                  - generic [ref=f2e78]:
+                    - generic [ref=f2e79]: Putra Candra
+                    - generic [ref=f2e80]: Admin Panel
+              - cell "putracandra" [ref=f2e81]
+              - cell "Super Admin" [ref=f2e82]
+              - cell "-" [ref=f2e84]
+              - cell "Idle" [ref=f2e85]
+              - cell [ref=f2e87]:
+                - generic [ref=f2e88]:
+                  - link "" [ref=f2e89] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/14/edit
+                  - button "" [ref=f2e92] [cursor=pointer]
+            - row [ref=f2e94]:
+              - cell "Laila Rahmawati Laila Rahmawati Portal Siswa" [ref=f2e95]:
+                - generic [ref=f2e96]:
+                  - img "Laila Rahmawati" [ref=f2e97]
+                  - generic [ref=f2e98]:
+                    - generic [ref=f2e99]: Laila Rahmawati
+                    - generic [ref=f2e100]: Portal Siswa
+              - cell "20240011" [ref=f2e101]
+              - cell "Siswa" [ref=f2e102]
+              - cell "X / RPL" [ref=f2e104]
+              - cell "Idle" [ref=f2e105]
+              - cell [ref=f2e107]:
+                - generic [ref=f2e108]:
+                  - link "" [ref=f2e109] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/12/edit
+                  - button "" [ref=f2e112] [cursor=pointer]
+            - row [ref=f2e114]:
+              - cell "Muhammad Rizki Muhammad Rizki Portal Siswa" [ref=f2e115]:
+                - generic [ref=f2e116]:
+                  - img "Muhammad Rizki" [ref=f2e117]
+                  - generic [ref=f2e118]:
+                    - generic [ref=f2e119]: Muhammad Rizki
+                    - generic [ref=f2e120]: Portal Siswa
+              - cell "20240012" [ref=f2e121]
+              - cell "Siswa" [ref=f2e122]
+              - cell "X / TOI" [ref=f2e124]
+              - cell "Idle" [ref=f2e125]
+              - cell [ref=f2e127]:
+                - generic [ref=f2e128]:
+                  - link "" [ref=f2e129] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/13/edit
+                  - button "" [ref=f2e132] [cursor=pointer]
+            - row [ref=f2e134]:
+              - cell "Hendra Gunawan Hendra Gunawan Portal Siswa" [ref=f2e135]:
+                - generic [ref=f2e136]:
+                  - img "Hendra Gunawan" [ref=f2e137]
+                  - generic [ref=f2e138]:
+                    - generic [ref=f2e139]: Hendra Gunawan
+                    - generic [ref=f2e140]: Portal Siswa
+              - cell "20240008" [ref=f2e141]
+              - cell "Siswa" [ref=f2e142]
+              - cell "XII / TKJ" [ref=f2e144]
+              - cell "Idle" [ref=f2e145]
+              - cell [ref=f2e147]:
+                - generic [ref=f2e148]:
+                  - link "" [ref=f2e149] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/9/edit
+                  - button "" [ref=f2e152] [cursor=pointer]
+            - row [ref=f2e154]:
+              - cell "Intan Permata Intan Permata Portal Siswa" [ref=f2e155]:
+                - generic [ref=f2e156]:
+                  - img "Intan Permata" [ref=f2e157]
+                  - generic [ref=f2e158]:
+                    - generic [ref=f2e159]: Intan Permata
+                    - generic [ref=f2e160]: Portal Siswa
+              - cell "20240009" [ref=f2e161]
+              - cell "Siswa" [ref=f2e162]
+              - cell "XI / RPL" [ref=f2e164]
+              - cell "Idle" [ref=f2e165]
+              - cell [ref=f2e167]:
+                - generic [ref=f2e168]:
+                  - link "" [ref=f2e169] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/10/edit
+                  - button "" [ref=f2e172] [cursor=pointer]
+            - row [ref=f2e174]:
+              - cell "Joko Santoso Joko Santoso Portal Siswa" [ref=f2e175]:
+                - generic [ref=f2e176]:
+                  - img "Joko Santoso" [ref=f2e177]
+                  - generic [ref=f2e178]:
+                    - generic [ref=f2e179]: Joko Santoso
+                    - generic [ref=f2e180]: Portal Siswa
+              - cell "20240010" [ref=f2e181]
+              - cell "Siswa" [ref=f2e182]
+              - cell "XI / MM" [ref=f2e184]
+              - cell "Idle" [ref=f2e185]
+              - cell [ref=f2e187]:
+                - generic [ref=f2e188]:
+                  - link "" [ref=f2e189] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/11/edit
+                  - button "" [ref=f2e192] [cursor=pointer]
+            - row [ref=f2e194]:
+              - cell "Fajar Ramadhan Fajar Ramadhan Portal Siswa" [ref=f2e195]:
+                - generic [ref=f2e196]:
+                  - img "Fajar Ramadhan" [ref=f2e197]
+                  - generic [ref=f2e198]:
+                    - generic [ref=f2e199]: Fajar Ramadhan
+                    - generic [ref=f2e200]: Portal Siswa
+              - cell "20240006" [ref=f2e201]
+              - cell "Siswa" [ref=f2e202]
+              - cell "X / TOI" [ref=f2e204]
+              - cell "Idle" [ref=f2e205]
+              - cell [ref=f2e207]:
+                - generic [ref=f2e208]:
+                  - link "" [ref=f2e209] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/7/edit
+                  - button "" [ref=f2e212] [cursor=pointer]
+            - row [ref=f2e214]:
+              - cell "Gita Maharani Gita Maharani Portal Siswa" [ref=f2e215]:
+                - generic [ref=f2e216]:
+                  - img "Gita Maharani" [ref=f2e217]
+                  - generic [ref=f2e218]:
+                    - generic [ref=f2e219]: Gita Maharani
+                    - generic [ref=f2e220]: Portal Siswa
+              - cell "20240007" [ref=f2e221]
+              - cell "Siswa" [ref=f2e222]
+              - cell "XII / RPL" [ref=f2e224]
+              - cell "Idle" [ref=f2e225]
+              - cell [ref=f2e227]:
+                - generic [ref=f2e228]:
+                  - link "" [ref=f2e229] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/8/edit
+                  - button "" [ref=f2e232] [cursor=pointer]
+            - row [ref=f2e234]:
+              - cell "Bunga Lestari Bunga Lestari Portal Siswa" [ref=f2e235]:
+                - generic [ref=f2e236]:
+                  - img "Bunga Lestari" [ref=f2e237]
+                  - generic [ref=f2e238]:
+                    - generic [ref=f2e239]: Bunga Lestari
+                    - generic [ref=f2e240]: Portal Siswa
+              - cell "20240002" [ref=f2e241]
+              - cell "Siswa" [ref=f2e242]
+              - cell "XII / TKJ" [ref=f2e244]
+              - cell "Idle" [ref=f2e245]
+              - cell [ref=f2e247]:
+                - generic [ref=f2e248]:
+                  - link "" [ref=f2e249] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/3/edit
+                  - button "" [ref=f2e252] [cursor=pointer]
+            - row [ref=f2e254]:
+              - cell "Citra Ayu Citra Ayu Portal Siswa" [ref=f2e255]:
+                - generic [ref=f2e256]:
+                  - img "Citra Ayu" [ref=f2e257]
+                  - generic [ref=f2e258]:
+                    - generic [ref=f2e259]: Citra Ayu
+                    - generic [ref=f2e260]: Portal Siswa
+              - cell "20240003" [ref=f2e261]
+              - cell "Siswa" [ref=f2e262]
+              - cell "XI / RPL" [ref=f2e264]
+              - cell "Idle" [ref=f2e265]
+              - cell [ref=f2e267]:
+                - generic [ref=f2e268]:
+                  - link "" [ref=f2e269] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/4/edit
+                  - button "" [ref=f2e272] [cursor=pointer]
+            - row [ref=f2e274]:
+              - cell "Dimas Prasetyo Dimas Prasetyo Portal Siswa" [ref=f2e275]:
+                - generic [ref=f2e276]:
+                  - img "Dimas Prasetyo" [ref=f2e277]
+                  - generic [ref=f2e278]:
+                    - generic [ref=f2e279]: Dimas Prasetyo
+                    - generic [ref=f2e280]: Portal Siswa
+              - cell "20240004" [ref=f2e281]
+              - cell "Siswa" [ref=f2e282]
+              - cell "XI / MM" [ref=f2e284]
+              - cell "Idle" [ref=f2e285]
+              - cell [ref=f2e287]:
+                - generic [ref=f2e288]:
+                  - link "" [ref=f2e289] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/5/edit
+                  - button "" [ref=f2e292] [cursor=pointer]
+            - row [ref=f2e294]:
+              - cell "Eka Wulandari Eka Wulandari Portal Siswa" [ref=f2e295]:
+                - generic [ref=f2e296]:
+                  - img "Eka Wulandari" [ref=f2e297]
+                  - generic [ref=f2e298]:
+                    - generic [ref=f2e299]: Eka Wulandari
+                    - generic [ref=f2e300]: Portal Siswa
+              - cell "20240005" [ref=f2e301]
+              - cell "Siswa" [ref=f2e302]
+              - cell "X / RPL" [ref=f2e304]
+              - cell "Idle" [ref=f2e305]
+              - cell [ref=f2e307]:
+                - generic [ref=f2e308]:
+                  - link "" [ref=f2e309] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/6/edit
+                  - button "" [ref=f2e312] [cursor=pointer]
+            - row [ref=f2e314]:
+              - cell "Administrator Administrator Admin Panel" [ref=f2e315]:
+                - generic [ref=f2e316]:
+                  - img "Administrator" [ref=f2e317]
+                  - generic [ref=f2e318]:
+                    - generic [ref=f2e319]: Administrator
+                    - generic [ref=f2e320]: Admin Panel
+              - cell "admin" [ref=f2e321]
+              - cell "Admin" [ref=f2e322]
+              - cell "-" [ref=f2e324]
+              - cell "Idle" [ref=f2e325]
+              - cell [ref=f2e327]:
+                - generic [ref=f2e328]:
+                  - link "" [ref=f2e329] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/1/edit
+                  - button "" [ref=f2e332] [cursor=pointer]
+            - row [ref=f2e334]:
+              - cell "Ahmad Fauzi Ahmad Fauzi Portal Siswa" [ref=f2e335]:
+                - generic [ref=f2e336]:
+                  - img "Ahmad Fauzi" [ref=f2e337]
+                  - generic [ref=f2e338]:
+                    - generic [ref=f2e339]: Ahmad Fauzi
+                    - generic [ref=f2e340]: Portal Siswa
+              - cell "20240001" [ref=f2e341]
+              - cell "Siswa" [ref=f2e342]
+              - cell "XII / RPL" [ref=f2e344]
+              - cell "Idle" [ref=f2e345]
+              - cell [ref=f2e347]:
+                - generic [ref=f2e348]:
+                  - link "" [ref=f2e349] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/2/edit
+                  - button "" [ref=f2e352] [cursor=pointer]
+    - contentinfo [ref=f2e354]:
+      - generic [ref=f2e355]:
+        - generic [ref=f2e356]:
+          - generic [ref=f2e357]: 
+          - text: PemlapTex
+        - generic [ref=f2e358]: "|"
+        - generic [ref=f2e359]: © 2026 Peminjaman Laptop Sekolah

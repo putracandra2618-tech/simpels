@@ -1,0 +1,92 @@
+- generic [ref=f15e1]:
+  - generic [ref=f15e2]:
+    - link " PemlapTex" [ref=f15e3] [cursor=pointer]:
+      - /url: http://127.0.0.1:8899/dashboard
+      - generic [ref=f15e4]: 
+      - generic [ref=f15e5]: PemlapTex
+    - generic [ref=f15e7]:
+      - generic [ref=f15e8]: Menu
+      - list [ref=f15e9]:
+        - listitem [ref=f15e10]:
+          - link " Dashboard" [ref=f15e11] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/dashboard
+            - generic [ref=f15e12]: 
+            - generic [ref=f15e13]: Dashboard
+        - listitem [ref=f15e14]:
+          - link " Pinjam Laptop" [ref=f15e15] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/pinjam
+            - generic [ref=f15e16]: 
+            - generic [ref=f15e17]: Pinjam Laptop
+        - listitem [ref=f15e18]:
+          - link " Kembalikan Laptop" [ref=f15e19] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/kembali
+            - generic [ref=f15e20]: 
+            - generic [ref=f15e21]: Kembalikan Laptop
+    - generic [ref=f15e22]:
+      - img "Ahmad Fauzi" [ref=f15e23]
+      - generic [ref=f15e24]:
+        - generic [ref=f15e25]: Ahmad Fauzi
+        - generic [ref=f15e26]: "20240001"
+  - generic [ref=f15e27]:
+    - banner [ref=f15e28]:
+      - generic [ref=f15e29]:
+        - text: 
+        - button "Toggle Navigation" [ref=f15e30] [cursor=pointer]:
+          - generic [ref=f15e31]: 
+      - generic [ref=f15e33]:
+        - generic [ref=f15e34]: 
+        - text: Peminjaman Laptop Sekolah
+      - generic [ref=f15e35]:
+        - button "Toggle Fullscreen" [ref=f15e36] [cursor=pointer]:
+          - generic [ref=f15e37]: 
+        - button "" [ref=f15e39] [cursor=pointer]
+        - generic [ref=f15e41]:
+          - button "Profile Ahmad Fauzi " [expanded] [active] [ref=f15e42] [cursor=pointer]:
+            - img "Profile" [ref=f15e43]
+            - generic [ref=f15e44]: Ahmad Fauzi
+            - generic [ref=f15e45]: 
+          - list "Profile Ahmad Fauzi " [ref=f15e84]:
+            - listitem [ref=f15e85]: Masuk sebagai Siswa
+            - listitem [ref=f15e86]:
+              - separator [ref=f15e87]
+            - listitem [ref=f15e88]:
+              - button " Logout" [ref=f15e90] [cursor=pointer]:
+                - generic [ref=f15e91]: 
+                - text: Logout
+    - generic [ref=f15e46]:
+      - generic [ref=f15e47]:
+        - heading "Kembalikan Laptop" [level=1] [ref=f15e48]
+        - paragraph [ref=f15e49]: Ajukan pengembalian laptop yang Anda pinjam. Admin akan memverifikasi.
+      - alert [ref=f15e50]:
+        - generic [ref=f15e51]: 
+        - text: Pengembalian dikirim ke Admin. Menunggu verifikasi.
+        - button "Close" [ref=f15e52] [cursor=pointer]
+    - main [ref=f15e53]:
+      - table [ref=f15e56]:
+        - rowgroup [ref=f15e57]:
+          - row [ref=f15e58]:
+            - columnheader "Laptop" [ref=f15e59]
+            - columnheader "Anggota" [ref=f15e60]
+            - columnheader "Dipinjam" [ref=f15e61]
+            - columnheader "Status" [ref=f15e62]
+            - columnheader "Aksi" [ref=f15e63]
+        - rowgroup [ref=f15e64]:
+          - row [ref=f15e65]:
+            - cell "Lenovo ThinkPad T14" [ref=f15e66]
+            - cell "Ahmad Fauzi Bunga Lestari Citra Ayu" [ref=f15e67]:
+              - generic [ref=f15e68]: Ahmad Fauzi
+              - generic [ref=f15e69]: Bunga Lestari
+              - generic [ref=f15e70]: Citra Ayu
+            - cell "21 Sep 2026, 08:37" [ref=f15e71]
+            - cell "Menunggu Verifikasi" [ref=f15e72]
+            - cell " Menunggu verifikasi Admin..." [ref=f15e74]:
+              - generic [ref=f15e76]:
+                - generic [ref=f15e77]: 
+                - text: Menunggu verifikasi Admin...
+    - contentinfo [ref=f15e78]:
+      - generic [ref=f15e79]:
+        - generic [ref=f15e80]:
+          - generic [ref=f15e81]: 
+          - text: PemlapTex
+        - generic [ref=f15e82]: "|"
+        - generic [ref=f15e83]: © 2026 Peminjaman Laptop Sekolah

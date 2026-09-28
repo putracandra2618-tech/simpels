@@ -1,0 +1,11 @@
+- generic [active] [ref=f4e1]:
+  - generic [ref=f4e2]:
+    - button "Cetak QR" [ref=f4e3] [cursor=pointer]
+    - link "Kembali" [ref=f4e4] [cursor=pointer]:
+      - /url: http://127.0.0.1:8899/admin/laptop
+  - generic [ref=f4e5]:
+    - img "QR Lenovo ThinkPad T14" [ref=f4e6]
+    - generic [ref=f4e7]: Lenovo ThinkPad T14
+    - generic [ref=f4e8]: Lenovo
+    - generic [ref=f4e9]: PemlapTex — Peminjaman Laptop Sekolah
+  - paragraph [ref=f4e10]: Tempel hasil cetakan ini pada fisik laptop yang sesuai.

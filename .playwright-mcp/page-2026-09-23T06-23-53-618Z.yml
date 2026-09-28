@@ -1,0 +1,775 @@
+- generic [active] [ref=f51e1]:
+  - generic [ref=f51e2]:
+    - link " PemlapTex" [ref=f51e3] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000/dashboard
+      - generic [ref=f51e4]: 
+      - generic [ref=f51e5]: PemlapTex
+    - generic [ref=f51e7]:
+      - generic [ref=f51e8]: Menu
+      - list [ref=f51e9]:
+        - listitem [ref=f51e10]:
+          - link " Dashboard" [ref=f51e11] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+            - generic [ref=f51e12]: 
+            - generic [ref=f51e13]: Dashboard
+        - listitem [ref=f51e14]:
+          - link " Verifikasi" [ref=f51e15] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/verifikasi
+            - generic [ref=f51e16]: 
+            - generic [ref=f51e17]: Verifikasi
+        - listitem [ref=f51e18]:
+          - link " Data Laptop" [ref=f51e19] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/laptop
+            - generic [ref=f51e20]: 
+            - generic [ref=f51e21]: Data Laptop
+        - listitem [ref=f51e22]:
+          - link " Data User" [ref=f51e23] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/user
+            - generic [ref=f51e24]: 
+            - generic [ref=f51e25]: Data User
+        - listitem [ref=f51e26]:
+          - link " Data Admin" [ref=f51e27] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/admin-user
+            - generic [ref=f51e28]: 
+            - generic [ref=f51e29]: Data Admin
+    - generic [ref=f51e30]:
+      - generic "Foto profil" [ref=f51e31]: 
+      - generic [ref=f51e33]:
+        - generic [ref=f51e34]: Putra Candra
+        - generic [ref=f51e35]: putracandra
+  - generic [ref=f51e36]:
+    - banner [ref=f51e37]:
+      - generic [ref=f51e38]:
+        - button "Minimize Sidebar" [ref=f51e39] [cursor=pointer]:
+          - generic [ref=f51e40]: 
+        - text: 
+      - generic [ref=f51e42]:
+        - generic [ref=f51e43]: 
+        - text: Peminjaman Laptop Smk Texmaco Semarang
+      - generic [ref=f51e44]:
+        - button "Toggle Fullscreen" [ref=f51e45] [cursor=pointer]:
+          - generic [ref=f51e46]: 
+        - button "" [ref=f51e48] [cursor=pointer]
+        - generic [ref=f51e50]:
+          - button "Foto profil Putra Candra " [ref=f51e51] [cursor=pointer]:
+            - generic "Foto profil" [ref=f51e52]: 
+            - generic [ref=f51e54]: Putra Candra
+            - generic [ref=f51e55]: 
+          - text: 
+    - generic [ref=f51e57]:
+      - heading "Data User" [level=1] [ref=f51e58]
+      - paragraph [ref=f51e59]: Kelola akun siswa. Siswa login dengan akun yang dibuat Admin.
+    - main [ref=f51e60]:
+      - generic [ref=f51e61]:
+        - generic [ref=f51e62]:
+          - generic [ref=f51e63]:
+            - combobox [ref=f51e64]:
+              - 'option "Kelas: Semua" [selected]'
+              - option "X"
+              - option "XI"
+              - option "XII"
+            - combobox [ref=f51e65]:
+              - 'option "Jurusan: Semua" [selected]'
+              - option "TKJ"
+              - option "RPL"
+              - option "TEI"
+              - option "TPSB"
+              - option "TB"
+              - option "TKR"
+              - option "TP"
+            - generic [ref=f51e66]:
+              - generic [ref=f51e67]: 
+              - textbox "Cari nama atau username..." [ref=f51e68]
+          - link " Tambah User" [ref=f51e70] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/user/create
+            - generic [ref=f51e71]: 
+            - text: Tambah User
+        - table [ref=f51e73]:
+          - rowgroup [ref=f51e74]:
+            - row [ref=f51e75]:
+              - columnheader "User" [ref=f51e76]
+              - columnheader "Username" [ref=f51e77]
+              - columnheader "Role" [ref=f51e78]
+              - columnheader "Kelas / Jurusan" [ref=f51e79]
+              - columnheader "Peminjaman Aktif" [ref=f51e80]
+              - columnheader "Aksi" [ref=f51e81]
+          - rowgroup [ref=f51e82]:
+            - row [ref=f51e83]:
+              - cell "Foto profil AINA FAJAR RIZKIA Portal Siswa" [ref=f51e84]:
+                - generic [ref=f51e85]:
+                  - generic "Foto profil" [ref=f51e86]: 
+                  - generic [ref=f51e88]:
+                    - generic [ref=f51e89]: AINA FAJAR RIZKIA
+                    - generic [ref=f51e90]: Portal Siswa
+              - cell "2471061" [ref=f51e91]
+              - cell "Siswa" [ref=f51e92]
+              - cell "XII / RPL" [ref=f51e94]
+              - cell "Idle" [ref=f51e95]
+              - cell [ref=f51e97]:
+                - generic [ref=f51e98]:
+                  - link "" [ref=f51e99] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/58/edit
+                  - button "" [ref=f51e102] [cursor=pointer]
+            - row [ref=f51e104]:
+              - cell "Foto profil YOSAFAT NICO CHANDRA PRASODJO Portal Siswa" [ref=f51e105]:
+                - generic [ref=f51e106]:
+                  - generic "Foto profil" [ref=f51e107]: 
+                  - generic [ref=f51e109]:
+                    - generic [ref=f51e110]: YOSAFAT NICO CHANDRA PRASODJO
+                    - generic [ref=f51e111]: Portal Siswa
+              - cell "2471060" [ref=f51e112]
+              - cell "Siswa" [ref=f51e113]
+              - cell "XII / RPL" [ref=f51e115]
+              - cell "Idle" [ref=f51e116]
+              - cell [ref=f51e118]:
+                - generic [ref=f51e119]:
+                  - link "" [ref=f51e120] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/57/edit
+                  - button "" [ref=f51e123] [cursor=pointer]
+            - row [ref=f51e125]:
+              - cell "Foto profil TANIA BUDI NISRINA Portal Siswa" [ref=f51e126]:
+                - generic [ref=f51e127]:
+                  - generic "Foto profil" [ref=f51e128]: 
+                  - generic [ref=f51e130]:
+                    - generic [ref=f51e131]: TANIA BUDI NISRINA
+                    - generic [ref=f51e132]: Portal Siswa
+              - cell "2471059" [ref=f51e133]
+              - cell "Siswa" [ref=f51e134]
+              - cell "XII / RPL" [ref=f51e136]
+              - cell "Idle" [ref=f51e137]
+              - cell [ref=f51e139]:
+                - generic [ref=f51e140]:
+                  - link "" [ref=f51e141] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/56/edit
+                  - button "" [ref=f51e144] [cursor=pointer]
+            - row [ref=f51e146]:
+              - cell "Foto profil SILVIA NIRMALA ROHMADHONA Portal Siswa" [ref=f51e147]:
+                - generic [ref=f51e148]:
+                  - generic "Foto profil" [ref=f51e149]: 
+                  - generic [ref=f51e151]:
+                    - generic [ref=f51e152]: SILVIA NIRMALA ROHMADHONA
+                    - generic [ref=f51e153]: Portal Siswa
+              - cell "2471058" [ref=f51e154]
+              - cell "Siswa" [ref=f51e155]
+              - cell "XII / RPL" [ref=f51e157]
+              - cell "Idle" [ref=f51e158]
+              - cell [ref=f51e160]:
+                - generic [ref=f51e161]:
+                  - link "" [ref=f51e162] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/55/edit
+                  - button "" [ref=f51e165] [cursor=pointer]
+            - row [ref=f51e167]:
+              - cell "Foto profil SHERLY AULINA Portal Siswa" [ref=f51e168]:
+                - generic [ref=f51e169]:
+                  - generic "Foto profil" [ref=f51e170]: 
+                  - generic [ref=f51e172]:
+                    - generic [ref=f51e173]: SHERLY AULINA
+                    - generic [ref=f51e174]: Portal Siswa
+              - cell "2471057" [ref=f51e175]
+              - cell "Siswa" [ref=f51e176]
+              - cell "XII / RPL" [ref=f51e178]
+              - cell "Idle" [ref=f51e179]
+              - cell [ref=f51e181]:
+                - generic [ref=f51e182]:
+                  - link "" [ref=f51e183] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/54/edit
+                  - button "" [ref=f51e186] [cursor=pointer]
+            - row [ref=f51e188]:
+              - cell "Foto profil SAFA ANNISA RAMADHANI Portal Siswa" [ref=f51e189]:
+                - generic [ref=f51e190]:
+                  - generic "Foto profil" [ref=f51e191]: 
+                  - generic [ref=f51e193]:
+                    - generic [ref=f51e194]: SAFA ANNISA RAMADHANI
+                    - generic [ref=f51e195]: Portal Siswa
+              - cell "2471056" [ref=f51e196]
+              - cell "Siswa" [ref=f51e197]
+              - cell "XII / RPL" [ref=f51e199]
+              - cell "Idle" [ref=f51e200]
+              - cell [ref=f51e202]:
+                - generic [ref=f51e203]:
+                  - link "" [ref=f51e204] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/53/edit
+                  - button "" [ref=f51e207] [cursor=pointer]
+            - row [ref=f51e209]:
+              - cell "Foto profil REYHAN MARINO BUDIONO Portal Siswa" [ref=f51e210]:
+                - generic [ref=f51e211]:
+                  - generic "Foto profil" [ref=f51e212]: 
+                  - generic [ref=f51e214]:
+                    - generic [ref=f51e215]: REYHAN MARINO BUDIONO
+                    - generic [ref=f51e216]: Portal Siswa
+              - cell "2471055" [ref=f51e217]
+              - cell "Siswa" [ref=f51e218]
+              - cell "XII / RPL" [ref=f51e220]
+              - cell "Idle" [ref=f51e221]
+              - cell [ref=f51e223]:
+                - generic [ref=f51e224]:
+                  - link "" [ref=f51e225] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/52/edit
+                  - button "" [ref=f51e228] [cursor=pointer]
+            - row [ref=f51e230]:
+              - cell "Foto profil REHAN SALIFFATIN MURTAZA Portal Siswa" [ref=f51e231]:
+                - generic [ref=f51e232]:
+                  - generic "Foto profil" [ref=f51e233]: 
+                  - generic [ref=f51e235]:
+                    - generic [ref=f51e236]: REHAN SALIFFATIN MURTAZA
+                    - generic [ref=f51e237]: Portal Siswa
+              - cell "2471054" [ref=f51e238]
+              - cell "Siswa" [ref=f51e239]
+              - cell "XII / RPL" [ref=f51e241]
+              - cell "Idle" [ref=f51e242]
+              - cell [ref=f51e244]:
+                - generic [ref=f51e245]:
+                  - link "" [ref=f51e246] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/51/edit
+                  - button "" [ref=f51e249] [cursor=pointer]
+            - row [ref=f51e251]:
+              - cell "Foto profil RAKA ADITYA PUTRA Portal Siswa" [ref=f51e252]:
+                - generic [ref=f51e253]:
+                  - generic "Foto profil" [ref=f51e254]: 
+                  - generic [ref=f51e256]:
+                    - generic [ref=f51e257]: RAKA ADITYA PUTRA
+                    - generic [ref=f51e258]: Portal Siswa
+              - cell "2471053" [ref=f51e259]
+              - cell "Siswa" [ref=f51e260]
+              - cell "XII / RPL" [ref=f51e262]
+              - cell "Idle" [ref=f51e263]
+              - cell [ref=f51e265]:
+                - generic [ref=f51e266]:
+                  - link "" [ref=f51e267] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/50/edit
+                  - button "" [ref=f51e270] [cursor=pointer]
+            - row [ref=f51e272]:
+              - cell "Foto profil RAFAEL LIONEL RINGGARD Portal Siswa" [ref=f51e273]:
+                - generic [ref=f51e274]:
+                  - generic "Foto profil" [ref=f51e275]: 
+                  - generic [ref=f51e277]:
+                    - generic [ref=f51e278]: RAFAEL LIONEL RINGGARD
+                    - generic [ref=f51e279]: Portal Siswa
+              - cell "2471052" [ref=f51e280]
+              - cell "Siswa" [ref=f51e281]
+              - cell "XII / RPL" [ref=f51e283]
+              - cell "Idle" [ref=f51e284]
+              - cell [ref=f51e286]:
+                - generic [ref=f51e287]:
+                  - link "" [ref=f51e288] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/49/edit
+                  - button "" [ref=f51e291] [cursor=pointer]
+            - row [ref=f51e293]:
+              - cell "Foto profil PUTRA WIDI CANDRA KANTA Portal Siswa" [ref=f51e294]:
+                - generic [ref=f51e295]:
+                  - generic "Foto profil" [ref=f51e296]: 
+                  - generic [ref=f51e298]:
+                    - generic [ref=f51e299]: PUTRA WIDI CANDRA KANTA
+                    - generic [ref=f51e300]: Portal Siswa
+              - cell "2471051" [ref=f51e301]
+              - cell "Siswa" [ref=f51e302]
+              - cell "XII / RPL" [ref=f51e304]
+              - cell "Idle" [ref=f51e305]
+              - cell [ref=f51e307]:
+                - generic [ref=f51e308]:
+                  - link "" [ref=f51e309] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/48/edit
+                  - button "" [ref=f51e312] [cursor=pointer]
+            - row [ref=f51e314]:
+              - cell "Foto profil NURITA Portal Siswa" [ref=f51e315]:
+                - generic [ref=f51e316]:
+                  - generic "Foto profil" [ref=f51e317]: 
+                  - generic [ref=f51e319]:
+                    - generic [ref=f51e320]: NURITA
+                    - generic [ref=f51e321]: Portal Siswa
+              - cell "2471050" [ref=f51e322]
+              - cell "Siswa" [ref=f51e323]
+              - cell "XII / RPL" [ref=f51e325]
+              - cell "Idle" [ref=f51e326]
+              - cell [ref=f51e328]:
+                - generic [ref=f51e329]:
+                  - link "" [ref=f51e330] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/47/edit
+                  - button "" [ref=f51e333] [cursor=pointer]
+            - row [ref=f51e335]:
+              - cell "Foto profil NUR ALFA AL ZAHRA Portal Siswa" [ref=f51e336]:
+                - generic [ref=f51e337]:
+                  - generic "Foto profil" [ref=f51e338]: 
+                  - generic [ref=f51e340]:
+                    - generic [ref=f51e341]: NUR ALFA AL ZAHRA
+                    - generic [ref=f51e342]: Portal Siswa
+              - cell "2471049" [ref=f51e343]
+              - cell "Siswa" [ref=f51e344]
+              - cell "XII / RPL" [ref=f51e346]
+              - cell "Idle" [ref=f51e347]
+              - cell [ref=f51e349]:
+                - generic [ref=f51e350]:
+                  - link "" [ref=f51e351] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/46/edit
+                  - button "" [ref=f51e354] [cursor=pointer]
+            - row [ref=f51e356]:
+              - cell "Foto profil NHEISYA LUNA ISMADILLA Portal Siswa" [ref=f51e357]:
+                - generic [ref=f51e358]:
+                  - generic "Foto profil" [ref=f51e359]: 
+                  - generic [ref=f51e361]:
+                    - generic [ref=f51e362]: NHEISYA LUNA ISMADILLA
+                    - generic [ref=f51e363]: Portal Siswa
+              - cell "2471048" [ref=f51e364]
+              - cell "Siswa" [ref=f51e365]
+              - cell "XII / RPL" [ref=f51e367]
+              - cell "Idle" [ref=f51e368]
+              - cell [ref=f51e370]:
+                - generic [ref=f51e371]:
+                  - link "" [ref=f51e372] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/45/edit
+                  - button "" [ref=f51e375] [cursor=pointer]
+            - row [ref=f51e377]:
+              - cell "Foto profil NAYAKA NOVA TIRTHA Portal Siswa" [ref=f51e378]:
+                - generic [ref=f51e379]:
+                  - generic "Foto profil" [ref=f51e380]: 
+                  - generic [ref=f51e382]:
+                    - generic [ref=f51e383]: NAYAKA NOVA TIRTHA
+                    - generic [ref=f51e384]: Portal Siswa
+              - cell "2471047" [ref=f51e385]
+              - cell "Siswa" [ref=f51e386]
+              - cell "XII / RPL" [ref=f51e388]
+              - cell "Idle" [ref=f51e389]
+              - cell [ref=f51e391]:
+                - generic [ref=f51e392]:
+                  - link "" [ref=f51e393] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/44/edit
+                  - button "" [ref=f51e396] [cursor=pointer]
+            - row [ref=f51e398]:
+              - cell "Foto profil NAJWA AULIA ZAHRA Portal Siswa" [ref=f51e399]:
+                - generic [ref=f51e400]:
+                  - generic "Foto profil" [ref=f51e401]: 
+                  - generic [ref=f51e403]:
+                    - generic [ref=f51e404]: NAJWA AULIA ZAHRA
+                    - generic [ref=f51e405]: Portal Siswa
+              - cell "2471045" [ref=f51e406]
+              - cell "Siswa" [ref=f51e407]
+              - cell "XII / RPL" [ref=f51e409]
+              - cell "Idle" [ref=f51e410]
+              - cell [ref=f51e412]:
+                - generic [ref=f51e413]:
+                  - link "" [ref=f51e414] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/42/edit
+                  - button "" [ref=f51e417] [cursor=pointer]
+            - row [ref=f51e419]:
+              - cell "Foto profil NADINDRA SIYANNA PUTRA Portal Siswa" [ref=f51e420]:
+                - generic [ref=f51e421]:
+                  - generic "Foto profil" [ref=f51e422]: 
+                  - generic [ref=f51e424]:
+                    - generic [ref=f51e425]: NADINDRA SIYANNA PUTRA
+                    - generic [ref=f51e426]: Portal Siswa
+              - cell "2471044" [ref=f51e427]
+              - cell "Siswa" [ref=f51e428]
+              - cell "XII / RPL" [ref=f51e430]
+              - cell "Idle" [ref=f51e431]
+              - cell [ref=f51e433]:
+                - generic [ref=f51e434]:
+                  - link "" [ref=f51e435] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/41/edit
+                  - button "" [ref=f51e438] [cursor=pointer]
+            - row [ref=f51e440]:
+              - cell "Foto profil NATASYA TRIA YUNIAR Portal Siswa" [ref=f51e441]:
+                - generic [ref=f51e442]:
+                  - generic "Foto profil" [ref=f51e443]: 
+                  - generic [ref=f51e445]:
+                    - generic [ref=f51e446]: NATASYA TRIA YUNIAR
+                    - generic [ref=f51e447]: Portal Siswa
+              - cell "2471046" [ref=f51e448]
+              - cell "Siswa" [ref=f51e449]
+              - cell "XII / RPL" [ref=f51e451]
+              - cell "Idle" [ref=f51e452]
+              - cell [ref=f51e454]:
+                - generic [ref=f51e455]:
+                  - link "" [ref=f51e456] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/43/edit
+                  - button "" [ref=f51e459] [cursor=pointer]
+            - row [ref=f51e461]:
+              - cell "Foto profil MUHANNAD GUNTUR BINTANG PRATAMA Portal Siswa" [ref=f51e462]:
+                - generic [ref=f51e463]:
+                  - generic "Foto profil" [ref=f51e464]: 
+                  - generic [ref=f51e466]:
+                    - generic [ref=f51e467]: MUHANNAD GUNTUR BINTANG PRATAMA
+                    - generic [ref=f51e468]: Portal Siswa
+              - cell "2471043" [ref=f51e469]
+              - cell "Siswa" [ref=f51e470]
+              - cell "XII / RPL" [ref=f51e472]
+              - cell "Idle" [ref=f51e473]
+              - cell [ref=f51e475]:
+                - generic [ref=f51e476]:
+                  - link "" [ref=f51e477] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/40/edit
+                  - button "" [ref=f51e480] [cursor=pointer]
+            - row [ref=f51e482]:
+              - cell "Foto profil MUHAMMAD ISNAN RAMADHAN Portal Siswa" [ref=f51e483]:
+                - generic [ref=f51e484]:
+                  - generic "Foto profil" [ref=f51e485]: 
+                  - generic [ref=f51e487]:
+                    - generic [ref=f51e488]: MUHAMMAD ISNAN RAMADHAN
+                    - generic [ref=f51e489]: Portal Siswa
+              - cell "2471042" [ref=f51e490]
+              - cell "Siswa" [ref=f51e491]
+              - cell "XII / RPL" [ref=f51e493]
+              - cell "Idle" [ref=f51e494]
+              - cell [ref=f51e496]:
+                - generic [ref=f51e497]:
+                  - link "" [ref=f51e498] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/39/edit
+                  - button "" [ref=f51e501] [cursor=pointer]
+            - row [ref=f51e503]:
+              - cell "Foto profil MUHAMMAD ADRIAN MAULANA Portal Siswa" [ref=f51e504]:
+                - generic [ref=f51e505]:
+                  - generic "Foto profil" [ref=f51e506]: 
+                  - generic [ref=f51e508]:
+                    - generic [ref=f51e509]: MUHAMMAD ADRIAN MAULANA
+                    - generic [ref=f51e510]: Portal Siswa
+              - cell "2471040" [ref=f51e511]
+              - cell "Siswa" [ref=f51e512]
+              - cell "XII / RPL" [ref=f51e514]
+              - cell "Idle" [ref=f51e515]
+              - cell [ref=f51e517]:
+                - generic [ref=f51e518]:
+                  - link "" [ref=f51e519] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/37/edit
+                  - button "" [ref=f51e522] [cursor=pointer]
+            - row [ref=f51e524]:
+              - cell "Foto profil MUHAMMAD ILYAS Portal Siswa" [ref=f51e525]:
+                - generic [ref=f51e526]:
+                  - generic "Foto profil" [ref=f51e527]: 
+                  - generic [ref=f51e529]:
+                    - generic [ref=f51e530]: MUHAMMAD ILYAS
+                    - generic [ref=f51e531]: Portal Siswa
+              - cell "2471041" [ref=f51e532]
+              - cell "Siswa" [ref=f51e533]
+              - cell "XII / RPL" [ref=f51e535]
+              - cell "Idle" [ref=f51e536]
+              - cell [ref=f51e538]:
+                - generic [ref=f51e539]:
+                  - link "" [ref=f51e540] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/38/edit
+                  - button "" [ref=f51e543] [cursor=pointer]
+            - row [ref=f51e545]:
+              - cell "Foto profil MUHAMAD BAGUS PRABOWO PUTRO Portal Siswa" [ref=f51e546]:
+                - generic [ref=f51e547]:
+                  - generic "Foto profil" [ref=f51e548]: 
+                  - generic [ref=f51e550]:
+                    - generic [ref=f51e551]: MUHAMAD BAGUS PRABOWO PUTRO
+                    - generic [ref=f51e552]: Portal Siswa
+              - cell "2471039" [ref=f51e553]
+              - cell "Siswa" [ref=f51e554]
+              - cell "XII / RPL" [ref=f51e556]
+              - cell "Idle" [ref=f51e557]
+              - cell [ref=f51e559]:
+                - generic [ref=f51e560]:
+                  - link "" [ref=f51e561] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/36/edit
+                  - button "" [ref=f51e564] [cursor=pointer]
+            - row [ref=f51e566]:
+              - cell "Foto profil LUTFI AJI SUTANSYAH Portal Siswa" [ref=f51e567]:
+                - generic [ref=f51e568]:
+                  - generic "Foto profil" [ref=f51e569]: 
+                  - generic [ref=f51e571]:
+                    - generic [ref=f51e572]: LUTFI AJI SUTANSYAH
+                    - generic [ref=f51e573]: Portal Siswa
+              - cell "2471037" [ref=f51e574]
+              - cell "Siswa" [ref=f51e575]
+              - cell "XII / RPL" [ref=f51e577]
+              - cell "Idle" [ref=f51e578]
+              - cell [ref=f51e580]:
+                - generic [ref=f51e581]:
+                  - link "" [ref=f51e582] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/34/edit
+                  - button "" [ref=f51e585] [cursor=pointer]
+            - row [ref=f51e587]:
+              - cell "Foto profil MAULANA ZACKY PRATAMA Portal Siswa" [ref=f51e588]:
+                - generic [ref=f51e589]:
+                  - generic "Foto profil" [ref=f51e590]: 
+                  - generic [ref=f51e592]:
+                    - generic [ref=f51e593]: MAULANA ZACKY PRATAMA
+                    - generic [ref=f51e594]: Portal Siswa
+              - cell "2471038" [ref=f51e595]
+              - cell "Siswa" [ref=f51e596]
+              - cell "XII / RPL" [ref=f51e598]
+              - cell "Idle" [ref=f51e599]
+              - cell [ref=f51e601]:
+                - generic [ref=f51e602]:
+                  - link "" [ref=f51e603] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/35/edit
+                  - button "" [ref=f51e606] [cursor=pointer]
+            - row [ref=f51e608]:
+              - cell "Foto profil KESYA AULIA AZ ZAHRA Portal Siswa" [ref=f51e609]:
+                - generic [ref=f51e610]:
+                  - generic "Foto profil" [ref=f51e611]: 
+                  - generic [ref=f51e613]:
+                    - generic [ref=f51e614]: KESYA AULIA AZ ZAHRA
+                    - generic [ref=f51e615]: Portal Siswa
+              - cell "2471035" [ref=f51e616]
+              - cell "Siswa" [ref=f51e617]
+              - cell "XII / RPL" [ref=f51e619]
+              - cell "Idle" [ref=f51e620]
+              - cell [ref=f51e622]:
+                - generic [ref=f51e623]:
+                  - link "" [ref=f51e624] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/32/edit
+                  - button "" [ref=f51e627] [cursor=pointer]
+            - row [ref=f51e629]:
+              - cell "Foto profil LAUDYA CHINTIA BELLA Portal Siswa" [ref=f51e630]:
+                - generic [ref=f51e631]:
+                  - generic "Foto profil" [ref=f51e632]: 
+                  - generic [ref=f51e634]:
+                    - generic [ref=f51e635]: LAUDYA CHINTIA BELLA
+                    - generic [ref=f51e636]: Portal Siswa
+              - cell "2471036" [ref=f51e637]
+              - cell "Siswa" [ref=f51e638]
+              - cell "XII / RPL" [ref=f51e640]
+              - cell "Idle" [ref=f51e641]
+              - cell [ref=f51e643]:
+                - generic [ref=f51e644]:
+                  - link "" [ref=f51e645] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/33/edit
+                  - button "" [ref=f51e648] [cursor=pointer]
+            - row [ref=f51e650]:
+              - cell "Foto profil IZZATI JAUHRUSYAFAR Portal Siswa" [ref=f51e651]:
+                - generic [ref=f51e652]:
+                  - generic "Foto profil" [ref=f51e653]: 
+                  - generic [ref=f51e655]:
+                    - generic [ref=f51e656]: IZZATI JAUHRUSYAFAR
+                    - generic [ref=f51e657]: Portal Siswa
+              - cell "2471034" [ref=f51e658]
+              - cell "Siswa" [ref=f51e659]
+              - cell "XII / RPL" [ref=f51e661]
+              - cell "Idle" [ref=f51e662]
+              - cell [ref=f51e664]:
+                - generic [ref=f51e665]:
+                  - link "" [ref=f51e666] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/31/edit
+                  - button "" [ref=f51e669] [cursor=pointer]
+            - row [ref=f51e671]:
+              - cell "Foto profil HINDIANA SUKMA DEWI Portal Siswa" [ref=f51e672]:
+                - generic [ref=f51e673]:
+                  - generic "Foto profil" [ref=f51e674]: 
+                  - generic [ref=f51e676]:
+                    - generic [ref=f51e677]: HINDIANA SUKMA DEWI
+                    - generic [ref=f51e678]: Portal Siswa
+              - cell "2471033" [ref=f51e679]
+              - cell "Siswa" [ref=f51e680]
+              - cell "XII / RPL" [ref=f51e682]
+              - cell "Idle" [ref=f51e683]
+              - cell [ref=f51e685]:
+                - generic [ref=f51e686]:
+                  - link "" [ref=f51e687] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/30/edit
+                  - button "" [ref=f51e690] [cursor=pointer]
+            - row [ref=f51e692]:
+              - cell "Foto profil FEBRIYAN ARBI UTAMA Portal Siswa" [ref=f51e693]:
+                - generic [ref=f51e694]:
+                  - generic "Foto profil" [ref=f51e695]: 
+                  - generic [ref=f51e697]:
+                    - generic [ref=f51e698]: FEBRIYAN ARBI UTAMA
+                    - generic [ref=f51e699]: Portal Siswa
+              - cell "2471032" [ref=f51e700]
+              - cell "Siswa" [ref=f51e701]
+              - cell "XII / RPL" [ref=f51e703]
+              - cell "Idle" [ref=f51e704]
+              - cell [ref=f51e706]:
+                - generic [ref=f51e707]:
+                  - link "" [ref=f51e708] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/29/edit
+                  - button "" [ref=f51e711] [cursor=pointer]
+            - row [ref=f51e713]:
+              - cell "Foto profil ERISKA VALENCIA PUTRI Portal Siswa" [ref=f51e714]:
+                - generic [ref=f51e715]:
+                  - generic "Foto profil" [ref=f51e716]: 
+                  - generic [ref=f51e718]:
+                    - generic [ref=f51e719]: ERISKA VALENCIA PUTRI
+                    - generic [ref=f51e720]: Portal Siswa
+              - cell "2471031" [ref=f51e721]
+              - cell "Siswa" [ref=f51e722]
+              - cell "XII / RPL" [ref=f51e724]
+              - cell "Idle" [ref=f51e725]
+              - cell [ref=f51e727]:
+                - generic [ref=f51e728]:
+                  - link "" [ref=f51e729] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/28/edit
+                  - button "" [ref=f51e732] [cursor=pointer]
+            - row [ref=f51e734]:
+              - cell "Foto profil DEWI ARUM SARI Portal Siswa" [ref=f51e735]:
+                - generic [ref=f51e736]:
+                  - generic "Foto profil" [ref=f51e737]: 
+                  - generic [ref=f51e739]:
+                    - generic [ref=f51e740]: DEWI ARUM SARI
+                    - generic [ref=f51e741]: Portal Siswa
+              - cell "2471030" [ref=f51e742]
+              - cell "Siswa" [ref=f51e743]
+              - cell "XII / RPL" [ref=f51e745]
+              - cell "Idle" [ref=f51e746]
+              - cell [ref=f51e748]:
+                - generic [ref=f51e749]:
+                  - link "" [ref=f51e750] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/27/edit
+                  - button "" [ref=f51e753] [cursor=pointer]
+            - row [ref=f51e755]:
+              - cell "Foto profil DESQUINEO JAYANAGARA Portal Siswa" [ref=f51e756]:
+                - generic [ref=f51e757]:
+                  - generic "Foto profil" [ref=f51e758]: 
+                  - generic [ref=f51e760]:
+                    - generic [ref=f51e761]: DESQUINEO JAYANAGARA
+                    - generic [ref=f51e762]: Portal Siswa
+              - cell "2471029" [ref=f51e763]
+              - cell "Siswa" [ref=f51e764]
+              - cell "XII / RPL" [ref=f51e766]
+              - cell "Idle" [ref=f51e767]
+              - cell [ref=f51e769]:
+                - generic [ref=f51e770]:
+                  - link "" [ref=f51e771] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/26/edit
+                  - button "" [ref=f51e774] [cursor=pointer]
+            - row [ref=f51e776]:
+              - cell "Foto profil CINTA DAMAI CAHYANI Portal Siswa" [ref=f51e777]:
+                - generic [ref=f51e778]:
+                  - generic "Foto profil" [ref=f51e779]: 
+                  - generic [ref=f51e781]:
+                    - generic [ref=f51e782]: CINTA DAMAI CAHYANI
+                    - generic [ref=f51e783]: Portal Siswa
+              - cell "2471028" [ref=f51e784]
+              - cell "Siswa" [ref=f51e785]
+              - cell "XII / RPL" [ref=f51e787]
+              - cell "Idle" [ref=f51e788]
+              - cell [ref=f51e790]:
+                - generic [ref=f51e791]:
+                  - link "" [ref=f51e792] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/25/edit
+                  - button "" [ref=f51e795] [cursor=pointer]
+            - row [ref=f51e797]:
+              - cell "Foto profil BARRA ANDRACESA KHARISMA Portal Siswa" [ref=f51e798]:
+                - generic [ref=f51e799]:
+                  - generic "Foto profil" [ref=f51e800]: 
+                  - generic [ref=f51e802]:
+                    - generic [ref=f51e803]: BARRA ANDRACESA KHARISMA
+                    - generic [ref=f51e804]: Portal Siswa
+              - cell "2471027" [ref=f51e805]
+              - cell "Siswa" [ref=f51e806]
+              - cell "XII / RPL" [ref=f51e808]
+              - cell "Idle" [ref=f51e809]
+              - cell [ref=f51e811]:
+                - generic [ref=f51e812]:
+                  - link "" [ref=f51e813] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/24/edit
+                  - button "" [ref=f51e816] [cursor=pointer]
+            - row [ref=f51e818]:
+              - cell "Foto profil APRILIA NURASY SYAHRANI Portal Siswa" [ref=f51e819]:
+                - generic [ref=f51e820]:
+                  - generic "Foto profil" [ref=f51e821]: 
+                  - generic [ref=f51e823]:
+                    - generic [ref=f51e824]: APRILIA NURASY SYAHRANI
+                    - generic [ref=f51e825]: Portal Siswa
+              - cell "2471026" [ref=f51e826]
+              - cell "Siswa" [ref=f51e827]
+              - cell "XII / RPL" [ref=f51e829]
+              - cell "Idle" [ref=f51e830]
+              - cell [ref=f51e832]:
+                - generic [ref=f51e833]:
+                  - link "" [ref=f51e834] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/23/edit
+                  - button "" [ref=f51e837] [cursor=pointer]
+            - row [ref=f51e839]:
+              - cell "Foto profil ANDREA FRANCY MAYANEZTA Portal Siswa" [ref=f51e840]:
+                - generic [ref=f51e841]:
+                  - generic "Foto profil" [ref=f51e842]: 
+                  - generic [ref=f51e844]:
+                    - generic [ref=f51e845]: ANDREA FRANCY MAYANEZTA
+                    - generic [ref=f51e846]: Portal Siswa
+              - cell "2471025" [ref=f51e847]
+              - cell "Siswa" [ref=f51e848]
+              - cell "XII / RPL" [ref=f51e850]
+              - cell "Idle" [ref=f51e851]
+              - cell [ref=f51e853]:
+                - generic [ref=f51e854]:
+                  - link "" [ref=f51e855] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/22/edit
+                  - button "" [ref=f51e858] [cursor=pointer]
+            - row [ref=f51e860]:
+              - cell "Foto profil ALMIRA SYAFAWIBOWO Portal Siswa" [ref=f51e861]:
+                - generic [ref=f51e862]:
+                  - generic "Foto profil" [ref=f51e863]: 
+                  - generic [ref=f51e865]:
+                    - generic [ref=f51e866]: ALMIRA SYAFAWIBOWO
+                    - generic [ref=f51e867]: Portal Siswa
+              - cell "2471024" [ref=f51e868]
+              - cell "Siswa" [ref=f51e869]
+              - cell "XII / RPL" [ref=f51e871]
+              - cell "Idle" [ref=f51e872]
+              - cell [ref=f51e874]:
+                - generic [ref=f51e875]:
+                  - link "" [ref=f51e876] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/21/edit
+                  - button "" [ref=f51e879] [cursor=pointer]
+            - row [ref=f51e881]:
+              - cell "Foto profil AIMATUN NISA Portal Siswa" [ref=f51e882]:
+                - generic [ref=f51e883]:
+                  - generic "Foto profil" [ref=f51e884]: 
+                  - generic [ref=f51e886]:
+                    - generic [ref=f51e887]: AIMATUN NISA
+                    - generic [ref=f51e888]: Portal Siswa
+              - cell "2471023" [ref=f51e889]
+              - cell "Siswa" [ref=f51e890]
+              - cell "XII / RPL" [ref=f51e892]
+              - cell "Idle" [ref=f51e893]
+              - cell [ref=f51e895]:
+                - generic [ref=f51e896]:
+                  - link "" [ref=f51e897] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/20/edit
+                  - button "" [ref=f51e900] [cursor=pointer]
+            - row [ref=f51e902]:
+              - cell "Foto profil AFIDATUNNISA Portal Siswa" [ref=f51e903]:
+                - generic [ref=f51e904]:
+                  - generic "Foto profil" [ref=f51e905]: 
+                  - generic [ref=f51e907]:
+                    - generic [ref=f51e908]: AFIDATUNNISA
+                    - generic [ref=f51e909]: Portal Siswa
+              - cell "2471022" [ref=f51e910]
+              - cell "Siswa" [ref=f51e911]
+              - cell "XII / RPL" [ref=f51e913]
+              - cell "Idle" [ref=f51e914]
+              - cell [ref=f51e916]:
+                - generic [ref=f51e917]:
+                  - link "" [ref=f51e918] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/19/edit
+                  - button "" [ref=f51e921] [cursor=pointer]
+            - row [ref=f51e923]:
+              - cell "Foto profil ABRIANI AFNANSYAH Portal Siswa" [ref=f51e924]:
+                - generic [ref=f51e925]:
+                  - generic "Foto profil" [ref=f51e926]: 
+                  - generic [ref=f51e928]:
+                    - generic [ref=f51e929]: ABRIANI AFNANSYAH
+                    - generic [ref=f51e930]: Portal Siswa
+              - cell "2471021" [ref=f51e931]
+              - cell "Siswa" [ref=f51e932]
+              - cell "XII / RPL" [ref=f51e934]
+              - cell "Idle" [ref=f51e935]
+              - cell [ref=f51e937]:
+                - generic [ref=f51e938]:
+                  - link "" [ref=f51e939] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/18/edit
+                  - button "" [ref=f51e942] [cursor=pointer]
+            - row [ref=f51e944]:
+              - cell "Foto profil DANJI DWI PRASETYO Portal Siswa" [ref=f51e945]:
+                - generic [ref=f51e946]:
+                  - generic "Foto profil" [ref=f51e947]: 
+                  - generic [ref=f51e949]:
+                    - generic [ref=f51e950]: DANJI DWI PRASETYO
+                    - generic [ref=f51e951]: Portal Siswa
+              - cell "237891" [ref=f51e952]
+              - cell "Siswa" [ref=f51e953]
+              - cell "XII / RPL" [ref=f51e955]
+              - cell "Idle" [ref=f51e956]
+              - cell [ref=f51e958]:
+                - generic [ref=f51e959]:
+                  - link "" [ref=f51e960] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/admin/user/17/edit
+                  - button "" [ref=f51e963] [cursor=pointer]
+    - contentinfo [ref=f51e965]:
+      - generic [ref=f51e966]:
+        - generic [ref=f51e967]:
+          - generic [ref=f51e968]: 
+          - text: PemlapTex
+        - generic [ref=f51e969]: "|"
+        - generic [ref=f51e970]: © 2026 Peminjaman Laptop Sekolah

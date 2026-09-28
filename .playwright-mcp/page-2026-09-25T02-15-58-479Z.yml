@@ -1,0 +1,52 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]: Login ke Siatex
+    - generic [ref=e6]:
+      - textbox "Username" [ref=e7]
+      - textbox "Password" [ref=e8]
+      - combobox "Select example" [ref=e9]:
+        - option "Silahkan Pilih Status" [selected]
+        - option "SiAtex Siswa"
+        - option "SiAtex Guru"
+        - option "SiAtex Kepsek"
+        - option "SiAtex STP2K"
+        - option "SiAtex BK"
+        - option "SiAtex Sarpras"
+        - option "SiAtex Kesiswaan"
+        - option "SiAtex Kurikulum"
+        - option "SiAtex Keuangan"
+        - option "SiAtex Humas"
+        - option "SiAtex Alumni"
+        - option "SiAtex Tata Usaha"
+        - option "SiAtex Kepegawaian"
+      - iframe [ref=e13]:
+        - generic [ref=f1e2]:
+          - generic [ref=f1e3]:
+            - checkbox "I'm not a robot" [ref=f1e7]
+            - generic [aria-hidden] [ref=f1e11]: I'm not a robot
+            - generic [ref=f1e13]:
+              - text: This site is exceeding
+              - link "reCAPTCHA Enterprise free quota" [ref=f1e14] [cursor=pointer]:
+                - /url: https://cloud.google.com/recaptcha/docs/billing-information
+              - text: .
+          - generic [ref=f1e15]: reCAPTCHA
+      - button "Submit" [ref=e14] [cursor=pointer]
+      - button "Login dengan Google" [ref=e17] [cursor=pointer]
+  - generic [ref=e29]:
+    - generic [ref=e30]: SIATEX
+    - generic [ref=e31]: Sistem Informasi Akademik Texmaco Semarang
+    - link "  Download Apk Siatex di Playstore" [ref=e32] [cursor=pointer]:
+      - /url: https://play.google.com/store/apps/details?id=com.smt.siatexmobilesmg&pli=1
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]: 
+          - generic: 
+        - generic [ref=e36]: Download Apk Siatex di Playstore
+    - generic [ref=e38]:
+      - generic [ref=e39]: Untuk alumni, Silahkan login terlebih dahulu untuk mengisi Alumni Tracking. Jika lupa, bisa menggunakan form dibawah.
+      - link "Alumni Tracking" [ref=e40] [cursor=pointer]:
+        - /url: /public-alumni-tracking
+    - generic [ref=e42]:
+      - generic [ref=e43]: Untuk Tamu, Silahkan isi buku tamu dibawah.
+      - link "Buku Tamu" [ref=e44] [cursor=pointer]:
+        - /url: /public-alumni-logbook

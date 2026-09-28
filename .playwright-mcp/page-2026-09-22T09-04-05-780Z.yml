@@ -1,0 +1,33 @@
+- generic [ref=f8e3]:
+  - link " PemlapTex" [ref=f8e4] [cursor=pointer]:
+    - /url: http://127.0.0.1:8000/login
+    - generic [ref=f8e5]: 
+    - generic [ref=f8e6]: PemlapTex
+  - paragraph [ref=f8e7]:
+    - text: Sistem Peminjaman Laptop Sekolah — masuk sebagai
+    - strong [ref=f8e8]: Siswa
+  - generic [ref=f8e9]:
+    - generic [ref=f8e10]:
+      - generic [ref=f8e11]: Username (NIS)
+      - generic [ref=f8e12]:
+        - generic: 
+        - textbox "Username (NIS)" [active] [ref=f8e13]:
+          - /placeholder: Masukkan NIS / username
+    - generic [ref=f8e14]:
+      - generic [ref=f8e15]: Password
+      - generic [ref=f8e16]:
+        - generic: 
+        - textbox "Password" [ref=f8e17]:
+          - /placeholder: ••••••••
+        - button "Show password" [ref=f8e18] [cursor=pointer]:
+          - generic [ref=f8e19]: 
+    - generic [ref=f8e21] [cursor=pointer]:
+      - checkbox "Ingat Saya" [ref=f8e22]
+      - generic [ref=f8e23]: Ingat Saya
+    - button "Masuk ke Dashboard " [ref=f8e24] [cursor=pointer]:
+      - generic [ref=f8e25]: Masuk ke Dashboard
+      - generic [ref=f8e26]: 
+  - paragraph [ref=f8e27]:
+    - text: Anda Admin?
+    - link "Masuk sebagai Admin →" [ref=f8e28] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000/admin

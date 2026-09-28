@@ -1,0 +1,115 @@
+/* ========================================================================
+   PEMLAPTEX - ADMIN LOGIN (tema biru)
+   Override tema hijau login admin di main.css — mirror login siswa.
+   Hanya dipakai di resources/views/auth/login-admin.blade.php (body .login-admin).
+   ======================================================================== */
+
+body.login-admin {
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+body.login-admin .login-wrapper {
+    background-color: #f3f6f9;
+}
+
+body.login-admin .login-bg-shape {
+    background: radial-gradient(circle, rgba(103, 192, 144, 0.18) 0%, rgba(103, 192, 144, 0) 70%);
+}
+
+body.login-admin .login-card {
+    background-color: #ffffff;
+    border: 1px solid #dbdfe9;
+    box-shadow: 0 20px 50px rgba(46, 91, 67, 0.12);
+}
+
+body.login-admin .login-card:hover {
+    box-shadow: 0 30px 60px rgba(103, 192, 144, 0.16);
+}
+
+body.login-admin .login-brand img {
+    width: 170px;
+    height: auto;
+}
+
+body.login-admin .login-subtitle {
+    color: #2E5B43;
+    font-weight: 600;
+}
+
+body.login-admin .login-form-label {
+    color: #071437;
+}
+
+body.login-admin .login-input-group i.input-icon {
+    color: #9da5b4;
+}
+
+body.login-admin .login-input {
+    background-color: #ffffff;
+    border: 1px solid #dbdfe9;
+    border-radius: 10px;
+    font-weight: 500;
+    color: #071437;
+}
+
+body.login-admin .login-input::placeholder {
+    color: #9da5b4;
+}
+
+body.login-admin .login-input:focus {
+    background-color: #ffffff;
+    border-color: #67C090;
+    box-shadow: 0 0 0 4px rgba(103, 192, 144, 0.18);
+}
+
+body.login-admin .login-input:focus + i.input-icon {
+    color: #67C090;
+}
+
+body.login-admin .password-toggle-btn {
+    color: #78829d;
+    cursor: pointer;
+}
+
+body.login-admin .password-toggle-btn:hover {
+    color: #67C090;
+}
+
+body.login-admin .custom-control-label {
+    color: #78829d;
+    cursor: pointer;
+}
+
+body.login-admin .custom-checkbox-input {
+    cursor: pointer;
+}
+
+body.login-admin .custom-checkbox-input:checked {
+    background-color: #67C090;
+    border-color: #67C090;
+}
+
+body.login-admin .btn-login {
+    background-color: #67C090;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+body.login-admin .btn-login:hover {
+    background-color: #4C8E6B;
+    box-shadow: 0 6px 16px rgba(103, 192, 144, 0.25);
+}
+
+body.login-admin .login-footer-text {
+    color: #78829d;
+}
+
+body.login-admin .login-footer-text a {
+    color: #2E5B43;
+}
+
+body.login-admin .login-footer-text a:hover {
+    color: #3E7A58;
+    text-decoration: underline;
+}

@@ -1,0 +1,100 @@
+- generic [active] [ref=f42e1]:
+  - generic [ref=f42e2]:
+    - link " PemlapTex" [ref=f42e3] [cursor=pointer]:
+      - /url: http://127.0.0.1:8899/dashboard
+      - generic [ref=f42e4]: 
+      - generic [ref=f42e5]: PemlapTex
+    - generic [ref=f42e7]:
+      - generic [ref=f42e8]: Menu
+      - list [ref=f42e9]:
+        - listitem [ref=f42e10]:
+          - link " Dashboard" [ref=f42e11] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/dashboard
+            - generic [ref=f42e12]: 
+            - generic [ref=f42e13]: Dashboard
+        - listitem [ref=f42e14]:
+          - link " Pinjam Laptop" [ref=f42e15] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/pinjam
+            - generic [ref=f42e16]: 
+            - generic [ref=f42e17]: Pinjam Laptop
+        - listitem [ref=f42e18]:
+          - link " Kembalikan Laptop" [ref=f42e19] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/kembali
+            - generic [ref=f42e20]: 
+            - generic [ref=f42e21]: Kembalikan Laptop
+    - generic [ref=f42e22]:
+      - img "Bunga Lestari" [ref=f42e23]
+      - generic [ref=f42e24]:
+        - generic [ref=f42e25]: Bunga Lestari
+        - generic [ref=f42e26]: "20240002"
+  - generic [ref=f42e27]:
+    - banner [ref=f42e28]:
+      - generic [ref=f42e29]:
+        - text: 
+        - button "Toggle Navigation" [ref=f42e30] [cursor=pointer]:
+          - generic [ref=f42e31]: 
+      - generic [ref=f42e33]:
+        - generic [ref=f42e34]: 
+        - text: Peminjaman Laptop Sekolah
+      - generic [ref=f42e35]:
+        - button "Toggle Fullscreen" [ref=f42e36] [cursor=pointer]:
+          - generic [ref=f42e37]: 
+        - generic [ref=f42e38]:
+          - button "" [ref=f42e39] [cursor=pointer]
+          - text:  
+        - generic [ref=f42e41]:
+          - button "Profile Bunga Lestari " [ref=f42e42] [cursor=pointer]:
+            - img "Profile" [ref=f42e43]
+            - generic [ref=f42e44]: Bunga Lestari
+            - generic [ref=f42e45]: 
+          - text: 
+    - generic [ref=f42e47]:
+      - heading "Dashboard Siswa" [level=1] [ref=f42e48]
+      - paragraph [ref=f42e49]: Selamat datang, Bunga Lestari — kelola peminjaman laptop Anda.
+    - main [ref=f42e50]:
+      - generic [ref=f42e51]:
+        - generic [ref=f42e53]:
+          - generic [ref=f42e56]:
+            - generic [ref=f42e57]: Sesi Aktif
+            - generic [ref=f42e59]: "1"
+            - generic [ref=f42e60]:
+              - generic [ref=f42e61]: 
+              - generic [ref=f42e62]: Laptop yang sedang dipinjam
+          - generic [ref=f42e65]:
+            - generic [ref=f42e66]: Selesai Dipinjam
+            - generic [ref=f42e68]: "1"
+            - generic [ref=f42e69]:
+              - generic [ref=f42e70]: 
+              - generic [ref=f42e71]: Riwayat pengembalian
+          - generic [ref=f42e73]:
+            - generic [ref=f42e74]:
+              - generic [ref=f42e75]: Pinjam
+              - generic [ref=f42e76]: Scan QR Code
+              - generic [ref=f42e77]: Pilih menu Pinjam Laptop lalu scan QR di laptop.
+            - link "Mulai Pinjam " [ref=f42e78] [cursor=pointer]:
+              - /url: http://127.0.0.1:8899/pinjam
+              - generic [ref=f42e79]: Mulai Pinjam
+              - generic [ref=f42e80]: 
+        - generic [ref=f42e82]:
+          - heading "Sesi Peminjaman Aktif" [level=2] [ref=f42e84]
+          - generic [ref=f42e86]:
+            - generic [ref=f42e87]: 
+            - generic [ref=f42e89]:
+              - generic [ref=f42e90]: Dell Latitude 3420
+              - generic [ref=f42e91]: Aktif sejak 21 Sep 2026, 08:42 • 1/5 siswa
+            - generic [ref=f42e92]: AKTIF
+        - generic [ref=f42e94]:
+          - heading "Riwayat Terakhir" [level=2] [ref=f42e96]
+          - generic [ref=f42e98]:
+            - generic [ref=f42e99]: 
+            - generic [ref=f42e101]:
+              - generic [ref=f42e102]: Lenovo ThinkPad T14
+              - generic [ref=f42e103]: Dikembalikan 21 Sep 2026, 08:39
+            - generic [ref=f42e104]: Selesai
+    - contentinfo [ref=f42e105]:
+      - generic [ref=f42e106]:
+        - generic [ref=f42e107]:
+          - generic [ref=f42e108]: 
+          - text: PemlapTex
+        - generic [ref=f42e109]: "|"
+        - generic [ref=f42e110]: © 2026 Peminjaman Laptop Sekolah

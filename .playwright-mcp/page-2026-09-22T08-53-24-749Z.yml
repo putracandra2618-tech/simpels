@@ -1,0 +1,388 @@
+- generic [active] [ref=f5e1]:
+  - generic [ref=f5e2]:
+    - paragraph [ref=f5e6]: Selamat Datang di Website Resmi
+    - heading "SMK TEXMACO SEMARANG" [level=1] [ref=f5e7]
+  - generic [ref=f5e9]:
+    - banner [ref=f5e10]:
+      - generic [ref=f5e12]:
+        - list [ref=f5e13]:
+          - listitem [ref=f5e14]:
+            - link " Jl. Raya Mangkang KM 16, Semarang 50155" [ref=f5e15] [cursor=pointer]:
+              - /url: https://www.google.com/maps/place/SMK+Texmaco+Semarang/@-7.0072944,110.3904599,15z/data=!4m5!3m4!1s0x2e705fe9c70586e9:0x76accfa1f41ef8ca!8m2!3d-6.9714043!4d110.2932415
+              - generic [ref=f5e16]: 
+              - text: Jl. Raya Mangkang KM 16, Semarang 50155
+          - listitem [ref=f5e17]:
+            - link " smktexmaco.smrg@gmail.com" [ref=f5e18] [cursor=pointer]:
+              - /url: mailto:smktexmaco.smrg@gmail.com
+              - generic [ref=f5e19]: 
+              - text: smktexmaco.smrg@gmail.com
+        - list [ref=f5e20]:
+          - listitem [ref=f5e21]:
+            - link " smktexmacosemarang" [ref=f5e22] [cursor=pointer]:
+              - /url: https://www.instagram.com/smktexmacosemarang/
+              - generic [ref=f5e23]: 
+              - text: smktexmacosemarang
+          - listitem [ref=f5e24]:
+            - link " SMK Texmaco Semarang" [ref=f5e25] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UCqkCTDH7gR2IdtrQBFcGhGA
+              - generic [ref=f5e26]: 
+              - text: SMK Texmaco Semarang
+          - listitem [ref=f5e27]:
+            - link " PILIH BAHASA " [ref=f5e28] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=f5e29]: 
+              - text: PILIH BAHASA
+              - generic [ref=f5e30]: 
+      - generic [ref=f5e31]:
+        - generic [ref=f5e33]:
+          - link [ref=f5e36] [cursor=pointer]:
+            - /url: /beranda
+            - img "Logo" [ref=f5e37]
+          - generic: a
+        - generic [ref=f5e39]:
+          - navigation [ref=f5e41]:
+            - navigation [ref=f5e42]:
+              - list [ref=f5e43]:
+                - listitem [ref=f5e44]:
+                  - link "BERANDA" [ref=f5e45] [cursor=pointer]:
+                    - /url: /beranda
+                - listitem [ref=f5e46]:
+                  - link "VISI MISI" [ref=f5e47] [cursor=pointer]:
+                    - /url: /visi-misi
+                - listitem [ref=f5e48]:
+                  - link "JURUSAN " [ref=f5e49] [cursor=pointer]:
+                    - /url: /jurusan
+                    - generic [ref=f5e50]:
+                      - text: JURUSAN
+                      - generic [ref=f5e51]: 
+                - listitem [ref=f5e52]:
+                  - link "GALERI" [ref=f5e53] [cursor=pointer]:
+                    - /url: /galeri
+                - listitem [ref=f5e54]:
+                  - link "FASILITAS " [ref=f5e55] [cursor=pointer]:
+                    - /url: /#
+                    - generic [ref=f5e56]:
+                      - text: FASILITAS
+                      - generic [ref=f5e57]: 
+                - listitem [ref=f5e58]:
+                  - link "ARTIKEL" [ref=f5e59] [cursor=pointer]:
+                    - /url: /artikel
+                - listitem [ref=f5e60]:
+                  - link "KEGIATAN " [ref=f5e61] [cursor=pointer]:
+                    - /url: /kegiatan
+                    - generic [ref=f5e62]:
+                      - text: KEGIATAN
+                      - generic [ref=f5e63]: 
+                - listitem [ref=f5e64]:
+                  - link "KONTAK" [ref=f5e65] [cursor=pointer]:
+                    - /url: /kontak
+          - list [ref=f5e66]:
+            - listitem [ref=f5e67]:
+              - link "PPDB" [ref=f5e68] [cursor=pointer]:
+                - /url: https://spmb.yayasanppittexmaco.or.id/
+    - list [ref=f5e73]:
+      - listitem [ref=f5e74]
+    - generic [ref=f5e84]:
+      - heading "program keahlian" [level=1] [ref=f5e88]
+      - generic [ref=f5e108]:
+        - generic [ref=f5e109] [cursor=pointer]
+        - generic [ref=f5e111] [cursor=pointer]
+    - generic [ref=f5e118]:
+      - heading [level=5]
+      - paragraph
+      - paragraph [ref=f5e119]: Assalamu'alaikum Wr. Wb
+      - paragraph [ref=f5e120]: Salam sejahtera bagi kita semua,
+      - paragraph [ref=f5e121]: SMK Texmaco Semarang sebagai salah satu sekolah menengah kejuruan di Kota Semarang telah berdiri sejak tahun 1997 di bawah kepemilikan Yayasan PPIT Texmaco. Saat ini memiliki 7 (tujuh) jurusan yaitu Teknik Elektronika Industri, Teknik Kendaraan Ringan, Teknik Pemesinan, Teknik Pemintalan Serat Buatan, Teknik Komputer dan Jaringan, Rekayasa Perangkat Lunak dan Tata Busana. Dengan jumlah siswa 1523 pada tahun ajaran 2022/2023 ini, SMK Texmaco merupakan SMK swasta dengn jumlah siswa terbanyak di Kota Semarang.
+      - paragraph
+      - button "Baca Selengkapnya" [ref=f5e122] [cursor=pointer]
+    - generic [ref=f5e126]:
+      - heading "berita terbaru" [level=1] [ref=f5e129]
+      - link "Berita Selengkapnya" [ref=f5e131] [cursor=pointer]:
+        - /url: artikel
+      - generic [ref=f5e132]:
+        - generic [ref=f5e134]:
+          - generic [ref=f5e136]:
+            - link [ref=f5e138] [cursor=pointer]:
+              - /url: https://smktexmaco-smg.sch.id/artikel/view/penertiban-kendaraan-tidak-standar-milik-siswa-smk-texmaco-semarang
+              - img "PENERTIBAN KENDARAAN TIDAK STANDAR MILIK SISWA SMK TEXMACO SEMARANG" [ref=f5e139]
+            - generic [ref=f5e140]:
+              - heading [level=3] [ref=f5e141]:
+                - link "PENERTIBAN KENDARAAN TIDAK STANDAR MILIK SISWA SMK TEXMACO SEMARANG" [ref=f5e142] [cursor=pointer]:
+                  - /url: https://smktexmaco-smg.sch.id/artikel/view/penertiban-kendaraan-tidak-standar-milik-siswa-smk-texmaco-semarang
+              - generic [ref=f5e143]:
+                - generic [ref=f5e144]: 
+                - text: 10 September 2026/Tim Hubinmas
+              - link "Selengkapnya" [ref=f5e145] [cursor=pointer]:
+                - /url: https://smktexmaco-smg.sch.id/artikel/view/penertiban-kendaraan-tidak-standar-milik-siswa-smk-texmaco-semarang
+          - generic [ref=f5e147]:
+            - link [ref=f5e149] [cursor=pointer]:
+              - /url: https://smktexmaco-smg.sch.id/artikel/view/laporan-rekapitulasi-realisasi-penggunaan-dana-bos-tahap-1-tahun-2026
+              - img "LAPORAN REKAPITULASI REALISASI PENGGUNAAN DANA BOS TAHAP 1 TAHUN 2026" [ref=f5e150]
+            - generic [ref=f5e151]:
+              - heading [level=3] [ref=f5e152]:
+                - link "LAPORAN REKAPITULASI REALISASI PENGGUNAAN DANA BOS TAHAP 1 TAHUN 2026" [ref=f5e153] [cursor=pointer]:
+                  - /url: https://smktexmaco-smg.sch.id/artikel/view/laporan-rekapitulasi-realisasi-penggunaan-dana-bos-tahap-1-tahun-2026
+              - generic [ref=f5e154]:
+                - generic [ref=f5e155]: 
+                - text: 10 September 2026/Tim Hubinmas
+              - link "Selengkapnya" [ref=f5e156] [cursor=pointer]:
+                - /url: https://smktexmaco-smg.sch.id/artikel/view/laporan-rekapitulasi-realisasi-penggunaan-dana-bos-tahap-1-tahun-2026
+          - generic [ref=f5e158]:
+            - link [ref=f5e160] [cursor=pointer]:
+              - /url: https://smktexmaco-smg.sch.id/artikel/view/sosialisasi-beasiswa-kuliah-cina-tahun-2027
+              - img "SOSIALISASI BEASISWA KULIAH CINA TAHUN 2027" [ref=f5e161]
+            - generic [ref=f5e162]:
+              - heading [level=3] [ref=f5e163]:
+                - link "SOSIALISASI BEASISWA KULIAH CINA TAHUN 2027" [ref=f5e164] [cursor=pointer]:
+                  - /url: https://smktexmaco-smg.sch.id/artikel/view/sosialisasi-beasiswa-kuliah-cina-tahun-2027
+              - generic [ref=f5e165]:
+                - generic [ref=f5e166]: 
+                - text: 31 Agustus 2026/Tim Hubinmas
+              - link "Selengkapnya" [ref=f5e167] [cursor=pointer]:
+                - /url: https://smktexmaco-smg.sch.id/artikel/view/sosialisasi-beasiswa-kuliah-cina-tahun-2027
+          - generic [ref=f5e169]:
+            - link [ref=f5e171] [cursor=pointer]:
+              - /url: https://smktexmaco-smg.sch.id/artikel/view/validasi-data-mutu-smk-bidang-kptk
+              - img "VALIDASI DATA MUTU SMK BIDANG KPTK" [ref=f5e172]
+            - generic [ref=f5e173]:
+              - heading [level=3] [ref=f5e174]:
+                - link "VALIDASI DATA MUTU SMK BIDANG KPTK" [ref=f5e175] [cursor=pointer]:
+                  - /url: https://smktexmaco-smg.sch.id/artikel/view/validasi-data-mutu-smk-bidang-kptk
+              - generic [ref=f5e176]:
+                - generic [ref=f5e177]: 
+                - text: 28 Agustus 2026/Tim Hubinmas
+              - link "Selengkapnya" [ref=f5e178] [cursor=pointer]:
+                - /url: https://smktexmaco-smg.sch.id/artikel/view/validasi-data-mutu-smk-bidang-kptk
+          - generic [ref=f5e180]:
+            - link [ref=f5e182] [cursor=pointer]:
+              - /url: https://smktexmaco-smg.sch.id/artikel/view/upacara-hut-ke-81-republik-indonesia-dan-penyerahan-beasiswa
+              - img "UPACARA HUT KE-81 REPUBLIK INDONESIA DAN PENYERAHAN BEASISWA" [ref=f5e183]
+            - generic [ref=f5e184]:
+              - heading [level=3] [ref=f5e185]:
+                - link "UPACARA HUT KE-81 REPUBLIK INDONESIA DAN PENYERAHAN BEASISWA" [ref=f5e186] [cursor=pointer]:
+                  - /url: https://smktexmaco-smg.sch.id/artikel/view/upacara-hut-ke-81-republik-indonesia-dan-penyerahan-beasiswa
+              - generic [ref=f5e187]:
+                - generic [ref=f5e188]: 
+                - text: 17 Agustus 2026/Tim Hubinmas
+              - link "Selengkapnya" [ref=f5e189] [cursor=pointer]:
+                - /url: https://smktexmaco-smg.sch.id/artikel/view/upacara-hut-ke-81-republik-indonesia-dan-penyerahan-beasiswa
+          - generic [ref=f5e191]:
+            - link [ref=f5e193] [cursor=pointer]:
+              - /url: https://smktexmaco-smg.sch.id/artikel/view/pertemuan-orang-tuawali-siswa-smk-texmaco-semarang
+              - img "PERTEMUAN ORANG TUA/WALI SISWA SMK TEXMACO SEMARANG" [ref=f5e194]
+            - generic [ref=f5e195]:
+              - heading [level=3] [ref=f5e196]:
+                - link "PERTEMUAN ORANG TUA/WALI SISWA SMK TEXMACO SEMARANG" [ref=f5e197] [cursor=pointer]:
+                  - /url: https://smktexmaco-smg.sch.id/artikel/view/pertemuan-orang-tuawali-siswa-smk-texmaco-semarang
+              - generic [ref=f5e198]:
+                - generic [ref=f5e199]: 
+                - text: 21 Juli 2026/Tim Hubinmas
+              - link "Selengkapnya" [ref=f5e200] [cursor=pointer]:
+                - /url: https://smktexmaco-smg.sch.id/artikel/view/pertemuan-orang-tuawali-siswa-smk-texmaco-semarang
+          - generic [ref=f5e202]:
+            - link [ref=f5e204] [cursor=pointer]:
+              - /url: https://smktexmaco-smg.sch.id/artikel/view/keren-smk-texmaco-juara-2-lomba-video
+              - img "KEREN! SMK TEXMACO JUARA 2 LOMBA VIDEO" [ref=f5e205]
+            - generic [ref=f5e206]:
+              - heading [level=3] [ref=f5e207]:
+                - link "KEREN! SMK TEXMACO JUARA 2 LOMBA VIDEO" [ref=f5e208] [cursor=pointer]:
+                  - /url: https://smktexmaco-smg.sch.id/artikel/view/keren-smk-texmaco-juara-2-lomba-video
+              - generic [ref=f5e209]:
+                - generic [ref=f5e210]: 
+                - text: 19 Juli 2026/Tim Hubinmas
+              - link "Selengkapnya" [ref=f5e211] [cursor=pointer]:
+                - /url: https://smktexmaco-smg.sch.id/artikel/view/keren-smk-texmaco-juara-2-lomba-video
+          - generic [ref=f5e213]:
+            - link [ref=f5e215] [cursor=pointer]:
+              - /url: https://smktexmaco-smg.sch.id/artikel/view/selamat-datang-siswa-baru-smk-texmaco-semarang-tahun-pelajaran-20262027
+              - img "SELAMAT DATANG SISWA BARU SMK TEXMACO SEMARANG TAHUN PELAJARAN 2026/2027" [ref=f5e216]
+            - generic [ref=f5e217]:
+              - heading [level=3] [ref=f5e218]:
+                - link "SELAMAT DATANG SISWA BARU SMK TEXMACO SEMARANG TAHUN PELAJARAN 2026/2027" [ref=f5e219] [cursor=pointer]:
+                  - /url: https://smktexmaco-smg.sch.id/artikel/view/selamat-datang-siswa-baru-smk-texmaco-semarang-tahun-pelajaran-20262027
+              - generic [ref=f5e220]:
+                - generic [ref=f5e221]: 
+                - text: 13 Juli 2026/Tim Hubinmas
+              - link "Selengkapnya" [ref=f5e222] [cursor=pointer]:
+                - /url: https://smktexmaco-smg.sch.id/artikel/view/selamat-datang-siswa-baru-smk-texmaco-semarang-tahun-pelajaran-20262027
+          - generic [ref=f5e224]:
+            - link [ref=f5e226] [cursor=pointer]:
+              - /url: https://smktexmaco-smg.sch.id/artikel/view/2026-asean-program-for-teacher-capacity-enhancement
+              - img "2026 ASEAN PROGRAM FOR TEACHER CAPACITY ENHANCEMENT" [ref=f5e227]
+            - generic [ref=f5e228]:
+              - heading [level=3] [ref=f5e229]:
+                - link "2026 ASEAN PROGRAM FOR TEACHER CAPACITY ENHANCEMENT" [ref=f5e230] [cursor=pointer]:
+                  - /url: https://smktexmaco-smg.sch.id/artikel/view/2026-asean-program-for-teacher-capacity-enhancement
+              - generic [ref=f5e231]:
+                - generic [ref=f5e232]: 
+                - text: 07 Juni 2026/Tim Hubinmas
+              - link "Selengkapnya" [ref=f5e233] [cursor=pointer]:
+                - /url: https://smktexmaco-smg.sch.id/artikel/view/2026-asean-program-for-teacher-capacity-enhancement
+          - generic [ref=f5e235]:
+            - link [ref=f5e237] [cursor=pointer]:
+              - /url: https://smktexmaco-smg.sch.id/artikel/view/edutrip-bali-2026
+              - img "EDUTRIP BALI 2026" [ref=f5e238]
+            - generic [ref=f5e239]:
+              - heading [level=3] [ref=f5e240]:
+                - link "EDUTRIP BALI 2026" [ref=f5e241] [cursor=pointer]:
+                  - /url: https://smktexmaco-smg.sch.id/artikel/view/edutrip-bali-2026
+              - generic [ref=f5e242]:
+                - generic [ref=f5e243]: 
+                - text: 05 Juni 2026/Tim Hubinmas
+              - link "Selengkapnya" [ref=f5e244] [cursor=pointer]:
+                - /url: https://smktexmaco-smg.sch.id/artikel/view/edutrip-bali-2026
+        - generic:
+          - generic [ref=f5e245]:
+            - generic [ref=f5e246] [cursor=pointer]
+            - generic [ref=f5e248] [cursor=pointer]
+            - generic [ref=f5e250] [cursor=pointer]
+            - generic [ref=f5e252] [cursor=pointer]
+          - generic:
+            - generic [ref=f5e254] [cursor=pointer]: 
+            - generic [ref=f5e255] [cursor=pointer]: 
+    - generic [ref=f5e259]:
+      - heading "kegiatan kami" [level=1] [ref=f5e262]
+      - link "Berita Selengkapnya" [ref=f5e264] [cursor=pointer]:
+        - /url: /kegiatan
+      - generic [ref=f5e265]:
+        - generic [ref=f5e267]:
+          - generic [ref=f5e269]:
+            - generic [ref=f5e270]:
+              - img "INFORMASI MPLS TP 2023/2024" [ref=f5e271]
+              - link "" [ref=f5e272] [cursor=pointer]:
+                - /url: https://smktexmaco-smg.sch.id/artikel/view/informasi-mpls-tp-20232024
+            - generic [ref=f5e274]:
+              - heading [level=3] [ref=f5e275]:
+                - link "INFORMASI MPLS TP 2023/2024" [ref=f5e276] [cursor=pointer]:
+                  - /url: https://smktexmaco-smg.sch.id/artikel/view/informasi-mpls-tp-20232024
+              - generic [ref=f5e277]:
+                - generic [ref=f5e278]: 
+                - text: 11 Juli 2023
+              - link "Selengkapnya" [ref=f5e279] [cursor=pointer]:
+                - /url: https://smktexmaco-smg.sch.id/artikel/view/informasi-mpls-tp-20232024
+          - generic [ref=f5e281]:
+            - generic [ref=f5e282]:
+              - img "MENINGKATKAN KUALITAS SUMBER DAYA ASSESOR, LSP P-1 MENYELENGGARAKAN KEGIATAN PELATIHAN" [ref=f5e283]
+              - link "" [ref=f5e284] [cursor=pointer]:
+                - /url: https://smktexmaco-smg.sch.id/artikel/view/meningkatkan-kualitas-sumber-daya-assesor-lsp-p-1-menyelenggarakan-kegiatan-pelatihan
+            - generic [ref=f5e286]:
+              - heading [level=3] [ref=f5e287]:
+                - link "MENINGKATKAN KUALITAS SUMBER DAYA ASSESOR, LSP P-1 MENYELENGGARAKAN KEGIATAN PELATIHAN" [ref=f5e288] [cursor=pointer]:
+                  - /url: https://smktexmaco-smg.sch.id/artikel/view/meningkatkan-kualitas-sumber-daya-assesor-lsp-p-1-menyelenggarakan-kegiatan-pelatihan
+              - generic [ref=f5e289]:
+                - generic [ref=f5e290]: 
+                - text: 20 Februari 2020
+              - link "Selengkapnya" [ref=f5e291] [cursor=pointer]:
+                - /url: https://smktexmaco-smg.sch.id/artikel/view/meningkatkan-kualitas-sumber-daya-assesor-lsp-p-1-menyelenggarakan-kegiatan-pelatihan
+          - generic [ref=f5e293]:
+            - generic [ref=f5e294]:
+              - img "RANGKAIAN KEGIATAN \" IT GOES TO SCHOOL \", UNISBANK MEMBERIKAN PELATIHAN BERBASIS ANDROID" [ref=f5e295]
+              - link "" [ref=f5e296] [cursor=pointer]:
+                - /url: https://smktexmaco-smg.sch.id/artikel/view/rangkaian-kegiatan-it-goes-to-school-unisbank-memberikan-pelatihan-berbasis-android
+            - generic [ref=f5e298]:
+              - heading [level=3] [ref=f5e299]:
+                - link "RANGKAIAN KEGIATAN \" IT GOES TO SCHOOL \", UNISBANK MEMBERIKAN PELATIHAN BERBASIS ANDROID" [ref=f5e300] [cursor=pointer]:
+                  - /url: https://smktexmaco-smg.sch.id/artikel/view/rangkaian-kegiatan-it-goes-to-school-unisbank-memberikan-pelatihan-berbasis-android
+              - generic [ref=f5e301]:
+                - generic [ref=f5e302]: 
+                - text: 13 September 2018
+              - link "Selengkapnya" [ref=f5e303] [cursor=pointer]:
+                - /url: https://smktexmaco-smg.sch.id/artikel/view/rangkaian-kegiatan-it-goes-to-school-unisbank-memberikan-pelatihan-berbasis-android
+        - text:  
+    - generic [ref=f5e304]:
+      - heading "Kerja sama sekolah" [level=1] [ref=f5e308]
+      - generic [ref=f5e312]:
+        - link [ref=f5e314] [cursor=pointer]:
+          - /url: ""
+          - img "client" [ref=f5e315]
+        - link [ref=f5e317] [cursor=pointer]:
+          - /url: ""
+          - img "client" [ref=f5e318]
+        - link [ref=f5e320] [cursor=pointer]:
+          - /url: ""
+          - img "client" [ref=f5e321]
+        - link [ref=f5e323] [cursor=pointer]:
+          - /url: ""
+          - img "client" [ref=f5e324]
+        - link [ref=f5e326] [cursor=pointer]:
+          - /url: ""
+          - img "client" [ref=f5e327]
+        - link [ref=f5e329] [cursor=pointer]:
+          - /url: ""
+          - img "client" [ref=f5e330]
+        - link [ref=f5e332] [cursor=pointer]:
+          - /url: ""
+          - img "client" [ref=f5e333]
+        - link [ref=f5e335] [cursor=pointer]:
+          - /url: ""
+          - img "client" [ref=f5e336]
+        - link [ref=f5e338] [cursor=pointer]:
+          - /url: ""
+          - img "client" [ref=f5e339]
+        - link [ref=f5e341] [cursor=pointer]:
+          - /url: ""
+          - img "client" [ref=f5e342]
+        - link [ref=f5e344] [cursor=pointer]:
+          - /url: ""
+          - img "client" [ref=f5e345]
+        - link [ref=f5e347] [cursor=pointer]:
+          - /url: ""
+          - img "client" [ref=f5e348]
+    - contentinfo [ref=f5e349]:
+      - generic [ref=f5e350]:
+        - generic [ref=f5e351]:
+          - generic [ref=f5e352]:
+            - link [ref=f5e354] [cursor=pointer]:
+              - /url: index.html
+              - img "logo" [ref=f5e355]
+            - generic [ref=f5e356]: Jl. Raya Mangkang KM 16, Semarang 50155
+            - generic [ref=f5e358]: "Telp. (024) 8661966, Fax. (024) 8661967 Email : smktexmaco.smrg@gmail.com"
+          - generic [ref=f5e359]:
+            - heading "Profile Sekolah" [level=4] [ref=f5e360]
+            - list [ref=f5e361]:
+              - listitem [ref=f5e362]:
+                - link "Profil Sekolah" [ref=f5e363] [cursor=pointer]:
+                  - /url: /profil-sekolah
+              - listitem [ref=f5e364]:
+                - link "Visi Misi dan Tujuan" [ref=f5e365] [cursor=pointer]:
+                  - /url: /visi-misi-tujuan
+              - listitem [ref=f5e366]:
+                - link "Pimpinan Sekolah" [ref=f5e367] [cursor=pointer]:
+                  - /url: /pimpinan-sekolah
+              - listitem [ref=f5e368]:
+                - link "Struktur Organisasi" [ref=f5e369] [cursor=pointer]:
+                  - /url: /struktur-organisasi
+          - generic [ref=f5e370]:
+            - heading "Konsentrasi Keahlian" [level=4] [ref=f5e371]
+            - list [ref=f5e372]:
+              - listitem [ref=f5e373]:
+                - link "Teknik Elektronika Industri" [ref=f5e374] [cursor=pointer]:
+                  - /url: /teknik-elektronika-industri
+              - listitem [ref=f5e375]:
+                - link "Teknik Kendaraan Ringan" [ref=f5e376] [cursor=pointer]:
+                  - /url: /teknik-kendaraan-ringan
+              - listitem [ref=f5e377]:
+                - link "Teknik Permesinan" [ref=f5e378] [cursor=pointer]:
+                  - /url: /teknik-permesinan
+              - listitem [ref=f5e379]:
+                - link "Teknik Pemintalan Serat Buatan" [ref=f5e380] [cursor=pointer]:
+                  - /url: /teknik-permintalan-serat-buatan
+              - listitem [ref=f5e381]:
+                - link "Tata Busana" [ref=f5e382] [cursor=pointer]:
+                  - /url: /tata-busana
+              - listitem [ref=f5e383]:
+                - link "Teknik Komputer Jaringan" [ref=f5e384] [cursor=pointer]:
+                  - /url: /teknik-komputer-jaringan
+              - listitem [ref=f5e385]:
+                - link "Rekayasa Perangkat Lunak" [ref=f5e386] [cursor=pointer]:
+                  - /url: /rekayasa-perangkat-lunak
+          - generic [ref=f5e387]:
+            - heading "Sosial Media" [level=4] [ref=f5e388]
+            - generic [ref=f5e390]:
+              - link "Instagram" [ref=f5e391] [cursor=pointer]:
+                - /url: https://www.instagram.com/smktexmacosemarang/
+              - link "Youtbue" [ref=f5e392] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCqkCTDH7gR2IdtrQBFcGhGA
+        - link "SMK Texmaco Semarang © 2020 | Hak cipta dilindungi undang-undang" [ref=f5e396] [cursor=pointer]:
+          - /url: "#"
+    - text: 

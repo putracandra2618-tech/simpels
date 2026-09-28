@@ -1,0 +1,80 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link " PemlapTex" [ref=e3] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000/dashboard
+      - generic [ref=e4]: 
+      - generic [ref=e5]: PemlapTex
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "" [ref=e8] [cursor=pointer]
+        - text: 
+      - generic [ref=e10]:
+        - button "Foto profil PUTRA WIDI CANDRA KANTA " [ref=e11] [cursor=pointer]:
+          - generic "Foto profil" [ref=e12]: 
+          - generic [ref=e14]: PUTRA WIDI CANDRA KANTA
+          - generic [ref=e15]: 
+        - text:  
+  - generic [ref=e16]:
+    - generic [ref=e18]:
+      - heading "Dashboard" [level=1] [ref=e19]
+      - paragraph [ref=e20]: Hai, PUTRA WIDI CANDRA KANTA — pantau sesi peminjaman laptop Anda.
+    - main [ref=e21]:
+      - generic [ref=e22]:
+        - generic [ref=e24]:
+          - generic [ref=e27]:
+            - generic [ref=e28]: Sesi Aktif
+            - generic [ref=e30]: "1"
+            - generic [ref=e31]:
+              - generic [ref=e32]: 
+              - generic [ref=e33]: Laptop yang sedang dipinjam
+          - generic [ref=e36]:
+            - generic [ref=e37]: Selesai Dipinjam
+            - generic [ref=e39]: "1"
+            - generic [ref=e40]:
+              - generic [ref=e41]: 
+              - generic [ref=e42]: Riwayat pengembalian
+          - generic [ref=e44]:
+            - generic [ref=e45]:
+              - generic [ref=e46]: Aktif
+              - generic [ref=e47]: MacBook Air 13
+              - generic [ref=e48]: 1 sesi peminjaman sedang berjalan. Kembalikan laptop untuk mengakhiri sesi.
+            - link "Kembalikan Laptop " [ref=e49] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/kembali
+              - generic [ref=e50]: Kembalikan Laptop
+              - generic [ref=e51]: 
+        - generic [ref=e53]:
+          - heading "Sesi Peminjaman Aktif" [level=2] [ref=e55]
+          - generic [ref=e57]:
+            - generic [ref=e58]: 
+            - generic [ref=e60]:
+              - generic [ref=e61]: MacBook Air 13
+              - generic [ref=e62]: Aktif sejak 24 Sep 2026, 07:23 • 1/5 siswa
+            - generic [ref=e63]: AKTIF
+        - generic [ref=e65]:
+          - heading "Riwayat Terakhir" [level=2] [ref=e67]
+          - generic [ref=e69]:
+            - generic [ref=e70]: 
+            - generic [ref=e72]:
+              - generic [ref=e73]: MacBook Air 13
+              - generic [ref=e74]: Dikembalikan 24 Sep 2026, 04:10
+            - generic [ref=e75]: Selesai
+    - contentinfo [ref=e76]:
+      - generic [ref=e77]:
+        - generic [ref=e78]:
+          - generic [ref=e79]: 
+          - text: PemlapTex
+        - generic [ref=e80]: "|"
+        - generic [ref=e81]: © 2026 Peminjaman Laptop Sekolah
+  - navigation "Menu siswa" [ref=e82]:
+    - link " Dashboard" [ref=e83] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000/dashboard
+      - generic [ref=e84]: 
+      - generic [ref=e85]: Dashboard
+    - link " Pinjam" [ref=e86] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000/pinjam
+      - generic [ref=e87]: 
+      - generic [ref=e88]: Pinjam
+    - link " Kembalikan" [ref=e89] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000/kembali
+      - generic [ref=e90]: 
+      - generic [ref=e91]: Kembalikan

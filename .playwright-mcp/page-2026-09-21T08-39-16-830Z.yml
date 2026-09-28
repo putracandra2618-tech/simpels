@@ -1,0 +1,28 @@
+- generic [ref=f16e3]:
+  - link " PemlapTex" [ref=f16e4] [cursor=pointer]:
+    - /url: http://127.0.0.1:8899/login
+    - generic [ref=f16e5]: 
+    - generic [ref=f16e6]: PemlapTex
+  - paragraph [ref=f16e7]: Sistem Peminjaman Laptop Sekolah — masuk dengan akun Anda
+  - generic [ref=f16e8]:
+    - generic [ref=f16e9]:
+      - generic [ref=f16e10]: Username (NIS)
+      - generic [ref=f16e11]:
+        - generic: 
+        - textbox "Username (NIS)" [active] [ref=f16e12]:
+          - /placeholder: Masukkan NIS / username
+    - generic [ref=f16e13]:
+      - generic [ref=f16e14]: Password
+      - generic [ref=f16e15]:
+        - generic: 
+        - textbox "Password" [ref=f16e16]:
+          - /placeholder: ••••••••
+        - button "Show password" [ref=f16e17] [cursor=pointer]:
+          - generic [ref=f16e18]: 
+    - generic [ref=f16e20] [cursor=pointer]:
+      - checkbox "Ingat Saya" [ref=f16e21]
+      - generic [ref=f16e22]: Ingat Saya
+    - button "Masuk ke Dashboard " [ref=f16e23] [cursor=pointer]:
+      - generic [ref=f16e24]: Masuk ke Dashboard
+      - generic [ref=f16e25]: 
+  - paragraph [ref=f16e26]: Login digunakan oleh Siswa maupun Admin dengan akun sekolah.

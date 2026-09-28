@@ -1,0 +1,55 @@
+- generic [ref=f23e2]:
+  - generic [ref=f23e4]:
+    - link "Logo PemlapTex PemlapTex" [ref=f23e5] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000/login
+      - img "Logo PemlapTex" [ref=f23e6]
+      - generic [ref=f23e7]: PemlapTex
+    - heading "Login ke PemlapTex" [level=1] [ref=f23e8]
+    - paragraph [ref=f23e9]:
+      - text: Sistem Peminjaman Laptop Sekolah — masuk sebagai
+      - strong [ref=f23e10]: Siswa
+    - generic [ref=f23e11]:
+      - generic [ref=f23e12]:
+        - generic [ref=f23e13]: Username (NIS)
+        - generic [ref=f23e14]:
+          - generic: 
+          - textbox "Username (NIS)" [active] [ref=f23e15]:
+            - /placeholder: Masukkan NIS / username
+      - generic [ref=f23e16]:
+        - generic [ref=f23e17]: Password
+        - generic [ref=f23e18]:
+          - generic: 
+          - textbox "Password" [ref=f23e19]:
+            - /placeholder: ••••••••
+          - button "Show password" [ref=f23e20] [cursor=pointer]:
+            - generic [ref=f23e21]: 
+      - generic [ref=f23e23] [cursor=pointer]:
+        - checkbox "Ingat Saya" [ref=f23e24]
+        - generic [ref=f23e25]: Ingat Saya
+      - button "Masuk ke Dashboard " [ref=f23e26] [cursor=pointer]:
+        - generic [ref=f23e27]: Masuk ke Dashboard
+        - generic [ref=f23e28]: 
+    - paragraph [ref=f23e29]:
+      - text: Anda Admin?
+      - link "Masuk sebagai Admin →" [ref=f23e30] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/admin
+  - generic [ref=f23e33]:
+    - img "Logo PemlapTex" [ref=f23e35]
+    - paragraph [ref=f23e36]: PemlapTex
+    - paragraph [ref=f23e37]: Sistem Informasi Peminjaman Laptop
+    - generic [ref=f23e38]:
+      - generic [ref=f23e39]:
+        - generic [ref=f23e40]: 
+        - generic [ref=f23e41]:
+          - strong [ref=f23e42]: Scan QR
+          - generic [ref=f23e43]: Mulai pinjam lewat kode QR di laptop
+      - generic [ref=f23e44]:
+        - generic [ref=f23e45]: 
+        - generic [ref=f23e46]:
+          - strong [ref=f23e47]: Pinjam Bersama
+          - generic [ref=f23e48]: Anggota kelompok sekelas sekaligus
+      - generic [ref=f23e49]:
+        - generic [ref=f23e50]: 
+        - generic [ref=f23e51]:
+          - strong [ref=f23e52]: Kembali Cepat
+          - generic [ref=f23e53]: Serahkan kembali dan terverifikasi admin

@@ -1,0 +1,95 @@
+- generic [active] [ref=f59e1]:
+  - generic [ref=f59e2]:
+    - link " PemlapTex" [ref=f59e3] [cursor=pointer]:
+      - /url: http://127.0.0.1:8899/dashboard
+      - generic [ref=f59e4]: 
+      - generic [ref=f59e5]: PemlapTex
+    - generic [ref=f59e7]:
+      - generic [ref=f59e8]: Menu
+      - list [ref=f59e9]:
+        - listitem [ref=f59e10]:
+          - link " Dashboard" [ref=f59e11] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/dashboard
+            - generic [ref=f59e12]: 
+            - generic [ref=f59e13]: Dashboard
+        - listitem [ref=f59e14]:
+          - link " Verifikasi" [ref=f59e15] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/dashboard#verifikasi
+            - generic [ref=f59e16]: 
+            - generic [ref=f59e17]: Verifikasi
+        - listitem [ref=f59e18]:
+          - link " Data Laptop" [ref=f59e19] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/admin/laptop
+            - generic [ref=f59e20]: 
+            - generic [ref=f59e21]: Data Laptop
+    - generic [ref=f59e22]:
+      - img "Administrator" [ref=f59e23]
+      - generic [ref=f59e24]:
+        - generic [ref=f59e25]: Administrator
+        - generic [ref=f59e26]: admin
+  - generic [ref=f59e27]:
+    - banner [ref=f59e28]:
+      - generic [ref=f59e29]:
+        - text: 
+        - button "Toggle Navigation" [ref=f59e30] [cursor=pointer]:
+          - generic [ref=f59e31]: 
+      - generic [ref=f59e33]:
+        - generic [ref=f59e34]: 
+        - text: Sistem Peminjaman Laptop Sekolah
+      - generic [ref=f59e35]:
+        - button "Toggle Fullscreen" [ref=f59e36] [cursor=pointer]:
+          - generic [ref=f59e37]: 
+        - button "" [ref=f59e39] [cursor=pointer]
+        - generic [ref=f59e41]:
+          - button "Profile Administrator " [ref=f59e42] [cursor=pointer]:
+            - img "Profile" [ref=f59e43]
+            - generic [ref=f59e44]: Administrator
+            - generic [ref=f59e45]: 
+          - text: 
+    - generic [ref=f59e47]:
+      - heading "Dashboard Admin" [level=1] [ref=f59e48]
+      - paragraph [ref=f59e49]: Pantau peminjaman laptop dan verifikasi pengembalian.
+    - main [ref=f59e50]:
+      - generic [ref=f59e51]:
+        - generic [ref=f59e53]:
+          - generic [ref=f59e56]:
+            - generic [ref=f59e57]: Total Laptop
+            - generic [ref=f59e59]: "6"
+            - generic [ref=f59e60]: Seluruh laptop terdaftar
+          - generic [ref=f59e64]:
+            - generic [ref=f59e65]: Tersedia
+            - generic [ref=f59e67]: "6"
+            - generic [ref=f59e68]: Siap dipinjam
+          - generic [ref=f59e72]:
+            - generic [ref=f59e73]: Dipinjam
+            - generic [ref=f59e75]: "0"
+            - generic [ref=f59e76]: Sedang dipakai sesi
+          - generic [ref=f59e80]:
+            - generic [ref=f59e81]: Menunggu Verifikasi
+            - generic [ref=f59e83]: "0"
+            - generic [ref=f59e84]: Permintaan pengembalian
+        - generic [ref=f59e87]:
+          - generic [ref=f59e88]:
+            - heading "Antrian Verifikasi Pengembalian" [level=2] [ref=f59e89]
+            - link "Kelola Laptop →" [ref=f59e90] [cursor=pointer]:
+              - /url: http://127.0.0.1:8899/admin/laptop
+          - table [ref=f59e92]:
+            - rowgroup [ref=f59e93]:
+              - row [ref=f59e94]:
+                - columnheader "Laptop" [ref=f59e95]
+                - columnheader "Anggota" [ref=f59e96]
+                - columnheader "Diminta" [ref=f59e97]
+                - columnheader "Action" [ref=f59e98]
+            - rowgroup [ref=f59e99]:
+              - row [ref=f59e100]:
+                - cell "Tidak ada antrian verifikasi." [ref=f59e101]
+        - generic [ref=f59e103]:
+          - heading "Peminjaman Terbaru" [level=2] [ref=f59e105]
+          - generic [ref=f59e106]: Belum ada peminjaman.
+    - contentinfo [ref=f59e108]:
+      - generic [ref=f59e109]:
+        - generic [ref=f59e110]:
+          - generic [ref=f59e111]: 
+          - text: PemlapTex
+        - generic [ref=f59e112]: "|"
+        - generic [ref=f59e113]: © 2026 Peminjaman Laptop Sekolah

@@ -1,0 +1,108 @@
+- generic [active] [ref=f40e1]:
+  - generic [ref=f40e2]:
+    - link " PemlapTex" [ref=f40e3] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000/dashboard
+      - generic [ref=f40e4]: 
+      - generic [ref=f40e5]: PemlapTex
+    - generic [ref=f40e7]:
+      - generic [ref=f40e8]: Menu
+      - list [ref=f40e9]:
+        - listitem [ref=f40e10]:
+          - link " Dashboard" [ref=f40e11] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+            - generic [ref=f40e12]: 
+            - generic [ref=f40e13]: Dashboard
+        - listitem [ref=f40e14]:
+          - link " Verifikasi" [ref=f40e15] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/verifikasi
+            - generic [ref=f40e16]: 
+            - generic [ref=f40e17]: Verifikasi
+        - listitem [ref=f40e18]:
+          - link " Data Laptop" [ref=f40e19] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/laptop
+            - generic [ref=f40e20]: 
+            - generic [ref=f40e21]: Data Laptop
+        - listitem [ref=f40e22]:
+          - link " Data User" [ref=f40e23] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/user
+            - generic [ref=f40e24]: 
+            - generic [ref=f40e25]: Data User
+        - listitem [ref=f40e26]:
+          - link " Data Admin" [ref=f40e27] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/admin-user
+            - generic [ref=f40e28]: 
+            - generic [ref=f40e29]: Data Admin
+    - generic [ref=f40e30]:
+      - img "Putra Candra" [ref=f40e31]
+      - generic [ref=f40e32]:
+        - generic [ref=f40e33]: Putra Candra
+        - generic [ref=f40e34]: putracandra
+  - generic [ref=f40e35]:
+    - banner [ref=f40e36]:
+      - generic [ref=f40e37]:
+        - button "Minimize Sidebar" [ref=f40e38] [cursor=pointer]:
+          - generic [ref=f40e39]: 
+        - text: 
+      - generic [ref=f40e41]:
+        - generic [ref=f40e42]: 
+        - text: Peminjaman Laptop Smk Texmaco Semarang
+      - generic [ref=f40e43]:
+        - button "Toggle Fullscreen" [ref=f40e44] [cursor=pointer]:
+          - generic [ref=f40e45]: 
+        - button "" [ref=f40e47] [cursor=pointer]
+        - generic [ref=f40e49]:
+          - button "Profile Putra Candra " [ref=f40e50] [cursor=pointer]:
+            - img "Profile" [ref=f40e51]
+            - generic [ref=f40e52]: Putra Candra
+            - generic [ref=f40e53]: 
+          - text: 
+    - generic [ref=f40e55]:
+      - heading "Dashboard Admin" [level=1] [ref=f40e56]
+      - paragraph [ref=f40e57]: Pantau peminjaman laptop dan verifikasi pengembalian.
+    - main [ref=f40e58]:
+      - generic [ref=f40e59]:
+        - generic [ref=f40e61]:
+          - generic [ref=f40e64]:
+            - generic [ref=f40e65]: Total Laptop
+            - generic [ref=f40e67]: "7"
+            - generic [ref=f40e68]: Seluruh laptop terdaftar
+          - generic [ref=f40e72]:
+            - generic [ref=f40e73]: Tersedia
+            - generic [ref=f40e75]: "7"
+            - generic [ref=f40e76]: Siap dipinjam
+          - generic [ref=f40e80]:
+            - generic [ref=f40e81]: Dipinjam
+            - generic [ref=f40e83]: "0"
+            - generic [ref=f40e84]: Sedang dipakai sesi
+          - generic [ref=f40e88]:
+            - generic [ref=f40e89]: Menunggu Verifikasi
+            - generic [ref=f40e91]: "0"
+            - generic [ref=f40e92]: Permintaan pengembalian
+        - generic [ref=f40e95]:
+          - generic [ref=f40e96]:
+            - heading "Antrian Verifikasi Pengembalian" [level=2] [ref=f40e97]
+            - generic [ref=f40e98]:
+              - link "Lihat Halaman →" [ref=f40e99] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/admin/verifikasi
+              - link "Kelola Laptop →" [ref=f40e100] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/admin/laptop
+          - table [ref=f40e102]:
+            - rowgroup [ref=f40e103]:
+              - row [ref=f40e104]:
+                - columnheader "Laptop" [ref=f40e105]
+                - columnheader "Anggota" [ref=f40e106]
+                - columnheader "Diminta" [ref=f40e107]
+                - columnheader "Action" [ref=f40e108]
+            - rowgroup [ref=f40e109]:
+              - row [ref=f40e110]:
+                - cell "Tidak ada antrian verifikasi." [ref=f40e111]
+        - generic [ref=f40e113]:
+          - heading "Peminjaman Terbaru" [level=2] [ref=f40e115]
+          - generic [ref=f40e116]: Belum ada peminjaman.
+    - contentinfo [ref=f40e118]:
+      - generic [ref=f40e119]:
+        - generic [ref=f40e120]:
+          - generic [ref=f40e121]: 
+          - text: PemlapTex
+        - generic [ref=f40e122]: "|"
+        - generic [ref=f40e123]: © 2026 Peminjaman Laptop Sekolah

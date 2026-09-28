@@ -1,0 +1,79 @@
+- generic [active] [ref=f37e1]:
+  - generic [ref=f37e2]:
+    - link " PemlapTex" [ref=f37e3] [cursor=pointer]:
+      - /url: http://127.0.0.1:8899/dashboard
+      - generic [ref=f37e4]: 
+      - generic [ref=f37e5]: PemlapTex
+    - generic [ref=f37e7]:
+      - generic [ref=f37e8]: Menu
+      - list [ref=f37e9]:
+        - listitem [ref=f37e10]:
+          - link " Dashboard" [ref=f37e11] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/dashboard
+            - generic [ref=f37e12]: 
+            - generic [ref=f37e13]: Dashboard
+        - listitem [ref=f37e14]:
+          - link " Pinjam Laptop" [ref=f37e15] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/pinjam
+            - generic [ref=f37e16]: 
+            - generic [ref=f37e17]: Pinjam Laptop
+        - listitem [ref=f37e18]:
+          - link " Kembalikan Laptop" [ref=f37e19] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/kembali
+            - generic [ref=f37e20]: 
+            - generic [ref=f37e21]: Kembalikan Laptop
+    - generic [ref=f37e22]:
+      - img "Dimas Prasetyo" [ref=f37e23]
+      - generic [ref=f37e24]:
+        - generic [ref=f37e25]: Dimas Prasetyo
+        - generic [ref=f37e26]: "20240004"
+  - generic [ref=f37e27]:
+    - banner [ref=f37e28]:
+      - generic [ref=f37e29]:
+        - text: 
+        - button "Toggle Navigation" [ref=f37e30] [cursor=pointer]:
+          - generic [ref=f37e31]: 
+      - generic [ref=f37e33]:
+        - generic [ref=f37e34]: 
+        - text: Peminjaman Laptop Sekolah
+      - generic [ref=f37e35]:
+        - button "Toggle Fullscreen" [ref=f37e36] [cursor=pointer]:
+          - generic [ref=f37e37]: 
+        - button "" [ref=f37e39] [cursor=pointer]
+        - generic [ref=f37e41]:
+          - button "Profile Dimas Prasetyo " [ref=f37e42] [cursor=pointer]:
+            - img "Profile" [ref=f37e43]
+            - generic [ref=f37e44]: Dimas Prasetyo
+            - generic [ref=f37e45]: 
+          - text: 
+    - generic [ref=f37e46]:
+      - generic [ref=f37e47]:
+        - heading "Pinjam Laptop" [level=1] [ref=f37e48]
+        - paragraph [ref=f37e49]: Scan QR Code pada fisik laptop yang ingin dipinjam (maks 5 siswa per laptop).
+      - alert [ref=f37e50]:
+        - generic [ref=f37e51]: 
+        - text: Laptop "Dell Latitude 3420" sedang dipinjam.
+        - button "Close" [ref=f37e52] [cursor=pointer]
+    - main [ref=f37e53]:
+      - generic [ref=f37e56]:
+        - generic [ref=f37e57]:
+          - generic [ref=f37e58]: 
+          - heading "Arahkan Kamera ke QR Code Laptop" [level=5] [ref=f37e60]
+          - paragraph [ref=f37e61]: Pastikan QR terlihat jelas dan tidak silau.
+        - generic [ref=f37e62]:
+          - generic [ref=f37e63]: 
+          - text: Kamera belum aktif.
+        - generic [ref=f37e64]:
+          - button " Mulai Scan" [ref=f37e65] [cursor=pointer]:
+            - generic [ref=f37e66]: 
+            - text: Mulai Scan
+          - button " Stop" [disabled]:
+            - generic: 
+            - text: Stop
+    - contentinfo [ref=f37e67]:
+      - generic [ref=f37e68]:
+        - generic [ref=f37e69]:
+          - generic [ref=f37e70]: 
+          - text: PemlapTex
+        - generic [ref=f37e71]: "|"
+        - generic [ref=f37e72]: © 2026 Peminjaman Laptop Sekolah

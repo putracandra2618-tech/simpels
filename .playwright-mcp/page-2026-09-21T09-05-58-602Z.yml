@@ -1,0 +1,34 @@
+- generic [ref=f58e3]:
+  - link " PemlapTex" [ref=f58e4] [cursor=pointer]:
+    - /url: http://127.0.0.1:8899/admin
+    - generic [ref=f58e5]: 
+    - generic [ref=f58e6]: PemlapTex
+  - paragraph [ref=f58e7]:
+    - text: Panel
+    - strong [ref=f58e8]: Administrator
+    - text: — verifikasi peminjaman laptop sekolah
+  - generic [ref=f58e9]:
+    - generic [ref=f58e10]:
+      - generic [ref=f58e11]: Username
+      - generic [ref=f58e12]:
+        - generic: 
+        - textbox "Username" [active] [ref=f58e13]:
+          - /placeholder: Masukkan username admin
+    - generic [ref=f58e14]:
+      - generic [ref=f58e15]: Password
+      - generic [ref=f58e16]:
+        - generic: 
+        - textbox "Password" [ref=f58e17]:
+          - /placeholder: ••••••••
+        - button "Show password" [ref=f58e18] [cursor=pointer]:
+          - generic [ref=f58e19]: 
+    - generic [ref=f58e21] [cursor=pointer]:
+      - checkbox "Ingat Saya" [ref=f58e22]
+      - generic [ref=f58e23]: Ingat Saya
+    - button "Masuk ke Panel Admin " [ref=f58e24] [cursor=pointer]:
+      - generic [ref=f58e25]: Masuk ke Panel Admin
+      - generic [ref=f58e26]: 
+  - paragraph [ref=f58e27]:
+    - text: Bukan Admin?
+    - link "Masuk sebagai Siswa ←" [ref=f58e28] [cursor=pointer]:
+      - /url: http://127.0.0.1:8899/login

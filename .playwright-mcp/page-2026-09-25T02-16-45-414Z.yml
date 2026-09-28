@@ -1,0 +1,52 @@
+- generic [ref=f14e2]:
+  - generic [ref=f14e3]:
+    - generic [ref=f14e4]: Login ke Siatex
+    - generic [ref=f14e6]:
+      - textbox "Username" [ref=f14e7]
+      - textbox "Password" [ref=f14e8]
+      - combobox "Select example" [ref=f14e9]:
+        - option "Silahkan Pilih Status" [selected]
+        - option "SiAtex Siswa"
+        - option "SiAtex Guru"
+        - option "SiAtex Kepsek"
+        - option "SiAtex STP2K"
+        - option "SiAtex BK"
+        - option "SiAtex Sarpras"
+        - option "SiAtex Kesiswaan"
+        - option "SiAtex Kurikulum"
+        - option "SiAtex Keuangan"
+        - option "SiAtex Humas"
+        - option "SiAtex Alumni"
+        - option "SiAtex Tata Usaha"
+        - option "SiAtex Kepegawaian"
+      - iframe [ref=f14e13]:
+        - generic [ref=f15e2]:
+          - generic [ref=f15e3]:
+            - checkbox "I'm not a robot" [ref=f15e7]
+            - generic [aria-hidden] [ref=f15e11]: I'm not a robot
+            - generic [ref=f15e13]:
+              - text: This site is exceeding
+              - link "reCAPTCHA Enterprise free quota" [ref=f15e14] [cursor=pointer]:
+                - /url: https://cloud.google.com/recaptcha/docs/billing-information
+              - text: .
+          - generic [ref=f15e15]: reCAPTCHA
+      - button "Submit" [ref=f14e14] [cursor=pointer]
+      - button "Login dengan Google" [ref=f14e17] [cursor=pointer]
+  - generic [ref=f14e29]:
+    - generic [ref=f14e30]: SIATEX
+    - generic [ref=f14e31]: Sistem Informasi Akademik Texmaco Semarang
+    - link "  Download Apk Siatex di Playstore" [ref=f14e32] [cursor=pointer]:
+      - /url: https://play.google.com/store/apps/details?id=com.smt.siatexmobilesmg&pli=1
+      - generic [ref=f14e33]:
+        - generic [ref=f14e34]:
+          - generic [ref=f14e35]: 
+          - generic: 
+        - generic [ref=f14e36]: Download Apk Siatex di Playstore
+    - generic [ref=f14e38]:
+      - generic [ref=f14e39]: Untuk alumni, Silahkan login terlebih dahulu untuk mengisi Alumni Tracking. Jika lupa, bisa menggunakan form dibawah.
+      - link "Alumni Tracking" [ref=f14e40] [cursor=pointer]:
+        - /url: /public-alumni-tracking
+    - generic [ref=f14e42]:
+      - generic [ref=f14e43]: Untuk Tamu, Silahkan isi buku tamu dibawah.
+      - link "Buku Tamu" [ref=f14e44] [cursor=pointer]:
+        - /url: /public-alumni-logbook

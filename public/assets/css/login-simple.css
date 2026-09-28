@@ -1,0 +1,329 @@
+/* ========================================================================
+   SIMPELS - SISWA LOGIN  
+   Halaman login siswa: split 2 kolom — form di kiri, panel brand di kanan.
+   Hanya dipakai di resources/views/auth/login.blade.php (body .login-simple).
+   ======================================================================== */
+
+.login-simple {
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* --------------------------------------------------------------------- */
+/* 1. Layout 2 kolom penuh layar */
+/* --------------------------------------------------------------------- */
+.simple-login {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* ---- Kolom kiri: form ---- */
+.simple-login__form {
+    width: 50%;
+    min-height: 100vh;
+    background-color: #f3f6f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 3rem;
+}
+
+.simple-login__form-inner {
+    width: 100%;
+    max-width: 460px;
+}
+
+.simple-login__brand {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+}
+
+.simple-login__logo-sm {
+    width: 52px;
+    height: auto;
+}
+
+.simple-login__brand span {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #071437;
+}
+
+.simple-login__title {
+    font-size: 25px;
+    font-weight: 600;
+    color: #2E5B43;
+    text-align: center;
+    margin-bottom: 0.4rem;
+    letter-spacing: -0.01em;
+}
+
+.simple-login__subtitle {
+    font-size: 0.9rem;
+    color: #78829d;
+    text-align: center;
+    margin-bottom: 1.75rem;
+    font-weight: 500;
+}
+
+/* ---- Field form ---- */
+.simple-login__field {
+    margin-bottom: 1.1rem;
+}
+
+.simple-login__label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #071437;
+    margin-bottom: 0.45rem;
+}
+
+.simple-login__input-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.simple-login__input-icon {
+    position: absolute;
+    left: 1.1rem;
+    color: #9da5b4;
+    font-size: 1.05rem;
+    pointer-events: none;
+}
+
+.simple-login__input {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #dbdfe9;
+    border-radius: 10px;
+    padding: 0.8rem 2.6rem 0.8rem 2.8rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #071437;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.simple-login__input::placeholder {
+    color: #9da5b4;
+}
+
+.simple-login__input:focus {
+    border-color: #67C090;
+    box-shadow: 0 0 0 4px rgba(103, 192, 144, 0.18);
+}
+
+.simple-login__input-password {
+    padding-right: 2.8rem;
+}
+
+.simple-login__toggle {
+    position: absolute;
+    right: 1.1rem;
+    background: none;
+    border: none;
+    color: #78829d;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.simple-login__toggle:hover {
+    color: #67C090;
+}
+
+.simple-login__toggle:focus {
+    outline: none;
+}
+
+/* ---- Opsi + tombol ---- */
+.simple-login__options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.25rem 0 1.25rem;
+    font-size: 0.85rem;
+}
+
+.login-simple .custom-control-label {
+    font-weight: 600;
+    color: #78829d;
+}
+
+.login-simple .custom-checkbox-input:checked {
+    background-color: #67C090;
+    border-color: #67C090;
+}
+
+.simple-login__submit {
+    background-color: #67C090;
+    border-radius: 10px;
+    padding: 0.85rem;
+    font-weight: 700;
+    font-size: 0.95rem;
+    font-family: inherit;
+}
+
+.simple-login__submit:hover {
+    background-color: #4C8E6B;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(103, 192, 144, 0.25);
+}
+
+.simple-login__submit:focus {
+    box-shadow: 0 0 0 4px rgba(103, 192, 144, 0.2);
+}
+
+/* ---- Kolom kanan: panel brand ---- */
+.simple-login__info {
+    position: relative;
+    width: 50%;
+    min-height: 100vh;
+    background-image: linear-gradient(135deg, #3A7A59 0%, #2E5B43 60%, #1F3F2E 100%);
+    overflow: hidden;
+}
+
+.simple-login__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #2E5B43;
+    opacity: 0.9;
+}
+
+.simple-login__info-content {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem;
+    color: #ffffff;
+}
+
+.simple-login__logo-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.75rem;
+    line-height: 0;
+}
+
+.simple-login__logo-badge img {
+    width: 260px;
+    height: auto;
+    max-width: 70vw;
+    background-color: rgba(255, 255, 255, 0.92);
+    padding: 10px;
+    border-radius: 18px;
+    filter: drop-shadow(0 14px 28px rgba(7, 20, 55, 0.35));
+}
+
+.simple-login__big {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.05;
+    margin-bottom: 0.45rem;
+    letter-spacing: -0.02em;
+}
+
+.simple-login__tagline {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 2.25rem;
+}
+
+.simple-login__info-card {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 14px;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    text-align: left;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.simple-login__info-item {
+    display: flex;
+    gap: 0.9rem;
+    align-items: flex-start;
+}
+
+.simple-login__info-item i {
+    font-size: 1.35rem;
+    margin-top: 2px;
+    color: #9BDCB8;
+    flex-shrink: 0;
+}
+
+.simple-login__info-item strong {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.simple-login__info-item span {
+    display: block;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+/* --------------------------------------------------------------------- */
+/* 2. Responsive — panel kanan disembunyikan, form melebar penuh */
+/* --------------------------------------------------------------------- */
+@media (max-width: 768px) {
+    .simple-login {
+        flex-direction: column;
+    }
+
+    .simple-login__form {
+        width: 100%;
+        min-height: 100vh;
+        padding: 2.5rem 1.25rem 3rem;
+    }
+
+    .simple-login__info {
+        display: none;
+    }
+
+    .simple-login__brand {
+        display: flex;
+        margin-bottom: 1.5rem;
+    }
+
+    .simple-login__logo-sm {
+        width: 128px;
+    }
+
+    .simple-login__brand span {
+        display: none;
+    }
+
+    .simple-login__title {
+        font-size: 22px;
+    }
+
+    .simple-login__subtitle {
+        margin-bottom: 1.5rem;
+    }
+}

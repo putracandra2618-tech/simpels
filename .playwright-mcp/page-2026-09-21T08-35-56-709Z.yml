@@ -1,0 +1,202 @@
+- generic [active] [ref=f6e1]:
+  - generic [ref=f6e2]:
+    - link " PemlapTex" [ref=f6e3] [cursor=pointer]:
+      - /url: http://127.0.0.1:8899/dashboard
+      - generic [ref=f6e4]: 
+      - generic [ref=f6e5]: PemlapTex
+    - generic [ref=f6e7]:
+      - generic [ref=f6e8]: Menu
+      - list [ref=f6e9]:
+        - listitem [ref=f6e10]:
+          - link " Dashboard" [ref=f6e11] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/dashboard
+            - generic [ref=f6e12]: 
+            - generic [ref=f6e13]: Dashboard
+        - listitem [ref=f6e14]:
+          - link " Verifikasi" [ref=f6e15] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/admin
+            - generic [ref=f6e16]: 
+            - generic [ref=f6e17]: Verifikasi
+        - listitem [ref=f6e18]:
+          - link " Data Laptop" [ref=f6e19] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/admin/laptop
+            - generic [ref=f6e20]: 
+            - generic [ref=f6e21]: Data Laptop
+    - generic [ref=f6e22]:
+      - img "Administrator" [ref=f6e23]
+      - generic [ref=f6e24]:
+        - generic [ref=f6e25]: Administrator
+        - generic [ref=f6e26]: admin
+  - generic [ref=f6e27]:
+    - banner [ref=f6e28]:
+      - generic [ref=f6e29]:
+        - text: 
+        - button "Toggle Navigation" [ref=f6e30] [cursor=pointer]:
+          - generic [ref=f6e31]: 
+      - generic [ref=f6e33]:
+        - generic [ref=f6e34]: 
+        - text: Sistem Peminjaman Laptop Sekolah
+      - generic [ref=f6e35]:
+        - button "Toggle Fullscreen" [ref=f6e36] [cursor=pointer]:
+          - generic [ref=f6e37]: 
+        - button "" [ref=f6e39] [cursor=pointer]
+        - generic [ref=f6e41]:
+          - button "Profile Administrator " [ref=f6e42] [cursor=pointer]:
+            - img "Profile" [ref=f6e43]
+            - generic [ref=f6e44]: Administrator
+            - generic [ref=f6e45]: 
+          - text: 
+    - generic [ref=f6e46]:
+      - generic [ref=f6e47]:
+        - heading "Data Laptop" [level=1] [ref=f6e48]
+        - paragraph [ref=f6e49]: Kelola data laptop dan cetak QR Code untuk ditempel di fisik laptop.
+      - alert [ref=f6e50]:
+        - generic [ref=f6e51]: 
+        - text: Laptop "MSI Modern 14" ditambahkan dan QR Code dibuat.
+        - button "Close" [ref=f6e52] [cursor=pointer]
+    - main [ref=f6e53]:
+      - generic [ref=f6e54]:
+        - generic [ref=f6e55]:
+          - generic [ref=f6e56]:
+            - generic [ref=f6e57]: 
+            - textbox "Cari nama atau merek laptop..." [ref=f6e58]
+          - link " Tambah Laptop" [ref=f6e60] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/admin/laptop/create
+            - generic [ref=f6e61]: 
+            - text: Tambah Laptop
+        - table [ref=f6e63]:
+          - rowgroup [ref=f6e64]:
+            - row [ref=f6e65]:
+              - columnheader "QR" [ref=f6e66]
+              - columnheader "Laptop" [ref=f6e67]
+              - columnheader "Spesifikasi" [ref=f6e68]
+              - columnheader "Status" [ref=f6e69]
+              - columnheader "Siapa yang Pinjam" [ref=f6e70]
+              - columnheader "Aksi" [ref=f6e71]
+          - rowgroup [ref=f6e72]:
+            - row [ref=f6e73]:
+              - cell [ref=f6e74]:
+                - img "QR MSI Modern 14" [ref=f6e75]
+              - cell "MSI Modern 14 MSI" [ref=f6e76]:
+                - generic [ref=f6e78]:
+                  - generic [ref=f6e79]: MSI Modern 14
+                  - generic [ref=f6e80]: MSI
+              - cell "Intel Core i5-1235U, RAM 8 GB, SSD 512 GB" [ref=f6e81]
+              - cell "Tersedia" [ref=f6e82]
+              - cell "-" [ref=f6e84]
+              - cell [ref=f6e85]:
+                - generic [ref=f6e86]:
+                  - link "" [ref=f6e87] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8899/admin/laptop/7/qr
+                  - link "" [ref=f6e89] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8899/admin/laptop/7/edit
+                  - button "" [ref=f6e92] [cursor=pointer]
+            - row [ref=f6e94]:
+              - cell [ref=f6e95]:
+                - img "QR Lenovo ThinkPad T14" [ref=f6e96]
+              - cell "Lenovo ThinkPad T14 Lenovo" [ref=f6e97]:
+                - generic [ref=f6e99]:
+                  - generic [ref=f6e100]: Lenovo ThinkPad T14
+                  - generic [ref=f6e101]: Lenovo
+              - cell "Intel Core i5-1240P RAM 16 GB DDR4 SSD 512 GB NVMe Layar 14\"..." [ref=f6e102]
+              - cell "Tersedia" [ref=f6e103]
+              - cell "-" [ref=f6e105]
+              - cell [ref=f6e106]:
+                - generic [ref=f6e107]:
+                  - link "" [ref=f6e108] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8899/admin/laptop/1/qr
+                  - link "" [ref=f6e110] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8899/admin/laptop/1/edit
+                  - button "" [ref=f6e113] [cursor=pointer]
+            - row [ref=f6e115]:
+              - cell [ref=f6e116]:
+                - img "QR Dell Latitude 3420" [ref=f6e117]
+              - cell "Dell Latitude 3420 Dell" [ref=f6e118]:
+                - generic [ref=f6e120]:
+                  - generic [ref=f6e121]: Dell Latitude 3420
+                  - generic [ref=f6e122]: Dell
+              - cell "Intel Core i5-1135G7 RAM 8 GB DDR4 SSD 256 GB Layar 14\" HD" [ref=f6e123]
+              - cell "Tersedia" [ref=f6e124]
+              - cell "-" [ref=f6e126]
+              - cell [ref=f6e127]:
+                - generic [ref=f6e128]:
+                  - link "" [ref=f6e129] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8899/admin/laptop/2/qr
+                  - link "" [ref=f6e131] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8899/admin/laptop/2/edit
+                  - button "" [ref=f6e134] [cursor=pointer]
+            - row [ref=f6e136]:
+              - cell [ref=f6e137]:
+                - img "QR Asus Vivobook 14" [ref=f6e138]
+              - cell "Asus Vivobook 14 Asus" [ref=f6e139]:
+                - generic [ref=f6e141]:
+                  - generic [ref=f6e142]: Asus Vivobook 14
+                  - generic [ref=f6e143]: Asus
+              - cell "AMD Ryzen 7 5700U RAM 16 GB DDR4 SSD 512 GB Layar 14\" FHD IP..." [ref=f6e144]
+              - cell "Tersedia" [ref=f6e145]
+              - cell "-" [ref=f6e147]
+              - cell [ref=f6e148]:
+                - generic [ref=f6e149]:
+                  - link "" [ref=f6e150] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8899/admin/laptop/3/qr
+                  - link "" [ref=f6e152] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8899/admin/laptop/3/edit
+                  - button "" [ref=f6e155] [cursor=pointer]
+            - row [ref=f6e157]:
+              - cell [ref=f6e158]:
+                - img "QR HP ProBook 450 G8" [ref=f6e159]
+              - cell "HP ProBook 450 G8 HP" [ref=f6e160]:
+                - generic [ref=f6e162]:
+                  - generic [ref=f6e163]: HP ProBook 450 G8
+                  - generic [ref=f6e164]: HP
+              - cell "Intel Core i5-1135G7 RAM 8 GB DDR4 SSD 512 GB Layar 15.6\" FH..." [ref=f6e165]
+              - cell "Tersedia" [ref=f6e166]
+              - cell "-" [ref=f6e168]
+              - cell [ref=f6e169]:
+                - generic [ref=f6e170]:
+                  - link "" [ref=f6e171] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8899/admin/laptop/4/qr
+                  - link "" [ref=f6e173] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8899/admin/laptop/4/edit
+                  - button "" [ref=f6e176] [cursor=pointer]
+            - row [ref=f6e178]:
+              - cell [ref=f6e179]:
+                - img "QR Acer Aspire 5" [ref=f6e180]
+              - cell "Acer Aspire 5 Acer" [ref=f6e181]:
+                - generic [ref=f6e183]:
+                  - generic [ref=f6e184]: Acer Aspire 5
+                  - generic [ref=f6e185]: Acer
+              - cell "Intel Core i3-1215U RAM 8 GB DDR4 SSD 256 GB Layar 15.6\" FHD" [ref=f6e186]
+              - cell "Tersedia" [ref=f6e187]
+              - cell "-" [ref=f6e189]
+              - cell [ref=f6e190]:
+                - generic [ref=f6e191]:
+                  - link "" [ref=f6e192] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8899/admin/laptop/5/qr
+                  - link "" [ref=f6e194] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8899/admin/laptop/5/edit
+                  - button "" [ref=f6e197] [cursor=pointer]
+            - row [ref=f6e199]:
+              - cell [ref=f6e200]:
+                - img "QR MacBook Air 13" [ref=f6e201]
+              - cell "MacBook Air 13 Apple" [ref=f6e202]:
+                - generic [ref=f6e204]:
+                  - generic [ref=f6e205]: MacBook Air 13
+                  - generic [ref=f6e206]: Apple
+              - cell "Apple M1 RAM 8 GB SSD 256 GB Layar 13.3\" Retina" [ref=f6e207]
+              - cell "Tersedia" [ref=f6e208]
+              - cell "-" [ref=f6e210]
+              - cell [ref=f6e211]:
+                - generic [ref=f6e212]:
+                  - link "" [ref=f6e213] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8899/admin/laptop/6/qr
+                  - link "" [ref=f6e215] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8899/admin/laptop/6/edit
+                  - button "" [ref=f6e218] [cursor=pointer]
+    - contentinfo [ref=f6e220]:
+      - generic [ref=f6e221]:
+        - generic [ref=f6e222]:
+          - generic [ref=f6e223]: 
+          - text: PemlapTex
+        - generic [ref=f6e224]: "|"
+        - generic [ref=f6e225]: © 2026 Peminjaman Laptop Sekolah

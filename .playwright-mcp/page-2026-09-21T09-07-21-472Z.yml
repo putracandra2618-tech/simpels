@@ -1,0 +1,56 @@
+- generic [active] [ref=f66e1]:
+  - banner [ref=f66e2]:
+    - link " PemlapTex" [ref=f66e3] [cursor=pointer]:
+      - /url: http://127.0.0.1:8899/dashboard
+      - generic [ref=f66e4]: 
+      - generic [ref=f66e5]: PemlapTex
+    - navigation "Menu siswa" [ref=f66e6]:
+      - link " Dashboard" [ref=f66e7] [cursor=pointer]:
+        - /url: http://127.0.0.1:8899/dashboard
+        - generic [ref=f66e8]: 
+        - generic [ref=f66e9]: Dashboard
+      - link " Pinjam Laptop" [ref=f66e10] [cursor=pointer]:
+        - /url: http://127.0.0.1:8899/pinjam
+        - generic [ref=f66e11]: 
+        - generic [ref=f66e12]: Pinjam Laptop
+      - link " Kembalikan Laptop" [ref=f66e13] [cursor=pointer]:
+        - /url: http://127.0.0.1:8899/kembali
+        - generic [ref=f66e14]: 
+        - generic [ref=f66e15]: Kembalikan Laptop
+    - generic [ref=f66e16]:
+      - button "Toggle Fullscreen" [ref=f66e17] [cursor=pointer]:
+        - generic [ref=f66e18]: 
+      - button "" [ref=f66e20] [cursor=pointer]
+      - generic [ref=f66e22]:
+        - button "Profile Ahmad Fauzi " [ref=f66e23] [cursor=pointer]:
+          - img "Profile" [ref=f66e24]
+          - generic [ref=f66e25]: Ahmad Fauzi
+          - generic [ref=f66e26]: 
+        - text:  
+  - generic [ref=f66e27]:
+    - generic [ref=f66e29]:
+      - heading "Pinjam Laptop" [level=1] [ref=f66e30]
+      - paragraph [ref=f66e31]: Scan QR Code pada fisik laptop yang ingin dipinjam (maks 5 siswa per laptop).
+    - main [ref=f66e32]:
+      - generic [ref=f66e35]:
+        - generic [ref=f66e36]:
+          - generic [ref=f66e37]: 
+          - heading "Arahkan Kamera ke QR Code Laptop" [level=5] [ref=f66e39]
+          - paragraph [ref=f66e40]: Pastikan QR terlihat jelas dan tidak silau.
+        - generic [ref=f66e41]:
+          - generic [ref=f66e42]: 
+          - text: Kamera belum aktif.
+        - generic [ref=f66e43]:
+          - button " Mulai Scan" [ref=f66e44] [cursor=pointer]:
+            - generic [ref=f66e45]: 
+            - text: Mulai Scan
+          - button " Stop" [disabled]:
+            - generic: 
+            - text: Stop
+    - contentinfo [ref=f66e46]:
+      - generic [ref=f66e47]:
+        - generic [ref=f66e48]:
+          - generic [ref=f66e49]: 
+          - text: PemlapTex
+        - generic [ref=f66e50]: "|"
+        - generic [ref=f66e51]: © 2026 Peminjaman Laptop Sekolah

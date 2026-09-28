@@ -1,0 +1,92 @@
+- generic [active] [ref=f10e1]:
+  - generic [ref=f10e2]:
+    - link " PemlapTex" [ref=f10e3] [cursor=pointer]:
+      - /url: http://127.0.0.1:8899/dashboard
+      - generic [ref=f10e4]: 
+      - generic [ref=f10e5]: PemlapTex
+    - generic [ref=f10e7]:
+      - generic [ref=f10e8]: Menu
+      - list [ref=f10e9]:
+        - listitem [ref=f10e10]:
+          - link " Dashboard" [ref=f10e11] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/dashboard
+            - generic [ref=f10e12]: 
+            - generic [ref=f10e13]: Dashboard
+        - listitem [ref=f10e14]:
+          - link " Pinjam Laptop" [ref=f10e15] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/pinjam
+            - generic [ref=f10e16]: 
+            - generic [ref=f10e17]: Pinjam Laptop
+        - listitem [ref=f10e18]:
+          - link " Kembalikan Laptop" [ref=f10e19] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/kembali
+            - generic [ref=f10e20]: 
+            - generic [ref=f10e21]: Kembalikan Laptop
+    - generic [ref=f10e22]:
+      - img "Ahmad Fauzi" [ref=f10e23]
+      - generic [ref=f10e24]:
+        - generic [ref=f10e25]: Ahmad Fauzi
+        - generic [ref=f10e26]: "20240001"
+  - generic [ref=f10e27]:
+    - banner [ref=f10e28]:
+      - generic [ref=f10e29]:
+        - text: 
+        - button "Toggle Navigation" [ref=f10e30] [cursor=pointer]:
+          - generic [ref=f10e31]: 
+      - generic [ref=f10e33]:
+        - generic [ref=f10e34]: 
+        - text: Peminjaman Laptop Sekolah
+      - generic [ref=f10e35]:
+        - button "Toggle Fullscreen" [ref=f10e36] [cursor=pointer]:
+          - generic [ref=f10e37]: 
+        - button "" [ref=f10e39] [cursor=pointer]
+        - generic [ref=f10e41]:
+          - button "Profile Ahmad Fauzi " [ref=f10e42] [cursor=pointer]:
+            - img "Profile" [ref=f10e43]
+            - generic [ref=f10e44]: Ahmad Fauzi
+            - generic [ref=f10e45]: 
+          - text: 
+    - generic [ref=f10e47]:
+      - heading "Dashboard Siswa" [level=1] [ref=f10e48]
+      - paragraph [ref=f10e49]: Selamat datang, Ahmad Fauzi — kelola peminjaman laptop Anda.
+    - main [ref=f10e50]:
+      - generic [ref=f10e51]:
+        - generic [ref=f10e53]:
+          - generic [ref=f10e56]:
+            - generic [ref=f10e57]: Sesi Aktif
+            - generic [ref=f10e59]: "0"
+            - generic [ref=f10e60]:
+              - generic [ref=f10e61]: 
+              - generic [ref=f10e62]: Laptop yang sedang dipinjam
+          - generic [ref=f10e65]:
+            - generic [ref=f10e66]: Selesai Dipinjam
+            - generic [ref=f10e68]: "0"
+            - generic [ref=f10e69]:
+              - generic [ref=f10e70]: 
+              - generic [ref=f10e71]: Riwayat pengembalian
+          - generic [ref=f10e73]:
+            - generic [ref=f10e74]:
+              - generic [ref=f10e75]: Pinjam
+              - generic [ref=f10e76]: Scan QR Code
+              - generic [ref=f10e77]: Pilih menu Pinjam Laptop lalu scan QR di laptop.
+            - link "Mulai Pinjam " [ref=f10e78] [cursor=pointer]:
+              - /url: http://127.0.0.1:8899/pinjam
+              - generic [ref=f10e79]: Mulai Pinjam
+              - generic [ref=f10e80]: 
+        - generic [ref=f10e82]:
+          - heading "Sesi Peminjaman Aktif" [level=2] [ref=f10e84]
+          - generic [ref=f10e86]:
+            - generic [ref=f10e87]: 
+            - text: Tidak ada sesi peminjaman aktif.
+        - generic [ref=f10e89]:
+          - heading "Riwayat Terakhir" [level=2] [ref=f10e91]
+          - generic [ref=f10e93]:
+            - generic [ref=f10e94]: 
+            - text: Belum ada riwayat.
+    - contentinfo [ref=f10e95]:
+      - generic [ref=f10e96]:
+        - generic [ref=f10e97]:
+          - generic [ref=f10e98]: 
+          - text: PemlapTex
+        - generic [ref=f10e99]: "|"
+        - generic [ref=f10e100]: © 2026 Peminjaman Laptop Sekolah

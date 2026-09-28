@@ -1,0 +1,92 @@
+- generic [active] [ref=f27e1]:
+  - generic [ref=f27e2]:
+    - link " PemlapTex" [ref=f27e3] [cursor=pointer]:
+      - /url: http://127.0.0.1:8899/dashboard
+      - generic [ref=f27e4]: 
+      - generic [ref=f27e5]: PemlapTex
+    - generic [ref=f27e7]:
+      - generic [ref=f27e8]: Menu
+      - list [ref=f27e9]:
+        - listitem [ref=f27e10]:
+          - link " Dashboard" [ref=f27e11] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/dashboard
+            - generic [ref=f27e12]: 
+            - generic [ref=f27e13]: Dashboard
+        - listitem [ref=f27e14]:
+          - link " Pinjam Laptop" [ref=f27e15] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/pinjam
+            - generic [ref=f27e16]: 
+            - generic [ref=f27e17]: Pinjam Laptop
+        - listitem [ref=f27e18]:
+          - link " Kembalikan Laptop" [ref=f27e19] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/kembali
+            - generic [ref=f27e20]: 
+            - generic [ref=f27e21]: Kembalikan Laptop
+    - generic [ref=f27e22]:
+      - img "Bunga Lestari" [ref=f27e23]
+      - generic [ref=f27e24]:
+        - generic [ref=f27e25]: Bunga Lestari
+        - generic [ref=f27e26]: "20240002"
+  - generic [ref=f27e27]:
+    - banner [ref=f27e28]:
+      - generic [ref=f27e29]:
+        - text: 
+        - button "Toggle Navigation" [ref=f27e30] [cursor=pointer]:
+          - generic [ref=f27e31]: 
+      - generic [ref=f27e33]:
+        - generic [ref=f27e34]: 
+        - text: Peminjaman Laptop Sekolah
+      - generic [ref=f27e35]:
+        - button "Toggle Fullscreen" [ref=f27e36] [cursor=pointer]:
+          - generic [ref=f27e37]: 
+        - generic [ref=f27e38]:
+          - button "" [ref=f27e39] [cursor=pointer]
+          - text: 
+        - generic [ref=f27e42]:
+          - button "Profile Bunga Lestari " [ref=f27e43] [cursor=pointer]:
+            - img "Profile" [ref=f27e44]
+            - generic [ref=f27e45]: Bunga Lestari
+            - generic [ref=f27e46]: 
+          - text: 
+    - generic [ref=f27e48]:
+      - heading "Kembalikan Laptop" [level=1] [ref=f27e49]
+      - paragraph [ref=f27e50]: Ajukan pengembalian laptop yang Anda pinjam. Admin akan memverifikasi.
+    - main [ref=f27e51]:
+      - table [ref=f27e54]:
+        - rowgroup [ref=f27e55]:
+          - row [ref=f27e56]:
+            - columnheader "Laptop" [ref=f27e57]
+            - columnheader "Anggota" [ref=f27e58]
+            - columnheader "Dipinjam" [ref=f27e59]
+            - columnheader "Status" [ref=f27e60]
+            - columnheader "Aksi" [ref=f27e61]
+        - rowgroup [ref=f27e62]:
+          - row [ref=f27e63]:
+            - cell "Dell Latitude 3420" [ref=f27e64]
+            - cell "Bunga Lestari" [ref=f27e65]
+            - cell "21 Sep 2026, 08:42" [ref=f27e67]
+            - cell "Dipinjam" [ref=f27e68]
+            - cell [ref=f27e70]:
+              - button " Kembalikan Laptop" [ref=f27e73] [cursor=pointer]:
+                - generic [ref=f27e74]: 
+                - text: Kembalikan Laptop
+          - row [ref=f27e75]:
+            - cell "Lenovo ThinkPad T14" [ref=f27e76]
+            - cell "Ahmad Fauzi Bunga Lestari Citra Ayu" [ref=f27e77]:
+              - generic [ref=f27e78]: Ahmad Fauzi
+              - generic [ref=f27e79]: Bunga Lestari
+              - generic [ref=f27e80]: Citra Ayu
+            - cell "21 Sep 2026, 08:37" [ref=f27e81]
+            - cell "Dikembalikan" [ref=f27e82]
+            - cell [ref=f27e84]:
+              - link " Bukti" [ref=f27e86] [cursor=pointer]:
+                - /url: http://127.0.0.1:8899/bukti/1
+                - generic [ref=f27e87]: 
+                - text: Bukti
+    - contentinfo [ref=f27e88]:
+      - generic [ref=f27e89]:
+        - generic [ref=f27e90]:
+          - generic [ref=f27e91]: 
+          - text: PemlapTex
+        - generic [ref=f27e92]: "|"
+        - generic [ref=f27e93]: © 2026 Peminjaman Laptop Sekolah

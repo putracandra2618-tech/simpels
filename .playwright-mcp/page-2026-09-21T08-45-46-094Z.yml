@@ -1,0 +1,148 @@
+- generic [ref=f39e1]:
+  - generic [ref=f39e2]:
+    - link " PemlapTex" [ref=f39e3] [cursor=pointer]:
+      - /url: http://127.0.0.1:8899/dashboard
+      - generic [ref=f39e4]: 
+      - generic [ref=f39e5]: PemlapTex
+    - generic [ref=f39e7]:
+      - generic [ref=f39e8]: Menu
+      - list [ref=f39e9]:
+        - listitem [ref=f39e10]:
+          - link " Dashboard" [ref=f39e11] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/dashboard
+            - generic [ref=f39e12]: 
+            - generic [ref=f39e13]: Dashboard
+        - listitem [ref=f39e14]:
+          - link " Pinjam Laptop" [ref=f39e15] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/pinjam
+            - generic [ref=f39e16]: 
+            - generic [ref=f39e17]: Pinjam Laptop
+        - listitem [ref=f39e18]:
+          - link " Kembalikan Laptop" [ref=f39e19] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/kembali
+            - generic [ref=f39e20]: 
+            - generic [ref=f39e21]: Kembalikan Laptop
+    - generic [ref=f39e22]:
+      - img "Dimas Prasetyo" [ref=f39e23]
+      - generic [ref=f39e24]:
+        - generic [ref=f39e25]: Dimas Prasetyo
+        - generic [ref=f39e26]: "20240004"
+  - generic [ref=f39e27]:
+    - banner [ref=f39e28]:
+      - generic [ref=f39e29]:
+        - text: 
+        - button "Toggle Navigation" [ref=f39e30] [cursor=pointer]:
+          - generic [ref=f39e31]: 
+      - generic [ref=f39e33]:
+        - generic [ref=f39e34]: 
+        - text: Peminjaman Laptop Sekolah
+      - generic [ref=f39e35]:
+        - button "Toggle Fullscreen" [ref=f39e36] [cursor=pointer]:
+          - generic [ref=f39e37]: 
+        - generic [ref=f39e38]:
+          - button "" [expanded] [active] [ref=f39e39] [cursor=pointer]
+          - generic "" [ref=f39e137]:
+            - generic [ref=f39e138]:
+              - heading "Notifikasi" [level=6] [ref=f39e139]
+              - button "Tandai dibaca" [ref=f39e141] [cursor=pointer]
+            - generic [ref=f39e142]: Tidak ada notifikasi.
+        - generic [ref=f39e41]:
+          - button "Profile Dimas Prasetyo " [ref=f39e42] [cursor=pointer]:
+            - img "Profile" [ref=f39e43]
+            - generic [ref=f39e44]: Dimas Prasetyo
+            - generic [ref=f39e45]: 
+          - text: 
+    - generic [ref=f39e46]:
+      - generic [ref=f39e47]:
+        - heading "Bukti Peminjaman" [level=1] [ref=f39e48]
+        - paragraph [ref=f39e49]: Simpan atau cetak bukti sebagai arsip peminjaman Anda.
+      - alert [ref=f39e50]:
+        - generic [ref=f39e51]: 
+        - text: Peminjaman berhasil dicatat.
+        - button "Close" [ref=f39e52] [cursor=pointer]
+    - main [ref=f39e53]:
+      - button " Cetak Bukti" [ref=f39e55] [cursor=pointer]:
+        - generic [ref=f39e56]: 
+        - text: Cetak Bukti
+      - generic [ref=f39e59]:
+        - generic [ref=f39e61]:
+          - generic [ref=f39e62]:
+            - heading " PemlapTex" [level=4] [ref=f39e63]:
+              - generic [ref=f39e64]: 
+              - text: PemlapTex
+            - text: Bukti Peminjaman Laptop Sekolah
+          - generic [ref=f39e65]:
+            - text: Kode Bukti
+            - generic [ref=f39e66]: PML/PJM/00003
+        - generic [ref=f39e67]:
+          - generic [ref=f39e68]:
+            - generic [ref=f39e69]: 
+            - text: Peminjaman berhasil dicatat pada 21 Sep 2026, 08:44:35.
+          - heading "Data Laptop" [level=6] [ref=f39e70]
+          - table [ref=f39e71]:
+            - rowgroup [ref=f39e72]:
+              - row [ref=f39e73]:
+                - rowheader "Nama Laptop" [ref=f39e74]
+                - cell "Asus Vivobook 14" [ref=f39e75]
+              - row [ref=f39e76]:
+                - rowheader "Merek" [ref=f39e77]
+                - cell "Asus" [ref=f39e78]
+              - row [ref=f39e79]:
+                - rowheader "Spesifikasi" [ref=f39e80]
+                - cell "AMD Ryzen 7 5700U RAM 16 GB DDR4 SSD 512 GB Layar 14\" FHD IPS" [ref=f39e81]
+              - row [ref=f39e82]:
+                - rowheader "Waktu Peminjaman" [ref=f39e83]
+                - cell "21 Sep 2026, 08:44:35" [ref=f39e84]
+          - heading "Anggota Peminjaman (5/5)" [level=6] [ref=f39e85]
+          - table [ref=f39e86]:
+            - rowgroup [ref=f39e87]:
+              - row [ref=f39e88]:
+                - columnheader "No" [ref=f39e89]
+                - columnheader "NIS / Username" [ref=f39e90]
+                - columnheader "Nama" [ref=f39e91]
+                - columnheader "Kelas" [ref=f39e92]
+                - columnheader "Jurusan" [ref=f39e93]
+            - rowgroup [ref=f39e94]:
+              - row [ref=f39e95]:
+                - cell "1" [ref=f39e96]
+                - cell "20240001" [ref=f39e97]
+                - cell "Ahmad Fauzi" [ref=f39e98]
+                - cell "XII" [ref=f39e99]
+                - cell "RPL" [ref=f39e100]
+              - row [ref=f39e101]:
+                - cell "2" [ref=f39e102]
+                - cell "20240003" [ref=f39e103]
+                - cell "Citra Ayu" [ref=f39e104]
+                - cell "XI" [ref=f39e105]
+                - cell "RPL" [ref=f39e106]
+              - row [ref=f39e107]:
+                - cell "3" [ref=f39e108]
+                - cell "20240004" [ref=f39e109]
+                - cell "Dimas Prasetyo" [ref=f39e110]
+                - cell "XI" [ref=f39e111]
+                - cell "MM" [ref=f39e112]
+              - row [ref=f39e113]:
+                - cell "4" [ref=f39e114]
+                - cell "20240005" [ref=f39e115]
+                - cell "Eka Wulandari" [ref=f39e116]
+                - cell "X" [ref=f39e117]
+                - cell "RPL" [ref=f39e118]
+              - row [ref=f39e119]:
+                - cell "5" [ref=f39e120]
+                - cell "20240006" [ref=f39e121]
+                - cell "Fajar Ramadhan" [ref=f39e122]
+                - cell "X" [ref=f39e123]
+                - cell "TOI" [ref=f39e124]
+          - separator [ref=f39e125]
+          - generic [ref=f39e126]:
+            - generic [ref=f39e127]: Dicetak pada 21 Sep 2026, 08:44:36
+            - generic [ref=f39e128]:
+              - generic [ref=f39e129]: Peminjam
+              - generic [ref=f39e130]: Ahmad Fauzi
+    - contentinfo [ref=f39e131]:
+      - generic [ref=f39e132]:
+        - generic [ref=f39e133]:
+          - generic [ref=f39e134]: 
+          - text: PemlapTex
+        - generic [ref=f39e135]: "|"
+        - generic [ref=f39e136]: © 2026 Peminjaman Laptop Sekolah

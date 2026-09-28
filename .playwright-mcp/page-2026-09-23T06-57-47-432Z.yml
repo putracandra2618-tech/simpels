@@ -1,0 +1,53 @@
+- generic [ref=f97e1]:
+  - generic [ref=f97e2]:
+    - button "Cetak QR" [ref=f97e3] [cursor=pointer]
+    - link "Kembali" [ref=f97e4] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000/admin/laptop
+    - generic [ref=f97e5]:
+      - text: "Jumlah label per lembar:"
+      - generic [ref=f97e6]:
+        - button "1" [ref=f97e7] [cursor=pointer]
+        - button "4" [ref=f97e8] [cursor=pointer]
+        - button "8" [active] [ref=f97e9] [cursor=pointer]
+    - generic [ref=f97e10]: Klik Cetak QR, lalu di dialog pilih printer Anda (jangan "Save as PDF"). Jika hasil terpotong, atur skala "Fit to page" pada pengaturan print Chrome.
+  - generic [ref=f97e11]:
+    - generic [ref=f97e37]:
+      - img "QR MacBook Air 13" [ref=f97e38]
+      - generic [ref=f97e39]: MacBook Air 13
+      - generic [ref=f97e40]: Apple
+      - generic [ref=f97e41]: PemlapTex — Peminjaman Laptop Sekolah
+    - generic [ref=f97e42]:
+      - img "QR MacBook Air 13" [ref=f97e43]
+      - generic [ref=f97e44]: MacBook Air 13
+      - generic [ref=f97e45]: Apple
+      - generic [ref=f97e46]: PemlapTex — Peminjaman Laptop Sekolah
+    - generic [ref=f97e47]:
+      - img "QR MacBook Air 13" [ref=f97e48]
+      - generic [ref=f97e49]: MacBook Air 13
+      - generic [ref=f97e50]: Apple
+      - generic [ref=f97e51]: PemlapTex — Peminjaman Laptop Sekolah
+    - generic [ref=f97e52]:
+      - img "QR MacBook Air 13" [ref=f97e53]
+      - generic [ref=f97e54]: MacBook Air 13
+      - generic [ref=f97e55]: Apple
+      - generic [ref=f97e56]: PemlapTex — Peminjaman Laptop Sekolah
+    - generic [ref=f97e57]:
+      - img "QR MacBook Air 13" [ref=f97e58]
+      - generic [ref=f97e59]: MacBook Air 13
+      - generic [ref=f97e60]: Apple
+      - generic [ref=f97e61]: PemlapTex — Peminjaman Laptop Sekolah
+    - generic [ref=f97e62]:
+      - img "QR MacBook Air 13" [ref=f97e63]
+      - generic [ref=f97e64]: MacBook Air 13
+      - generic [ref=f97e65]: Apple
+      - generic [ref=f97e66]: PemlapTex — Peminjaman Laptop Sekolah
+    - generic [ref=f97e67]:
+      - img "QR MacBook Air 13" [ref=f97e68]
+      - generic [ref=f97e69]: MacBook Air 13
+      - generic [ref=f97e70]: Apple
+      - generic [ref=f97e71]: PemlapTex — Peminjaman Laptop Sekolah
+    - generic [ref=f97e72]:
+      - img "QR MacBook Air 13" [ref=f97e73]
+      - generic [ref=f97e74]: MacBook Air 13
+      - generic [ref=f97e75]: Apple
+      - generic [ref=f97e76]: PemlapTex — Peminjaman Laptop Sekolah

@@ -1,0 +1,130 @@
+- generic [active] [ref=f13e1]:
+  - generic [ref=f13e2]:
+    - link " PemlapTex" [ref=f13e3] [cursor=pointer]:
+      - /url: http://127.0.0.1:8899/dashboard
+      - generic [ref=f13e4]: 
+      - generic [ref=f13e5]: PemlapTex
+    - generic [ref=f13e7]:
+      - generic [ref=f13e8]: Menu
+      - list [ref=f13e9]:
+        - listitem [ref=f13e10]:
+          - link " Dashboard" [ref=f13e11] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/dashboard
+            - generic [ref=f13e12]: 
+            - generic [ref=f13e13]: Dashboard
+        - listitem [ref=f13e14]:
+          - link " Pinjam Laptop" [ref=f13e15] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/pinjam
+            - generic [ref=f13e16]: 
+            - generic [ref=f13e17]: Pinjam Laptop
+        - listitem [ref=f13e18]:
+          - link " Kembalikan Laptop" [ref=f13e19] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/kembali
+            - generic [ref=f13e20]: 
+            - generic [ref=f13e21]: Kembalikan Laptop
+    - generic [ref=f13e22]:
+      - img "Ahmad Fauzi" [ref=f13e23]
+      - generic [ref=f13e24]:
+        - generic [ref=f13e25]: Ahmad Fauzi
+        - generic [ref=f13e26]: "20240001"
+  - generic [ref=f13e27]:
+    - banner [ref=f13e28]:
+      - generic [ref=f13e29]:
+        - text: 
+        - button "Toggle Navigation" [ref=f13e30] [cursor=pointer]:
+          - generic [ref=f13e31]: 
+      - generic [ref=f13e33]:
+        - generic [ref=f13e34]: 
+        - text: Peminjaman Laptop Sekolah
+      - generic [ref=f13e35]:
+        - button "Toggle Fullscreen" [ref=f13e36] [cursor=pointer]:
+          - generic [ref=f13e37]: 
+        - button "" [ref=f13e39] [cursor=pointer]
+        - generic [ref=f13e41]:
+          - button "Profile Ahmad Fauzi " [ref=f13e42] [cursor=pointer]:
+            - img "Profile" [ref=f13e43]
+            - generic [ref=f13e44]: Ahmad Fauzi
+            - generic [ref=f13e45]: 
+          - text: 
+    - generic [ref=f13e46]:
+      - generic [ref=f13e47]:
+        - heading "Bukti Peminjaman" [level=1] [ref=f13e48]
+        - paragraph [ref=f13e49]: Simpan atau cetak bukti sebagai arsip peminjaman Anda.
+      - alert [ref=f13e50]:
+        - generic [ref=f13e51]: 
+        - text: Peminjaman berhasil dicatat.
+        - button "Close" [ref=f13e52] [cursor=pointer]
+    - main [ref=f13e53]:
+      - button " Cetak Bukti" [ref=f13e55] [cursor=pointer]:
+        - generic [ref=f13e56]: 
+        - text: Cetak Bukti
+      - generic [ref=f13e59]:
+        - generic [ref=f13e61]:
+          - generic [ref=f13e62]:
+            - heading " PemlapTex" [level=4] [ref=f13e63]:
+              - generic [ref=f13e64]: 
+              - text: PemlapTex
+            - text: Bukti Peminjaman Laptop Sekolah
+          - generic [ref=f13e65]:
+            - text: Kode Bukti
+            - generic [ref=f13e66]: PML/PJM/00001
+        - generic [ref=f13e67]:
+          - generic [ref=f13e68]:
+            - generic [ref=f13e69]: 
+            - text: Peminjaman berhasil dicatat pada 21 Sep 2026, 08:37:14.
+          - heading "Data Laptop" [level=6] [ref=f13e70]
+          - table [ref=f13e71]:
+            - rowgroup [ref=f13e72]:
+              - row [ref=f13e73]:
+                - rowheader "Nama Laptop" [ref=f13e74]
+                - cell "Lenovo ThinkPad T14" [ref=f13e75]
+              - row [ref=f13e76]:
+                - rowheader "Merek" [ref=f13e77]
+                - cell "Lenovo" [ref=f13e78]
+              - row [ref=f13e79]:
+                - rowheader "Spesifikasi" [ref=f13e80]
+                - cell "Intel Core i5-1240P RAM 16 GB DDR4 SSD 512 GB NVMe Layar 14\" FHD" [ref=f13e81]
+              - row [ref=f13e82]:
+                - rowheader "Waktu Peminjaman" [ref=f13e83]
+                - cell "21 Sep 2026, 08:37:14" [ref=f13e84]
+          - heading "Anggota Peminjaman (3/5)" [level=6] [ref=f13e85]
+          - table [ref=f13e86]:
+            - rowgroup [ref=f13e87]:
+              - row [ref=f13e88]:
+                - columnheader "No" [ref=f13e89]
+                - columnheader "NIS / Username" [ref=f13e90]
+                - columnheader "Nama" [ref=f13e91]
+                - columnheader "Kelas" [ref=f13e92]
+                - columnheader "Jurusan" [ref=f13e93]
+            - rowgroup [ref=f13e94]:
+              - row [ref=f13e95]:
+                - cell "1" [ref=f13e96]
+                - cell "20240001" [ref=f13e97]
+                - cell "Ahmad Fauzi" [ref=f13e98]
+                - cell "XII" [ref=f13e99]
+                - cell "RPL" [ref=f13e100]
+              - row [ref=f13e101]:
+                - cell "2" [ref=f13e102]
+                - cell "20240002" [ref=f13e103]
+                - cell "Bunga Lestari" [ref=f13e104]
+                - cell "XII" [ref=f13e105]
+                - cell "TKJ" [ref=f13e106]
+              - row [ref=f13e107]:
+                - cell "3" [ref=f13e108]
+                - cell "20240003" [ref=f13e109]
+                - cell "Citra Ayu" [ref=f13e110]
+                - cell "XI" [ref=f13e111]
+                - cell "RPL" [ref=f13e112]
+          - separator [ref=f13e113]
+          - generic [ref=f13e114]:
+            - generic [ref=f13e115]: Dicetak pada 21 Sep 2026, 08:37:14
+            - generic [ref=f13e116]:
+              - generic [ref=f13e117]: Peminjam
+              - generic [ref=f13e118]: Ahmad Fauzi
+    - contentinfo [ref=f13e119]:
+      - generic [ref=f13e120]:
+        - generic [ref=f13e121]:
+          - generic [ref=f13e122]: 
+          - text: PemlapTex
+        - generic [ref=f13e123]: "|"
+        - generic [ref=f13e124]: © 2026 Peminjaman Laptop Sekolah

@@ -1,0 +1,114 @@
+- generic [active] [ref=f31e1]:
+  - generic [ref=f31e2]:
+    - link " PemlapTex" [ref=f31e3] [cursor=pointer]:
+      - /url: http://127.0.0.1:8899/dashboard
+      - generic [ref=f31e4]: 
+      - generic [ref=f31e5]: PemlapTex
+    - generic [ref=f31e7]:
+      - generic [ref=f31e8]: Menu
+      - list [ref=f31e9]:
+        - listitem [ref=f31e10]:
+          - link " Dashboard" [ref=f31e11] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/dashboard
+            - generic [ref=f31e12]: 
+            - generic [ref=f31e13]: Dashboard
+        - listitem [ref=f31e14]:
+          - link " Verifikasi" [ref=f31e15] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/admin
+            - generic [ref=f31e16]: 
+            - generic [ref=f31e17]: Verifikasi
+        - listitem [ref=f31e18]:
+          - link " Data Laptop" [ref=f31e19] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/admin/laptop
+            - generic [ref=f31e20]: 
+            - generic [ref=f31e21]: Data Laptop
+    - generic [ref=f31e22]:
+      - img "Administrator" [ref=f31e23]
+      - generic [ref=f31e24]:
+        - generic [ref=f31e25]: Administrator
+        - generic [ref=f31e26]: admin
+  - generic [ref=f31e27]:
+    - banner [ref=f31e28]:
+      - generic [ref=f31e29]:
+        - text: 
+        - button "Toggle Navigation" [ref=f31e30] [cursor=pointer]:
+          - generic [ref=f31e31]: 
+      - generic [ref=f31e33]:
+        - generic [ref=f31e34]: 
+        - text: Sistem Peminjaman Laptop Sekolah
+      - generic [ref=f31e35]:
+        - button "Toggle Fullscreen" [ref=f31e36] [cursor=pointer]:
+          - generic [ref=f31e37]: 
+        - generic [ref=f31e38]:
+          - button "" [ref=f31e39] [cursor=pointer]
+          - text:  
+        - generic [ref=f31e42]:
+          - button "Profile Administrator " [ref=f31e43] [cursor=pointer]:
+            - img "Profile" [ref=f31e44]
+            - generic [ref=f31e45]: Administrator
+            - generic [ref=f31e46]: 
+          - text: 
+    - generic [ref=f31e47]:
+      - generic [ref=f31e48]:
+        - heading "Dashboard Admin" [level=1] [ref=f31e49]
+        - paragraph [ref=f31e50]: Pantau peminjaman laptop dan verifikasi pengembalian.
+      - alert [ref=f31e51]:
+        - generic [ref=f31e52]: 
+        - text: Pengembalian ditolak. Siswa dapat mengajukan kembali.
+        - button "Close" [ref=f31e53] [cursor=pointer]
+    - main [ref=f31e54]:
+      - generic [ref=f31e55]:
+        - generic [ref=f31e57]:
+          - generic [ref=f31e60]:
+            - generic [ref=f31e61]: Total Laptop
+            - generic [ref=f31e63]: "7"
+            - generic [ref=f31e64]: Seluruh laptop terdaftar
+          - generic [ref=f31e68]:
+            - generic [ref=f31e69]: Tersedia
+            - generic [ref=f31e71]: "6"
+            - generic [ref=f31e72]: Siap dipinjam
+          - generic [ref=f31e76]:
+            - generic [ref=f31e77]: Dipinjam
+            - generic [ref=f31e79]: "1"
+            - generic [ref=f31e80]: Sedang dipakai sesi
+          - generic [ref=f31e84]:
+            - generic [ref=f31e85]: Menunggu Verifikasi
+            - generic [ref=f31e87]: "0"
+            - generic [ref=f31e88]: Permintaan pengembalian
+        - generic [ref=f31e91]:
+          - generic [ref=f31e92]:
+            - heading "Antrian Verifikasi Pengembalian" [level=2] [ref=f31e93]
+            - link "Kelola Laptop →" [ref=f31e94] [cursor=pointer]:
+              - /url: http://127.0.0.1:8899/admin/laptop
+          - table [ref=f31e96]:
+            - rowgroup [ref=f31e97]:
+              - row [ref=f31e98]:
+                - columnheader "Laptop" [ref=f31e99]
+                - columnheader "Anggota" [ref=f31e100]
+                - columnheader "Diminta" [ref=f31e101]
+                - columnheader "Action" [ref=f31e102]
+            - rowgroup [ref=f31e103]:
+              - row [ref=f31e104]:
+                - cell "Tidak ada antrian verifikasi." [ref=f31e105]
+        - generic [ref=f31e107]:
+          - heading "Peminjaman Terbaru" [level=2] [ref=f31e109]
+          - generic [ref=f31e110]:
+            - generic [ref=f31e111]:
+              - generic [ref=f31e112]: 
+              - generic [ref=f31e114]:
+                - generic [ref=f31e115]: Dell Latitude 3420
+                - generic [ref=f31e116]: Bunga Lestari • 21 Sep, 08:42
+              - generic [ref=f31e117]: AKTIF
+            - generic [ref=f31e118]:
+              - generic [ref=f31e119]: 
+              - generic [ref=f31e121]:
+                - generic [ref=f31e122]: Lenovo ThinkPad T14
+                - generic [ref=f31e123]: Ahmad Fauzi, Bunga Lestari • 21 Sep, 08:37
+              - generic [ref=f31e124]: DIKEMBALIKAN
+    - contentinfo [ref=f31e125]:
+      - generic [ref=f31e126]:
+        - generic [ref=f31e127]:
+          - generic [ref=f31e128]: 
+          - text: PemlapTex
+        - generic [ref=f31e129]: "|"
+        - generic [ref=f31e130]: © 2026 Peminjaman Laptop Sekolah

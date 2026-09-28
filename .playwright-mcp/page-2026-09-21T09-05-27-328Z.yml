@@ -1,0 +1,83 @@
+- generic [ref=f55e1]:
+  - banner [ref=f55e2]:
+    - link " PemlapTex" [ref=f55e3] [cursor=pointer]:
+      - /url: http://127.0.0.1:8899/dashboard
+      - generic [ref=f55e4]: 
+      - generic [ref=f55e5]: PemlapTex
+    - navigation "Menu siswa" [ref=f55e6]:
+      - link " Dashboard" [ref=f55e7] [cursor=pointer]:
+        - /url: http://127.0.0.1:8899/dashboard
+        - generic [ref=f55e8]: 
+        - generic [ref=f55e9]: Dashboard
+      - link " Pinjam Laptop" [ref=f55e10] [cursor=pointer]:
+        - /url: http://127.0.0.1:8899/pinjam
+        - generic [ref=f55e11]: 
+        - generic [ref=f55e12]: Pinjam Laptop
+      - link " Kembalikan Laptop" [ref=f55e13] [cursor=pointer]:
+        - /url: http://127.0.0.1:8899/kembali
+        - generic [ref=f55e14]: 
+        - generic [ref=f55e15]: Kembalikan Laptop
+    - generic [ref=f55e16]:
+      - button "Toggle Fullscreen" [ref=f55e17] [cursor=pointer]:
+        - generic [ref=f55e18]: 
+      - button "" [ref=f55e20] [cursor=pointer]
+      - generic [ref=f55e22]:
+        - button "Profile Bunga Lestari " [expanded] [active] [ref=f55e23] [cursor=pointer]:
+          - img "Profile" [ref=f55e24]
+          - generic [ref=f55e25]: Bunga Lestari
+          - generic [ref=f55e26]: 
+        - list "Profile Bunga Lestari " [ref=f55e83]:
+          - listitem [ref=f55e84]:
+            - generic [ref=f55e85]: 
+            - text: Bunga Lestari (XII TKJ)
+          - listitem [ref=f55e86]:
+            - separator [ref=f55e87]
+          - listitem [ref=f55e88]:
+            - button " Logout" [ref=f55e90] [cursor=pointer]:
+              - generic [ref=f55e91]: 
+              - text: Logout
+  - generic [ref=f55e27]:
+    - generic [ref=f55e29]:
+      - heading "Dashboard Siswa" [level=1] [ref=f55e30]
+      - paragraph [ref=f55e31]: Selamat datang, Bunga Lestari — kelola peminjaman laptop Anda.
+    - main [ref=f55e32]:
+      - generic [ref=f55e33]:
+        - generic [ref=f55e35]:
+          - generic [ref=f55e38]:
+            - generic [ref=f55e39]: Sesi Aktif
+            - generic [ref=f55e41]: "0"
+            - generic [ref=f55e42]:
+              - generic [ref=f55e43]: 
+              - generic [ref=f55e44]: Laptop yang sedang dipinjam
+          - generic [ref=f55e47]:
+            - generic [ref=f55e48]: Selesai Dipinjam
+            - generic [ref=f55e50]: "0"
+            - generic [ref=f55e51]:
+              - generic [ref=f55e52]: 
+              - generic [ref=f55e53]: Riwayat pengembalian
+          - generic [ref=f55e55]:
+            - generic [ref=f55e56]:
+              - generic [ref=f55e57]: Pinjam
+              - generic [ref=f55e58]: Scan QR Code
+              - generic [ref=f55e59]: Pilih menu Pinjam Laptop lalu scan QR di laptop.
+            - link "Mulai Pinjam " [ref=f55e60] [cursor=pointer]:
+              - /url: http://127.0.0.1:8899/pinjam
+              - generic [ref=f55e61]: Mulai Pinjam
+              - generic [ref=f55e62]: 
+        - generic [ref=f55e64]:
+          - heading "Sesi Peminjaman Aktif" [level=2] [ref=f55e66]
+          - generic [ref=f55e68]:
+            - generic [ref=f55e69]: 
+            - text: Tidak ada sesi peminjaman aktif.
+        - generic [ref=f55e71]:
+          - heading "Riwayat Terakhir" [level=2] [ref=f55e73]
+          - generic [ref=f55e75]:
+            - generic [ref=f55e76]: 
+            - text: Belum ada riwayat.
+    - contentinfo [ref=f55e77]:
+      - generic [ref=f55e78]:
+        - generic [ref=f55e79]:
+          - generic [ref=f55e80]: 
+          - text: PemlapTex
+        - generic [ref=f55e81]: "|"
+        - generic [ref=f55e82]: © 2026 Peminjaman Laptop Sekolah

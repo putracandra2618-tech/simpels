@@ -1,0 +1,111 @@
+- generic [active] [ref=f44e1]:
+  - generic [ref=f44e2]:
+    - link " PemlapTex" [ref=f44e3] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000/dashboard
+      - generic [ref=f44e4]: 
+      - generic [ref=f44e5]: PemlapTex
+    - generic [ref=f44e7]:
+      - generic [ref=f44e8]: Menu
+      - list [ref=f44e9]:
+        - listitem [ref=f44e10]:
+          - link " Dashboard" [ref=f44e11] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+            - generic [ref=f44e12]: 
+            - generic [ref=f44e13]: Dashboard
+        - listitem [ref=f44e14]:
+          - link " Verifikasi" [ref=f44e15] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/verifikasi
+            - generic [ref=f44e16]: 
+            - generic [ref=f44e17]: Verifikasi
+        - listitem [ref=f44e18]:
+          - link " Data Laptop" [ref=f44e19] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/laptop
+            - generic [ref=f44e20]: 
+            - generic [ref=f44e21]: Data Laptop
+        - listitem [ref=f44e22]:
+          - link " Data User" [ref=f44e23] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/user
+            - generic [ref=f44e24]: 
+            - generic [ref=f44e25]: Data User
+        - listitem [ref=f44e26]:
+          - link " Data Admin" [ref=f44e27] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/admin-user
+            - generic [ref=f44e28]: 
+            - generic [ref=f44e29]: Data Admin
+    - generic [ref=f44e30]:
+      - img "Putra Candra" [ref=f44e31]
+      - generic [ref=f44e32]:
+        - generic [ref=f44e33]: Putra Candra
+        - generic [ref=f44e34]: putracandra
+  - generic [ref=f44e35]:
+    - banner [ref=f44e36]:
+      - generic [ref=f44e37]:
+        - button "Minimize Sidebar" [ref=f44e38] [cursor=pointer]:
+          - generic [ref=f44e39]: 
+        - text: 
+      - generic [ref=f44e41]:
+        - generic [ref=f44e42]: 
+        - text: Peminjaman Laptop Smk Texmaco Semarang
+      - generic [ref=f44e43]:
+        - button "Toggle Fullscreen" [ref=f44e44] [cursor=pointer]:
+          - generic [ref=f44e45]: 
+        - button "" [ref=f44e47] [cursor=pointer]
+        - generic [ref=f44e49]:
+          - button "Profile Putra Candra " [ref=f44e50] [cursor=pointer]:
+            - img "Profile" [ref=f44e51]
+            - generic [ref=f44e52]: Putra Candra
+            - generic [ref=f44e53]: 
+          - text: 
+    - generic [ref=f44e55]:
+      - heading "Tambah User" [level=1] [ref=f44e56]
+      - paragraph [ref=f44e57]: Buat akun siswa baru. Siswa login dengan kredensial ini.
+    - main [ref=f44e58]:
+      - generic [ref=f44e62]:
+        - generic [ref=f44e63]:
+          - generic [ref=f44e64]: Nama Lengkap *
+          - textbox "Nama Lengkap *" [ref=f44e65]:
+            - /placeholder: mis. Ahmad Fauzi
+        - generic [ref=f44e66]:
+          - generic [ref=f44e67]: Username *
+          - textbox "Username *" [ref=f44e68]:
+            - /placeholder: mis. 20240001
+        - generic [ref=f44e69]:
+          - generic [ref=f44e71]:
+            - generic [ref=f44e72]: Kelas *
+            - combobox "Kelas *" [ref=f44e73]:
+              - option "Pilih Kelas…" [disabled]
+              - option "X" [selected]
+              - option "XI"
+              - option "XII"
+          - generic [ref=f44e75]:
+            - generic [ref=f44e76]: Jurusan *
+            - combobox "Jurusan *" [ref=f44e77]:
+              - option "Pilih Jurusan…" [disabled]
+              - option "TKJ" [selected]
+              - option "RPL"
+              - option "TEI"
+              - option "TPSB"
+              - option "TB"
+              - option "TKR"
+              - option "TP"
+        - generic [ref=f44e78]:
+          - generic [ref=f44e80]:
+            - generic [ref=f44e81]: Password *
+            - textbox "Password *" [ref=f44e82]:
+              - /placeholder: Minimal 8 karakter
+          - generic [ref=f44e84]:
+            - generic [ref=f44e85]: Konfirmasi Password
+            - textbox "Konfirmasi Password" [ref=f44e86]
+        - generic [ref=f44e87]:
+          - link "Batal" [ref=f44e88] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/user
+          - button "Buat Akun " [ref=f44e89] [cursor=pointer]:
+            - generic [ref=f44e90]: Buat Akun
+            - generic [ref=f44e91]: 
+    - contentinfo [ref=f44e92]:
+      - generic [ref=f44e93]:
+        - generic [ref=f44e94]:
+          - generic [ref=f44e95]: 
+          - text: PemlapTex
+        - generic [ref=f44e96]: "|"
+        - generic [ref=f44e97]: © 2026 Peminjaman Laptop Sekolah

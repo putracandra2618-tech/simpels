@@ -1,0 +1,17 @@
+- generic [active] [ref=f97e1]:
+  - generic [ref=f97e2]:
+    - button "Cetak QR" [ref=f97e3] [cursor=pointer]
+    - link "Kembali" [ref=f97e4] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000/admin/laptop
+    - generic [ref=f97e5]:
+      - text: "Jumlah label per lembar:"
+      - generic [ref=f97e6]:
+        - button "1" [ref=f97e7] [cursor=pointer]
+        - button "4" [ref=f97e8] [cursor=pointer]
+        - button "8" [ref=f97e9] [cursor=pointer]
+    - generic [ref=f97e10]: Klik Cetak QR, lalu di dialog pilih printer Anda (jangan "Save as PDF"). Jika hasil terpotong, atur skala "Fit to page" pada pengaturan print Chrome.
+  - generic [ref=f97e12]:
+    - img "QR MacBook Air 13" [ref=f97e13]
+    - generic [ref=f97e14]: MacBook Air 13
+    - generic [ref=f97e15]: Apple
+    - generic [ref=f97e16]: PemlapTex — Peminjaman Laptop Sekolah

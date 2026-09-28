@@ -1,0 +1,128 @@
+- generic [active] [ref=f17e1]:
+  - generic [ref=f17e2]:
+    - link " PemlapTex" [ref=f17e3] [cursor=pointer]:
+      - /url: http://127.0.0.1:8899/dashboard
+      - generic [ref=f17e4]: 
+      - generic [ref=f17e5]: PemlapTex
+    - generic [ref=f17e7]:
+      - generic [ref=f17e8]: Menu
+      - list [ref=f17e9]:
+        - listitem [ref=f17e10]:
+          - link " Dashboard" [ref=f17e11] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/dashboard
+            - generic [ref=f17e12]: 
+            - generic [ref=f17e13]: Dashboard
+        - listitem [ref=f17e14]:
+          - link " Verifikasi" [ref=f17e15] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/admin
+            - generic [ref=f17e16]: 
+            - generic [ref=f17e17]: Verifikasi
+        - listitem [ref=f17e18]:
+          - link " Data Laptop" [ref=f17e19] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/admin/laptop
+            - generic [ref=f17e20]: 
+            - generic [ref=f17e21]: Data Laptop
+    - generic [ref=f17e22]:
+      - img "Administrator" [ref=f17e23]
+      - generic [ref=f17e24]:
+        - generic [ref=f17e25]: Administrator
+        - generic [ref=f17e26]: admin
+  - generic [ref=f17e27]:
+    - banner [ref=f17e28]:
+      - generic [ref=f17e29]:
+        - text: 
+        - button "Toggle Navigation" [ref=f17e30] [cursor=pointer]:
+          - generic [ref=f17e31]: 
+      - generic [ref=f17e33]:
+        - generic [ref=f17e34]: 
+        - text: Sistem Peminjaman Laptop Sekolah
+      - generic [ref=f17e35]:
+        - button "Toggle Fullscreen" [ref=f17e36] [cursor=pointer]:
+          - generic [ref=f17e37]: 
+        - generic [ref=f17e38]:
+          - button "" [ref=f17e39] [cursor=pointer]
+          - text: 
+        - generic [ref=f17e42]:
+          - button "Profile Administrator " [ref=f17e43] [cursor=pointer]:
+            - img "Profile" [ref=f17e44]
+            - generic [ref=f17e45]: Administrator
+            - generic [ref=f17e46]: 
+          - text: 
+    - generic [ref=f17e48]:
+      - heading "Dashboard Admin" [level=1] [ref=f17e49]
+      - paragraph [ref=f17e50]: Pantau peminjaman laptop dan verifikasi pengembalian.
+    - main [ref=f17e51]:
+      - generic [ref=f17e52]:
+        - generic [ref=f17e54]:
+          - generic [ref=f17e57]:
+            - generic [ref=f17e58]: Total Laptop
+            - generic [ref=f17e60]: "7"
+            - generic [ref=f17e61]: Seluruh laptop terdaftar
+          - generic [ref=f17e65]:
+            - generic [ref=f17e66]: Tersedia
+            - generic [ref=f17e68]: "6"
+            - generic [ref=f17e69]: Siap dipinjam
+          - generic [ref=f17e73]:
+            - generic [ref=f17e74]: Dipinjam
+            - generic [ref=f17e76]: "1"
+            - generic [ref=f17e77]: Sedang dipakai sesi
+          - generic [ref=f17e81]:
+            - generic [ref=f17e82]: Menunggu Verifikasi
+            - generic [ref=f17e84]: "1"
+            - generic [ref=f17e85]: Permintaan pengembalian
+        - generic [ref=f17e88]:
+          - generic [ref=f17e89]:
+            - heading "Antrian Verifikasi Pengembalian" [level=2] [ref=f17e90]
+            - link "Kelola Laptop →" [ref=f17e91] [cursor=pointer]:
+              - /url: http://127.0.0.1:8899/admin/laptop
+          - table [ref=f17e93]:
+            - rowgroup [ref=f17e94]:
+              - row [ref=f17e95]:
+                - columnheader "Laptop" [ref=f17e96]
+                - columnheader "Anggota" [ref=f17e97]
+                - columnheader "Diminta" [ref=f17e98]
+                - columnheader "Action" [ref=f17e99]
+            - rowgroup [ref=f17e100]:
+              - row [ref=f17e101]:
+                - cell "Lenovo ThinkPad T14" [ref=f17e102]
+                - cell "Ahmad Fauzi Bunga Lestari +1 lainnya" [ref=f17e103]:
+                  - generic [ref=f17e104]: Ahmad Fauzi
+                  - generic [ref=f17e105]: Bunga Lestari
+                  - text: +1 lainnya
+                - cell "21 Sep 2026, 08:38" [ref=f17e106]
+                - cell [ref=f17e107]:
+                  - link " Verifikasi" [ref=f17e109] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8899/admin#verifikasi-1
+                    - generic [ref=f17e110]: 
+                    - text: Verifikasi
+          - generic [ref=f17e111]:
+            - generic [ref=f17e112]:
+              - generic [ref=f17e113]:
+                - strong [ref=f17e114]: Lenovo ThinkPad T14
+                - generic [ref=f17e115]: Dipinjam 21 Sep 2026, 08:37 oleh Ahmad Fauzi, Bunga Lestari, Citra Ayu.
+              - generic [ref=f17e116]: Menunggu
+            - generic [ref=f17e117]:
+              - textbox "Kondisi laptop (mis. Baik, Rusak ringan)" [ref=f17e119]
+              - textbox "Catatan (opsional)" [ref=f17e121]
+              - generic [ref=f17e122]:
+                - button " Setujui" [ref=f17e123] [cursor=pointer]:
+                  - generic [ref=f17e124]: 
+                  - text: Setujui
+                - button " Tolak" [ref=f17e125] [cursor=pointer]:
+                  - generic [ref=f17e126]: 
+                  - text: Tolak
+        - generic [ref=f17e128]:
+          - heading "Peminjaman Terbaru" [level=2] [ref=f17e130]
+          - generic [ref=f17e132]:
+            - generic [ref=f17e133]: 
+            - generic [ref=f17e135]:
+              - generic [ref=f17e136]: Lenovo ThinkPad T14
+              - generic [ref=f17e137]: Ahmad Fauzi, Bunga Lestari • 21 Sep, 08:37
+            - generic [ref=f17e138]: MENUNGGU
+    - contentinfo [ref=f17e139]:
+      - generic [ref=f17e140]:
+        - generic [ref=f17e141]:
+          - generic [ref=f17e142]: 
+          - text: PemlapTex
+        - generic [ref=f17e143]: "|"
+        - generic [ref=f17e144]: © 2026 Peminjaman Laptop Sekolah

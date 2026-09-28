@@ -1,0 +1,37 @@
+- generic [ref=f57e3]:
+  - link " PemlapTex" [ref=f57e4] [cursor=pointer]:
+    - /url: http://127.0.0.1:8899/login
+    - generic [ref=f57e5]: 
+    - generic [ref=f57e6]: PemlapTex
+  - paragraph [ref=f57e7]:
+    - text: Sistem Peminjaman Laptop Sekolah — masuk sebagai
+    - strong [ref=f57e8]: Siswa
+  - alert [ref=f57e9]:
+    - generic [ref=f57e10]: 
+    - text: Akun ini bukan akun Siswa. Gunakan halaman login yang sesuai.
+  - generic [ref=f57e11]:
+    - generic [ref=f57e12]:
+      - generic [ref=f57e13]: Username (NIS)
+      - generic [ref=f57e14]:
+        - generic: 
+        - textbox "Username (NIS)" [active] [ref=f57e15]:
+          - /placeholder: Masukkan NIS / username
+          - text: admin
+    - generic [ref=f57e16]:
+      - generic [ref=f57e17]: Password
+      - generic [ref=f57e18]:
+        - generic: 
+        - textbox "Password" [ref=f57e19]:
+          - /placeholder: ••••••••
+        - button "Show password" [ref=f57e20] [cursor=pointer]:
+          - generic [ref=f57e21]: 
+    - generic [ref=f57e23] [cursor=pointer]:
+      - checkbox "Ingat Saya" [ref=f57e24]
+      - generic [ref=f57e25]: Ingat Saya
+    - button "Masuk ke Dashboard " [ref=f57e26] [cursor=pointer]:
+      - generic [ref=f57e27]: Masuk ke Dashboard
+      - generic [ref=f57e28]: 
+  - paragraph [ref=f57e29]:
+    - text: Anda Admin?
+    - link "Masuk sebagai Admin →" [ref=f57e30] [cursor=pointer]:
+      - /url: http://127.0.0.1:8899/admin

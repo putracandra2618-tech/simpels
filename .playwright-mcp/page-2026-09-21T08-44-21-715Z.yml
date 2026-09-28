@@ -1,0 +1,147 @@
+- generic [ref=f38e1]:
+  - generic [ref=f38e2]:
+    - link " PemlapTex" [ref=f38e3] [cursor=pointer]:
+      - /url: http://127.0.0.1:8899/dashboard
+      - generic [ref=f38e4]: 
+      - generic [ref=f38e5]: PemlapTex
+    - generic [ref=f38e7]:
+      - generic [ref=f38e8]: Menu
+      - list [ref=f38e9]:
+        - listitem [ref=f38e10]:
+          - link " Dashboard" [ref=f38e11] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/dashboard
+            - generic [ref=f38e12]: 
+            - generic [ref=f38e13]: Dashboard
+        - listitem [ref=f38e14]:
+          - link " Pinjam Laptop" [ref=f38e15] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/pinjam
+            - generic [ref=f38e16]: 
+            - generic [ref=f38e17]: Pinjam Laptop
+        - listitem [ref=f38e18]:
+          - link " Kembalikan Laptop" [ref=f38e19] [cursor=pointer]:
+            - /url: http://127.0.0.1:8899/kembali
+            - generic [ref=f38e20]: 
+            - generic [ref=f38e21]: Kembalikan Laptop
+    - generic [ref=f38e22]:
+      - img "Dimas Prasetyo" [ref=f38e23]
+      - generic [ref=f38e24]:
+        - generic [ref=f38e25]: Dimas Prasetyo
+        - generic [ref=f38e26]: "20240004"
+  - generic [ref=f38e27]:
+    - banner [ref=f38e28]:
+      - generic [ref=f38e29]:
+        - text: 
+        - button "Toggle Navigation" [ref=f38e30] [cursor=pointer]:
+          - generic [ref=f38e31]: 
+      - generic [ref=f38e33]:
+        - generic [ref=f38e34]: 
+        - text: Peminjaman Laptop Sekolah
+      - generic [ref=f38e35]:
+        - button "Toggle Fullscreen" [ref=f38e36] [cursor=pointer]:
+          - generic [ref=f38e37]: 
+        - button "" [ref=f38e39] [cursor=pointer]
+        - generic [ref=f38e41]:
+          - button "Profile Dimas Prasetyo " [ref=f38e42] [cursor=pointer]:
+            - img "Profile" [ref=f38e43]
+            - generic [ref=f38e44]: Dimas Prasetyo
+            - generic [ref=f38e45]: 
+          - text: 
+    - generic [ref=f38e47]:
+      - heading "Konfirmasi Peminjaman" [level=1] [ref=f38e48]
+      - paragraph [ref=f38e49]: Periksa informasi laptop lalu pilih anggota peminjaman (maks 5 siswa).
+    - main [ref=f38e50]:
+      - generic [ref=f38e51]:
+        - generic [ref=f38e53]:
+          - heading "Info Laptop" [level=2] [ref=f38e55]
+          - generic [ref=f38e56]:
+            - img "QR Asus Vivobook 14" [ref=f38e57]
+            - heading "Asus Vivobook 14" [level=4] [ref=f38e58]
+            - paragraph [ref=f38e59]: Asus
+            - table [ref=f38e61]:
+              - rowgroup [ref=f38e62]:
+                - row [ref=f38e63]:
+                  - cell "Spesifikasi" [ref=f38e64]
+                  - cell "AMD Ryzen 7 5700U RAM 16 GB DDR4 SSD 512 GB Layar 14\" FHD IPS" [ref=f38e65]
+                - row [ref=f38e66]:
+                  - cell "Status" [ref=f38e67]
+                  - cell "Tersedia" [ref=f38e68]
+        - generic [ref=f38e72]:
+          - generic [ref=f38e73]:
+            - heading "Pilih Anggota Peminjaman" [level=2] [ref=f38e74]
+            - generic [ref=f38e75]: 4/5
+          - generic [ref=f38e76]:
+            - generic [ref=f38e77]:
+              - generic [ref=f38e78]: 
+              - textbox "Cari NIS, nama, kelas, atau jurusan..." [ref=f38e79]
+            - generic [ref=f38e80]:
+              - checkbox "Dimas Prasetyo — 20240004 • XI MM Anda (scan)" [checked] [disabled] [ref=f38e81]
+              - generic [ref=f38e82]:
+                - strong [ref=f38e83]: Dimas Prasetyo
+                - generic [ref=f38e84]:
+                  - text: — 20240004 • XI MM
+                  - generic [ref=f38e85]: Anda (scan)
+            - generic [ref=f38e86]:
+              - generic [ref=f38e87]:
+                - checkbox "Ahmad Fauzi — 20240001 • XII RPL" [checked] [ref=f38e88] [cursor=pointer]
+                - generic [ref=f38e89]:
+                  - strong [ref=f38e90]: Ahmad Fauzi
+                  - text: — 20240001 • XII RPL
+              - generic [ref=f38e91]:
+                - checkbox "Citra Ayu — 20240003 • XI RPL" [checked] [ref=f38e92] [cursor=pointer]
+                - generic [ref=f38e93]:
+                  - strong [ref=f38e94]: Citra Ayu
+                  - text: — 20240003 • XI RPL
+              - generic [ref=f38e95]:
+                - checkbox "Eka Wulandari — 20240005 • X RPL" [checked] [active] [ref=f38e96] [cursor=pointer]
+                - generic [ref=f38e97]:
+                  - strong [ref=f38e98]: Eka Wulandari
+                  - text: — 20240005 • X RPL
+              - generic [ref=f38e99]:
+                - checkbox "Fajar Ramadhan — 20240006 • X TOI" [ref=f38e100] [cursor=pointer]
+                - generic [ref=f38e101]:
+                  - strong [ref=f38e102]: Fajar Ramadhan
+                  - text: — 20240006 • X TOI
+              - generic [ref=f38e103]:
+                - checkbox "Gita Maharani — 20240007 • XII RPL" [ref=f38e104] [cursor=pointer]
+                - generic [ref=f38e105]:
+                  - strong [ref=f38e106]: Gita Maharani
+                  - text: — 20240007 • XII RPL
+              - generic [ref=f38e107]:
+                - checkbox "Hendra Gunawan — 20240008 • XII TKJ" [ref=f38e108] [cursor=pointer]
+                - generic [ref=f38e109]:
+                  - strong [ref=f38e110]: Hendra Gunawan
+                  - text: — 20240008 • XII TKJ
+              - generic [ref=f38e111]:
+                - checkbox "Intan Permata — 20240009 • XI RPL" [ref=f38e112] [cursor=pointer]
+                - generic [ref=f38e113]:
+                  - strong [ref=f38e114]: Intan Permata
+                  - text: — 20240009 • XI RPL
+              - generic [ref=f38e115]:
+                - checkbox "Joko Santoso — 20240010 • XI MM" [ref=f38e116] [cursor=pointer]
+                - generic [ref=f38e117]:
+                  - strong [ref=f38e118]: Joko Santoso
+                  - text: — 20240010 • XI MM
+              - generic [ref=f38e119]:
+                - checkbox "Laila Rahmawati — 20240011 • X RPL" [ref=f38e120] [cursor=pointer]
+                - generic [ref=f38e121]:
+                  - strong [ref=f38e122]: Laila Rahmawati
+                  - text: — 20240011 • X RPL
+              - generic [ref=f38e123]:
+                - checkbox "Muhammad Rizki — 20240012 • X TOI" [ref=f38e124] [cursor=pointer]
+                - generic [ref=f38e125]:
+                  - strong [ref=f38e126]: Muhammad Rizki
+                  - text: — 20240012 • X TOI
+          - generic [ref=f38e127]:
+            - generic [ref=f38e128]:
+              - generic [ref=f38e129]: 
+              - text: Maksimal 5 siswa termasuk Anda. Setelah konfirmasi, laptop berstatus Dipinjam.
+            - button "Konfirmasi Pinjam " [ref=f38e130] [cursor=pointer]:
+              - generic [ref=f38e131]: Konfirmasi Pinjam
+              - generic [ref=f38e132]: 
+    - contentinfo [ref=f38e133]:
+      - generic [ref=f38e134]:
+        - generic [ref=f38e135]:
+          - generic [ref=f38e136]: 
+          - text: PemlapTex
+        - generic [ref=f38e137]: "|"
+        - generic [ref=f38e138]: © 2026 Peminjaman Laptop Sekolah
