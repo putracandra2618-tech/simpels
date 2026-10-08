@@ -1,0 +1,110 @@
+- generic [active] [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - link "Logo Simpels Simpels" [ref=f3e3] [cursor=pointer]:
+      - /url: http://localhost:8000/dashboard
+      - img "Logo Simpels" [ref=f3e4]
+      - generic [ref=f3e5]: Simpels
+    - generic [ref=f3e6]:
+      - generic [ref=f3e7]:
+        - button "" [ref=f3e8] [cursor=pointer]
+        - text:   
+      - generic [ref=f3e10]:
+        - button "Foto profil " [ref=f3e11] [cursor=pointer]:
+          - generic "Foto profil" [ref=f3e12]: 
+          - generic [ref=f3e14]: 
+        - text: 
+  - generic [ref=f3e15]:
+    - generic [ref=f3e17]:
+      - heading "Kembalikan Laptop" [level=1] [ref=f3e18]
+      - paragraph [ref=f3e19]: Ajukan pengembalian laptop yang Anda pinjam. Admin akan memverifikasi.
+    - main [ref=f3e20]:
+      - table [ref=f3e23]:
+        - rowgroup [ref=f3e24]:
+          - row [ref=f3e25]:
+            - cell "Laptop MacBook Air 13" [ref=f3e26]
+            - cell "Anggota PUTRA WIDI CANDRA KANTA AFIDATUNNISA AIMATUN NISA ALMIRA SYAFAWIBOWO" [ref=f3e27]:
+              - text: Anggota
+              - generic [ref=f3e28]:
+                - generic [ref=f3e29]: PUTRA WIDI CANDRA KANTA
+                - generic [ref=f3e30]: AFIDATUNNISA
+                - generic [ref=f3e31]: AIMATUN NISA
+                - generic [ref=f3e32]: ALMIRA SYAFAWIBOWO
+            - cell "Dipinjam 07 Oct 2026, 06:40" [ref=f3e33]
+            - cell "Status Dipinjam" [ref=f3e34]:
+              - text: Status
+              - generic [ref=f3e35]: Dipinjam
+            - cell [ref=f3e36]:
+              - text: Aksi
+              - button " Kembalikan Laptop" [ref=f3e39] [cursor=pointer]:
+                - generic [ref=f3e40]: 
+                - text: Kembalikan Laptop
+          - row [ref=f3e41]:
+            - cell "Laptop Lenovo ThinkPad T14" [ref=f3e42]
+            - cell "Anggota PUTRA WIDI CANDRA KANTA DANJI DWI PRASETYO" [ref=f3e43]:
+              - text: Anggota
+              - generic [ref=f3e44]:
+                - generic [ref=f3e45]: PUTRA WIDI CANDRA KANTA
+                - generic [ref=f3e46]: DANJI DWI PRASETYO
+            - cell "Dipinjam 06 Oct 2026, 07:19" [ref=f3e47]
+            - cell "Status Dikembalikan" [ref=f3e48]:
+              - text: Status
+              - generic [ref=f3e49]: Dikembalikan
+            - cell [ref=f3e50]:
+              - text: Aksi
+              - link " Lihat Bukti" [ref=f3e52] [cursor=pointer]:
+                - /url: http://localhost:8000/bukti/3
+                - generic [ref=f3e53]: 
+                - text: Lihat Bukti
+          - row [ref=f3e54]:
+            - cell "Laptop MacBook Air 13" [ref=f3e55]
+            - cell "Anggota PUTRA WIDI CANDRA KANTA" [ref=f3e56]:
+              - text: Anggota
+              - generic [ref=f3e57]: PUTRA WIDI CANDRA KANTA
+            - cell "Dipinjam 24 Sep 2026, 07:23" [ref=f3e59]
+            - cell "Status Dikembalikan" [ref=f3e60]:
+              - text: Status
+              - generic [ref=f3e61]: Dikembalikan
+            - cell [ref=f3e62]:
+              - text: Aksi
+              - link " Lihat Bukti" [ref=f3e64] [cursor=pointer]:
+                - /url: http://localhost:8000/bukti/2
+                - generic [ref=f3e65]: 
+                - text: Lihat Bukti
+          - row [ref=f3e66]:
+            - cell "Laptop MacBook Air 13" [ref=f3e67]
+            - cell "Anggota PUTRA WIDI CANDRA KANTA ERISKA VALENCIA PUTRI MUHAMAD BAGUS PRABOWO PUTRO MUHAMMAD ADRIAN MAULANA" [ref=f3e68]:
+              - text: Anggota
+              - generic [ref=f3e69]:
+                - generic [ref=f3e70]: PUTRA WIDI CANDRA KANTA
+                - generic [ref=f3e71]: ERISKA VALENCIA PUTRI
+                - generic [ref=f3e72]: MUHAMAD BAGUS PRABOWO PUTRO
+                - generic [ref=f3e73]: MUHAMMAD ADRIAN MAULANA
+            - cell "Dipinjam 24 Sep 2026, 04:09" [ref=f3e74]
+            - cell "Status Dikembalikan" [ref=f3e75]:
+              - text: Status
+              - generic [ref=f3e76]: Dikembalikan
+            - cell [ref=f3e77]:
+              - text: Aksi
+              - link " Lihat Bukti" [ref=f3e79] [cursor=pointer]:
+                - /url: http://localhost:8000/bukti/1
+                - generic [ref=f3e80]: 
+                - text: Lihat Bukti
+    - contentinfo [ref=f3e81]:
+      - generic [ref=f3e82]:
+        - generic [ref=f3e83]:
+          - img "Logo Simpels" [ref=f3e84]
+          - text: Simpels
+        - generic [ref=f3e85]: © 2026 Peminjaman Laptop Sekolah
+  - navigation "Menu siswa" [ref=f3e86]:
+    - link " Dashboard" [ref=f3e87] [cursor=pointer]:
+      - /url: http://localhost:8000/dashboard
+      - generic [ref=f3e88]: 
+      - generic [ref=f3e89]: Dashboard
+    - link " Pinjam" [ref=f3e90] [cursor=pointer]:
+      - /url: http://localhost:8000/pinjam
+      - generic [ref=f3e91]: 
+      - generic [ref=f3e92]: Pinjam
+    - link " Kembalikan" [ref=f3e93] [cursor=pointer]:
+      - /url: http://localhost:8000/kembali
+      - generic [ref=f3e94]: 
+      - generic [ref=f3e95]: Kembalikan

@@ -414,4 +414,36 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+
+    // -----------------------------------------------------------------
+    // Notifications: mark all as read when the bell dropdown opens
+    // -----------------------------------------------------------------
+    const notificationsBtn = document.getElementById('btn-notifications');
+
+    if (notificationsBtn) {
+        notificationsBtn.addEventListener('show.bs.dropdown', function () {
+            const badge = notificationsBtn.querySelector('.navbar-action-badge');
+            const readUrl = notificationsBtn.dataset.notificationsReadUrl;
+            const csrfToken = document.querySelector('meta[name="csrf-token"]')?.content;
+
+            document.querySelectorAll('.notification-unread-dot').forEach((dot) => dot.remove());
+
+            if (badge) {
+                badge.remove();
+            }
+
+            if (!readUrl || !csrfToken) {
+                return;
+            }
+
+            fetch(readUrl, {
+                method: 'POST',
+                headers: {
+                    'X-CSRF-TOKEN': csrfToken,
+                    'Accept': 'application/json',
+                },
+                keepalive: true,
+            }).catch(() => {});
+        });
+    }
 });

@@ -4,6 +4,7 @@ namespace Database\Factories;
 
 use App\Models\Borrowing;
 use App\Models\Laptop;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -20,6 +21,7 @@ class BorrowingFactory extends Factory
     {
         return [
             'laptop_id' => Laptop::factory(),
+            'created_by' => User::factory(),
             'borrowed_at' => now(),
             'status' => 'aktif',
             'returned_at' => null,

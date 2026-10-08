@@ -5,8 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Borrowing;
 use App\Models\Laptop;
 use App\Models\ReturnRequest;
-use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
 
@@ -63,10 +63,10 @@ class DashboardController extends Controller
         return view('dashboard.siswa', compact('myBorrowings', 'sessionsAktif', 'sessionsSelesai'));
     }
 
-    public function markNotificationsRead(Request $request): RedirectResponse
+    public function markNotificationsRead(Request $request): Response
     {
         $request->user()->unreadNotifications->markAsRead();
 
-        return back();
+        return response()->noContent();
     }
 }

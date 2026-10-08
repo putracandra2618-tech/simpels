@@ -86,7 +86,7 @@ class BorrowingController extends Controller
         $students = User::whereIn('id', $memberIds)->where('role', 'siswa')->get();
         $students = $students->concat([$user])->unique('id');
 
-        $result = DB::transaction(function () use ($laptop, $students): array {
+        $result = DB::transaction(function () use ($laptop, $students, $user): array {
             $lockedLaptop = Laptop::query()->whereKey($laptop->id)->lockForUpdate()->firstOrFail();
 
             if ($lockedLaptop->activeBorrowing() !== null) {
@@ -105,6 +105,7 @@ class BorrowingController extends Controller
 
             $borrowing = Borrowing::create([
                 'laptop_id' => $lockedLaptop->id,
+                'created_by' => $user->id,
                 'borrowed_at' => now(),
                 'status' => 'aktif',
             ]);
@@ -126,7 +127,7 @@ class BorrowingController extends Controller
 
     public function bukti(Borrowing $borrowing): View
     {
-        $borrowing->load(['laptop', 'students']);
+        $borrowing->load(['laptop', 'students', 'leader']);
 
         $isMember = $borrowing->students->contains(fn ($student) => $student->id === Auth::id());
 

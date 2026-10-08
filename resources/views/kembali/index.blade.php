@@ -18,7 +18,7 @@
       </div>
     @else
       <div class="table-responsive">
-        <table class="table-custom">
+        <table class="table-custom table-kembali">
           <thead>
             <tr>
               <th>Laptop</th>
@@ -33,9 +33,11 @@
               <tr>
                 <td data-label="Laptop" class="table-order-id">{{ $borrowing->laptop->nama }}</td>
                 <td data-label="Anggota">
-                  @foreach ($borrowing->students as $student)
-                    <span class="badge bg-forest-light text-lime me-1 mb-1">{{ $student->name }}</span>
-                  @endforeach
+                  <span class="member-badges">
+                    @foreach ($borrowing->students as $student)
+                      <span class="badge bg-forest-light text-lime">{{ $student->name }}</span>
+                    @endforeach
+                  </span>
                 </td>
                 <td data-label="Dipinjam">{{ $borrowing->borrowed_at->format('d M Y, H:i') }}</td>
                 <td data-label="Status">

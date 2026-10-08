@@ -66,7 +66,10 @@ class BorrowingFlowTest extends TestCase
         $laptop = Laptop::factory()->create();
         $borrowedLaptop = Laptop::factory()->create();
 
-        $busyBorrowing = Borrowing::factory()->create(['laptop_id' => $borrowedLaptop->id]);
+        $busyBorrowing = Borrowing::factory()->create([
+            'laptop_id' => $borrowedLaptop->id,
+            'created_by' => $busy->id,
+        ]);
         $busyBorrowing->students()->attach($busy);
 
         $this->actingAs($scanner)
@@ -105,6 +108,10 @@ class BorrowingFlowTest extends TestCase
         $borrowing = Borrowing::firstOrFail();
         $this->assertSame(3, $borrowing->students()->count());
         $this->assertTrue($borrowing->students->contains('id', $scanner->id));
+        $this->assertSame($scanner->id, $borrowing->created_by);
+        $this->assertTrue($borrowing->leader->is($scanner));
+        $this->assertTrue($borrowing->students->first()->is($scanner));
+        $this->assertTrue($borrowing->students->take(2)->contains('id', $scanner->id));
 
         $this->get(route('pinjam.bukti', $borrowing))
             ->assertOk()

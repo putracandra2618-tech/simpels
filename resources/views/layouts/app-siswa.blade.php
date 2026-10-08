@@ -27,7 +27,8 @@
     <div class="siswa-actions">
       <div class="dropdown">
         <button class="navbar-action-btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-          aria-expanded="false" id="btn-notifications" data-bs-auto-close="outside">
+          aria-expanded="false" id="btn-notifications" data-bs-auto-close="outside"
+          data-notifications-read-url="{{ route('notifications.read') }}">
           <i class="bi bi-bell"></i>
           @if (auth()->user()->unreadNotifications()->count() > 0)
             <span class="navbar-action-badge"></span>
@@ -37,10 +38,6 @@
           aria-labelledby="btn-notifications">
           <div class="notification-header">
             <h6 class="notification-title">Notifikasi</h6>
-            <form method="POST" action="{{ route('notifications.read') }}">
-              @csrf
-              <button class="btn-clear-all" type="submit">Tandai dibaca</button>
-            </form>
           </div>
           <div class="notification-list">
             @forelse (auth()->user()->notifications()->take(5)->get() as $notification)

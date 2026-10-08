@@ -26,10 +26,16 @@ class Borrowing extends Model
         return $this->belongsTo(Laptop::class);
     }
 
+    public function leader(): BelongsTo
+    {
+        return $this->belongsTo(User::class, 'created_by');
+    }
+
     public function students(): BelongsToMany
     {
         return $this->belongsToMany(User::class, 'borrowing_students')
-            ->withTimestamps();
+            ->withTimestamps()
+            ->orderByRaw('borrowing_students.user_id = (select created_by from borrowings where borrowings.id = borrowing_students.borrowing_id) desc');
     }
 
     public function returnRequests(): HasMany

@@ -124,9 +124,9 @@
               Dicetak pada {{ now()->format('d M Y, H:i:s') }}
             </div>
             <div class="text-center">
-              <div class="small text-muted mb-2">Peminjam</div>
+              <div class="small text-muted mb-2">Penanggung Jawab</div>
               <div class="text-uppercase fw-bold" style="min-width:120px; padding-top: 30px; border-top: 1px solid #adb5bd;">
-                {{ $borrowing->students->first()?->name }}
+                {{ $borrowing->leader?->name }}
               </div>
             </div>
           </div>

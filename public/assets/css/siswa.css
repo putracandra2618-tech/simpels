@@ -465,7 +465,45 @@
 }
 
 /* --------------------------------------------------------------------- */
-/* 11. Tabel -> kartu di mobile (pakai data-label pada tiap <td>) */
+/* 11. Tabel pengembalian — kolom tetap, anggota membungkus */
+/* --------------------------------------------------------------------- */
+.table-kembali {
+    table-layout: fixed;
+}
+
+.table-kembali th,
+.table-kembali td {
+    white-space: normal;
+}
+
+.table-kembali th:nth-child(1) {
+    width: 17%;
+}
+
+.table-kembali th:nth-child(2) {
+    width: 35%;
+}
+
+.table-kembali th:nth-child(3) {
+    width: 17%;
+}
+
+.table-kembali th:nth-child(4) {
+    width: 14%;
+}
+
+.table-kembali th:nth-child(5) {
+    width: 17%;
+}
+
+.table-kembali .member-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+/* --------------------------------------------------------------------- */
+/* 12. Tabel -> kartu di mobile (pakai data-label pada tiap <td>) */
 /* --------------------------------------------------------------------- */
 @media (max-width: 767.98px) {
     .table-card-custom {
@@ -558,10 +596,17 @@
         width: 100%;
         min-height: 44px;
     }
+
+    .table-custom td .member-badges {
+        flex: 1 1 auto;
+        min-width: 0;
+        flex-direction: column;
+        align-items: flex-end;
+    }
 }
 
 /* --------------------------------------------------------------------- */
-/* 12. Bukti — daftar anggota versi mobile */
+/* 13. Bukti — daftar anggota versi mobile */
 /* --------------------------------------------------------------------- */
 .receipt-mobile-list {
     display: flex;
