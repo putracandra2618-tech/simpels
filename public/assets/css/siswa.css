@@ -507,7 +507,11 @@
 /* --------------------------------------------------------------------- */
 @media (max-width: 767.98px) {
     .table-card-custom {
-        border-radius: var(--radius-lg);
+        background-color: transparent;
+        border: none !important;
+        box-shadow: none;
+        border-radius: 0;
+        overflow: visible;
     }
 
     .table-custom,

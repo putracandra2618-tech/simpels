@@ -45,6 +45,10 @@ class Borrowing extends Model
 
     public function latestReturnRequest(): ?ReturnRequest
     {
+        if ($this->relationLoaded('returnRequests')) {
+            return $this->returnRequests->sortByDesc('requested_at')->first();
+        }
+
         return $this->returnRequests()->latest('requested_at')->first();
     }
 

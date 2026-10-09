@@ -366,10 +366,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
             
-            // Trigger a window resize event so that charts (ApexCharts) redraw correctly
-            setTimeout(() => {
-                window.dispatchEvent(new Event('resize'));
-            }, 300);
+            // Trigger a window resize event so any mounted charts (ApexCharts) redraw correctly
+            if (document.querySelector('.apexcharts-canvas')) {
+                setTimeout(() => {
+                    window.dispatchEvent(new Event('resize'));
+                }, 300);
+            }
         });
     }
 

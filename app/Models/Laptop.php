@@ -24,6 +24,11 @@ class Laptop extends Model
         return $this->hasMany(Borrowing::class);
     }
 
+    public function activeBorrowings(): HasMany
+    {
+        return $this->hasMany(Borrowing::class)->whereIn('status', ['aktif', 'menunggu']);
+    }
+
     public function activeBorrowing(): ?Borrowing
     {
         return $this->borrowings()

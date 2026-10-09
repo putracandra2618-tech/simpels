@@ -31,7 +31,7 @@ class DashboardController extends Controller
         $menungguVerifikasi = ReturnRequest::where('status', 'menunggu')->count();
 
         $returnRequests = ReturnRequest::where('status', 'menunggu')
-            ->with('borrowing.laptop')
+            ->with(['borrowing.laptop', 'borrowing.students'])
             ->latest('requested_at')
             ->get();
 

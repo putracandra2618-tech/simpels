@@ -50,8 +50,15 @@
                   @endif
                 </td>
                 <td data-label="Aksi">
-                  <div class="d-flex justify-content-center gap-2 siswa-table-actions">
+                  <div class="d-flex flex-column align-items-center gap-2 siswa-table-actions">
                     @if ($borrowing->status === 'aktif')
+                      @php $last = $borrowing->latestReturnRequest(); @endphp
+                      @if ($last && $last->status === 'ditolak')
+                        <div class="small text-center">
+                          <span class="text-danger"><i class="bi bi-x-circle me-1"></i>Pengembalian ditolak:</span>
+                          <span class="text-muted">{{ $last->admin_notes ?? 'Silakan hubungi Admin.' }}</span>
+                        </div>
+                      @endif
                       <form method="POST" action="{{ route('kembali.request', $borrowing) }}"
                         onsubmit="return confirm('Ajukan pengembalian laptop {{ $borrowing->laptop->nama }}? Admin akan memverifikasi.');">
                         @csrf
@@ -60,15 +67,7 @@
                         </button>
                       </form>
                     @elseif ($borrowing->status === 'menunggu')
-                      @php $last = $borrowing->latestReturnRequest(); @endphp
-                      @if ($last && $last->status === 'ditolak')
-                        <div class="small">
-                          <span class="text-danger"><i class="bi bi-x-circle me-1"></i>Ditolak Admin:</span>
-                          <span class="text-muted">{{ $last->admin_notes ?? 'Silakan hubungi Admin.' }}</span>
-                        </div>
-                      @else
-                        <span class="text-muted small"><i class="bi bi-hourglass-split me-1"></i>Menunggu verifikasi Admin...</span>
-                      @endif
+                      <span class="text-muted small"><i class="bi bi-hourglass-split me-1"></i>Menunggu verifikasi Admin...</span>
                     @else
                       <a href="{{ route('pinjam.bukti', $borrowing) }}" class="btn btn-outline-success">
                         <i class="bi bi-file-earmark-text"></i> Lihat Bukti

@@ -179,5 +179,42 @@ class BorrowingFlowTest extends TestCase
             ->assertForbidden();
     }
 
+    public function test_bukti_is_blocked_for_non_member_when_borrowing_completed(): void
+    {
+        $member = User::factory()->siswa()->create();
+        $outsider = User::factory()->siswa()->create();
+        $laptop = Laptop::factory()->create();
+
+        $borrowing = Borrowing::factory()->create([
+            'laptop_id' => $laptop->id,
+            'status' => 'dikembalikan',
+            'returned_at' => now(),
+        ]);
+        $borrowing->students()->attach($member);
+
+        $this->actingAs($outsider)
+            ->get(route('pinjam.bukti', $borrowing))
+            ->assertForbidden();
+
+        $this->actingAs($member)
+            ->get(route('pinjam.bukti', $borrowing))
+            ->assertOk();
+    }
+
+    public function test_konfirmasi_redirects_when_laptop_is_borrowed(): void
+    {
+        $scanner = User::factory()->siswa()->create();
+        $laptop = Laptop::factory()->create();
+        Borrowing::factory()->create([
+            'laptop_id' => $laptop->id,
+            'status' => 'aktif',
+        ]);
+
+        $this->actingAs($scanner)
+            ->get(route('pinjam.konfirmasi', $laptop))
+            ->assertRedirect(route('pinjam.scan'))
+            ->assertSessionHas('error', "Laptop \"{$laptop->nama}\" sedang dipinjam.");
+    }
+
     private const MAX_STUDENTS = 5;
 }

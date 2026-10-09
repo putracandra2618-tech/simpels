@@ -2,6 +2,8 @@
 
 namespace Tests\Feature;
 
+use App\Models\Borrowing;
+use App\Models\Laptop;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Hash;
@@ -155,6 +157,49 @@ class UserManagementTest extends TestCase
         $this->assertTrue(Hash::check('barubaru123', $siswa->password));
     }
 
+    public function test_resetting_password_invalidates_remember_token(): void
+    {
+        $admin = User::factory()->admin()->create();
+        $siswa = User::factory()->siswa()->create(['username' => '20240010']);
+
+        $oldToken = $siswa->remember_token;
+
+        $this->actingAs($admin)
+            ->put(route('admin.user.update', $siswa), [
+                'name' => $siswa->name,
+                'username' => $siswa->username,
+                'password' => 'newpassword123',
+                'password_confirmation' => 'newpassword123',
+                'role' => 'siswa',
+                'kelas' => 'X',
+                'jurusan' => 'RPL',
+            ])
+            ->assertRedirect(route('admin.user.index'));
+
+        $this->assertNotSame($oldToken, $siswa->fresh()->remember_token);
+    }
+
+    public function test_updating_profile_without_password_keeps_remember_token(): void
+    {
+        $admin = User::factory()->admin()->create();
+        $siswa = User::factory()->siswa()->create(['username' => '20240009']);
+
+        $oldToken = $siswa->remember_token;
+
+        $this->actingAs($admin)
+            ->put(route('admin.user.update', $siswa), [
+                'name' => 'Nama Baru',
+                'username' => $siswa->username,
+                'password' => null,
+                'role' => 'siswa',
+                'kelas' => 'X',
+                'jurusan' => 'RPL',
+            ])
+            ->assertRedirect(route('admin.user.index'));
+
+        $this->assertSame($oldToken, $siswa->fresh()->remember_token);
+    }
+
     public function test_admin_can_delete_siswa_account(): void
     {
         $admin = User::factory()->admin()->create();
@@ -165,6 +210,24 @@ class UserManagementTest extends TestCase
             ->assertRedirect(route('admin.user.index'));
 
         $this->assertDatabaseMissing('users', ['username' => '20240055']);
+    }
+
+    public function test_admin_cannot_delete_siswa_with_active_borrowing(): void
+    {
+        $admin = User::factory()->admin()->create();
+        $siswa = User::factory()->siswa()->create(['username' => '20240011']);
+        $laptop = Laptop::factory()->create();
+        $borrowing = Borrowing::factory()->create([
+            'laptop_id' => $laptop->id,
+            'status' => 'aktif',
+        ]);
+        $borrowing->students()->attach($siswa);
+
+        $this->actingAs($admin)
+            ->delete(route('admin.user.destroy', $siswa))
+            ->assertSessionHas('error', "Akun \"{$siswa->name}\" tidak dapat dihapus karena masih terlibat dalam peminjaman aktif.");
+
+        $this->assertDatabaseHas('users', ['id' => $siswa->id]);
     }
 
     public function test_admin_cannot_delete_own_account(): void

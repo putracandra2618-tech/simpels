@@ -91,7 +91,7 @@
           'merek' => $l->merek,
       ])->values();
     @endphp
-    const laptops = {!! $qrPrintData->toJson() !!};
+    const laptops = {{ Illuminate\Support\Js::from($qrPrintData) }};
 
     const root = document.getElementById('print-root');
 

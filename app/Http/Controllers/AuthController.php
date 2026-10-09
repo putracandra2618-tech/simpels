@@ -6,10 +6,13 @@ use App\Models\User;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\View\View;
 
 class AuthController extends Controller
 {
+    private const DUMMY_HASH = '$2y$12$fLGcJDihD0VdFZmw5fEASuDd1WnQ3tvA/37Yc3pU6/GwkUcP9S3OO';
+
     public function showLogin(): View
     {
         return view('auth.login');
@@ -32,15 +35,15 @@ class AuthController extends Controller
 
         $user = User::where('username', $credentials['username'])->first();
 
-        if ($user !== null && ! $this->matchesRole($user->role, $role)) {
-            $label = $role === 'admin' ? 'Admin' : 'Siswa';
+        $roleMatches = $user !== null && $this->matchesRole($user->role, $role);
 
-            return back()
-                ->withInput($request->only('username'))
-                ->withErrors(['username' => "Akun ini bukan akun {$label}. Gunakan halaman login yang sesuai."]);
+        if ($user === null) {
+            Hash::check($credentials['password'], self::DUMMY_HASH);
+        } elseif (! $roleMatches) {
+            Hash::check($credentials['password'], $user->getAuthPassword());
         }
 
-        if ($user === null || ! Auth::attempt($credentials, $request->boolean('remember'))) {
+        if (! $roleMatches || ! Auth::attempt($credentials, $request->boolean('remember'))) {
             return back()
                 ->withInput($request->only('username'))
                 ->withErrors(['username' => 'Login Gagal. Periksa kembali username atau password Anda.']);

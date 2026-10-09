@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 a {
     color: var(--brand-forest-medium);
     text-decoration: none;
-    transition: all 0.25s ease-in-out;
+    transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
 }
 a:hover {
     color: var(--brand-lime-hover);
@@ -154,7 +154,7 @@ a:hover {
     flex-direction: column;
     padding: 2rem 1.5rem;
     border-right: 1px solid rgba(255, 255, 255, 0.15);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sidebar-brand {
@@ -221,7 +221,7 @@ a:hover {
     color: #C6E0D2;
     border-radius: var(--radius-md);
     font-weight: 500;
-    transition: all 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
     position: relative;
 }
 
@@ -424,7 +424,7 @@ body.sidebar-minimized .sidebar-profile {
     margin-left: var(--sidebar-width);
     padding: 2rem 2.5rem;
     min-height: 100vh;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
 }
@@ -470,7 +470,7 @@ body.sidebar-minimized .sidebar-profile {
     align-items: center;
     gap: 0.5rem;
     box-shadow: var(--shadow-sm);
-    transition: all 0.25s ease-in-out;
+    transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
     cursor: pointer;
 }
 
@@ -528,7 +528,7 @@ body.sidebar-minimized .sidebar-profile {
     display: flex;
     align-items: center;
     gap: 0.65rem;
-    transition: all 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 .dropdown-menu-quick-action .dropdown-item i {
@@ -582,7 +582,7 @@ body.sidebar-minimized .sidebar-profile {
     color: var(--text-main);
     outline: none;
     box-shadow: var(--shadow-sm);
-    transition: all 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 .navbar-search-input:focus {
@@ -623,7 +623,7 @@ body.sidebar-minimized .sidebar-profile {
     font-size: 1.15rem;
     position: relative;
     box-shadow: var(--shadow-sm);
-    transition: all 0.25s ease;
+    transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease, opacity 0.25s ease;
 }
 
 .navbar-action-btn:hover {
@@ -641,7 +641,15 @@ body.sidebar-minimized .sidebar-profile {
     border-radius: 50rem;
     border: 2px solid #FFFFFF;
     box-shadow: 0 0 8px rgba(34, 197, 94, 0.6);
-    animation: statusPulse 2s infinite;
+}
+
+.navbar-action-badge::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+    background-color: var(--sys-green);
+    animation: statusPing 2s ease-out infinite;
 }
 
 .navbar-actions .dropdown-toggle::after {
@@ -764,7 +772,7 @@ body.sidebar-minimized .sidebar-profile {
     font-weight: 700;
     color: var(--brand-forest-medium);
     text-decoration: none;
-    transition: all 0.25s ease-in-out;
+    transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
 }
 
 .notification-footer:hover {
@@ -783,7 +791,7 @@ body.sidebar-minimized .sidebar-profile {
     align-items: center;
     gap: 0.75rem;
     box-shadow: var(--shadow-sm);
-    transition: all 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 .btn-dark-custom:hover {
@@ -830,7 +838,7 @@ body.sidebar-minimized .sidebar-profile {
     color: var(--text-main);
     cursor: pointer;
     box-shadow: var(--shadow-sm);
-    transition: all 0.25s ease;
+    transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease, opacity 0.25s ease;
 }
 
 .btn-desktop-toggle:hover {
@@ -994,6 +1002,7 @@ body.sidebar-minimized .sidebar-profile {
 }
 
 .alert-green-badge {
+    position: relative;
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
@@ -1013,18 +1022,29 @@ body.sidebar-minimized .sidebar-profile {
     height: 6px;
     background-color: var(--sys-red);
     border-radius: 50rem;
-    animation: redPulse 2s infinite;
 }
 
-@keyframes redPulse {
+.alert-green-badge::after {
+    content: '';
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    width: 6px;
+    height: 6px;
+    margin-top: -3px;
+    border-radius: 50rem;
+    background-color: var(--sys-red);
+    animation: redPing 2s ease-out infinite;
+}
+
+@keyframes redPing {
     0% {
-        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.5);
+        transform: scale(0.7);
+        opacity: 0.6;
     }
-    70% {
-        box-shadow: 0 0 0 6px rgba(239, 68, 68, 0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+    70%, 100% {
+        transform: scale(2.4);
+        opacity: 0;
     }
 }
 
@@ -1050,7 +1070,7 @@ body.sidebar-minimized .sidebar-profile {
     align-items: center;
     gap: 0.25rem;
     margin-top: auto;
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .alert-green-link:hover {
@@ -1298,7 +1318,7 @@ body.sidebar-minimized .sidebar-profile {
     width: 100%;
     margin-top: 1.5rem;
     z-index: 2;
-    transition: all 0.25s ease;
+    transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease, opacity 0.25s ease;
 }
 
 .btn-promo:hover {
@@ -1453,7 +1473,7 @@ body.sidebar-minimized .sidebar-profile {
     top: 50% !important;
     transform: translateY(-50%) !important;
     background: transparent !important;
-    transition: all 0.2s ease !important;
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease, opacity 0.2s ease !important;
     color: var(--text-main) !important;
     fill: var(--text-main) !important;
 }
@@ -1508,7 +1528,7 @@ span.flatpickr-weekday {
     line-height: 38px !important;
     max-width: 38px !important;
     font-size: 0.85rem !important;
-    transition: all 0.15s ease !important;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease, opacity 0.15s ease !important;
     border: none !important;
     margin: 0 auto !important;
 }
@@ -1573,7 +1593,7 @@ span.flatpickr-weekday {
     padding: 8px 6px !important;
     min-width: 170px !important;
     margin-top: 6px !important;
-    transition: all 0.2s ease !important;
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease, opacity 0.2s ease !important;
     border: 1px solid var(--border-light) !important;
     z-index: 1050 !important;
 }
@@ -1588,7 +1608,7 @@ span.flatpickr-weekday {
     display: flex !important;
     align-items: center !important;
     gap: 8px !important;
-    transition: all 0.15s ease !important;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease, opacity 0.15s ease !important;
 }
 
 .dropdown-menu-custom .dropdown-item i {
@@ -1632,7 +1652,7 @@ span.flatpickr-weekday {
     gap: 1.5rem;
     font-size: 0.85rem;
     color: var(--text-muted-green);
-    transition: all 0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
 }
 
 .footer-left {
@@ -1712,6 +1732,7 @@ span.flatpickr-weekday {
 
 
 .footer-link .status-dot {
+    position: relative;
     display: inline-block;
     width: 6px;
     height: 6px;
@@ -1720,18 +1741,25 @@ span.flatpickr-weekday {
     margin-left: 0.35rem;
     vertical-align: middle;
     box-shadow: 0 0 6px var(--sys-green);
-    animation: statusPulse 2s infinite;
 }
 
-@keyframes statusPulse {
+.footer-link .status-dot::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background-color: var(--sys-green);
+    animation: statusPing 2s ease-out infinite;
+}
+
+@keyframes statusPing {
     0% {
-        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4);
+        transform: scale(0.7);
+        opacity: 0.6;
     }
-    70% {
-        box-shadow: 0 0 0 6px rgba(34, 197, 94, 0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+    70%, 100% {
+        transform: scale(2.2);
+        opacity: 0;
     }
 }
 
@@ -1890,7 +1918,7 @@ span.flatpickr-weekday {
     font-weight: 600;
     color: var(--text-main);
     outline: none;
-    transition: all 0.25s ease-in-out;
+    transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
 }
 
 /* Adjust padding for password field to fit eye toggle */
@@ -1954,7 +1982,7 @@ span.flatpickr-weekday {
     outline: none;
     cursor: pointer;
     position: relative;
-    transition: all 0.2s ease;
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
     background-color: transparent;
 }
 
@@ -1996,7 +2024,7 @@ span.flatpickr-weekday {
     font-size: 0.95rem;
     width: 100%;
     box-shadow: var(--shadow-sm);
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2067,7 +2095,7 @@ span.flatpickr-weekday {
     justify-content: center;
     gap: 0.5rem;
     box-shadow: var(--shadow-sm);
-    transition: all 0.2s ease;
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
 }
 
 .btn-social:hover {
@@ -2108,7 +2136,7 @@ span.flatpickr-weekday {
     align-items: center;
     gap: 0.65rem;
     border-radius: var(--radius-lg);
-    transition: all 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
     cursor: pointer;
 }
 
@@ -2192,7 +2220,7 @@ span.flatpickr-weekday {
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    transition: all 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 .dropdown-menu-profile .dropdown-item i {
@@ -2333,6 +2361,29 @@ span.flatpickr-weekday {
     background-color: var(--sys-red);
 }
 
+/* Status/role badge di dalam tabel admin & user: teks polos tanpa latar pil & titik */
+.table-custom .badge-table,
+.table-stack .badge-table,
+.table-custom .badge,
+.table-stack .badge {
+    background-color: transparent !important;
+    padding: 0;
+    border-radius: 0;
+    gap: 0;
+}
+
+.table-custom .badge-table::before,
+.table-stack .badge-table::before {
+    display: none;
+}
+
+.table-custom .badge.text-lime,
+.table-stack .badge.text-lime,
+.table-custom .badge.text-white,
+.table-stack .badge.text-white {
+    color: var(--brand-forest-dark) !important;
+}
+
 /* Table Controls Top bar */
 .table-header-control {
     background-color: #FFFFFF;
@@ -2358,12 +2409,31 @@ span.flatpickr-weekday {
     border-radius: var(--radius-lg);
     border: 1px solid rgba(11, 19, 15, 0.1);
     background-color: #FDFDFD;
-    transition: all 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 .table-search-input:focus {
     outline: none;
     border-color: var(--brand-forest-medium);
+    box-shadow: 0 0 0 3px rgba(7, 47, 31, 0.08);
+}
+
+.table-header-control .form-select {
+    padding: 0.5rem 2.25rem 0.5rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--brand-forest-dark);
+    background-color: #FFFFFF;
+    border: 1px solid rgba(11, 19, 15, 0.1);
+    border-radius: var(--radius-lg);
+    background-position: right 0.75rem center;
+    background-size: 12px 10px;
+}
+
+.table-header-control .form-select:focus {
+    border-color: var(--brand-forest-medium);
+    outline: 0;
     box-shadow: 0 0 0 3px rgba(7, 47, 31, 0.08);
 }
 
@@ -2394,7 +2464,7 @@ span.flatpickr-weekday {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
-    transition: all 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 .btn-table-action:hover {
@@ -2414,7 +2484,7 @@ span.flatpickr-weekday {
     align-items: center;
     justify-content: center;
     font-size: 0.85rem;
-    transition: all 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
     text-decoration: none;
 }
 
@@ -2468,7 +2538,7 @@ span.flatpickr-weekday {
     border-radius: var(--radius-md);
     color: var(--brand-forest-dark);
     background-color: transparent;
-    transition: all 0.25s ease-in-out;
+    transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
 }
 
 .table-footer-control .pagination .page-link:hover {
@@ -2789,7 +2859,7 @@ span.flatpickr-weekday {
     padding: 0.6rem 1.25rem;
     border-radius: var(--radius-lg);
     border: 1px solid transparent;
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     text-decoration: none;
     line-height: 1.5;
@@ -2946,7 +3016,7 @@ span.flatpickr-weekday {
     justify-content: center;
     padding: 0.25rem;
     border-radius: var(--radius-md);
-    transition: all 0.2s ease;
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
     opacity: 0.5;
 }
 
@@ -3155,7 +3225,7 @@ span.flatpickr-weekday {
     padding: 0.85rem 1rem;
     background-color: var(--bs-body-bg);
     border-radius: var(--radius-lg);
-    transition: all 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 .transaction-item:hover {
@@ -3247,6 +3317,163 @@ span.flatpickr-weekday {
 
     .login-options {
         margin-bottom: 1.25rem;
+    }
+}
+
+/* --------------------------------------------------------------------- */
+/* Badge daftar anggota (desktop) */
+/* --------------------------------------------------------------------- */
+.member-badges {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+/* --------------------------------------------------------------------- */
+/* Tabel admin -> kartu berlabel di mobile (pakai data-label pada tiap <td>) */
+/* --------------------------------------------------------------------- */
+@media (max-width: 767.98px) {
+    .table-card-custom {
+        background-color: transparent;
+        border: none !important;
+        box-shadow: none;
+        border-radius: 0;
+        overflow: visible;
+    }
+
+    .table-card-custom .table-header-control {
+        background-color: transparent;
+        border-bottom: none;
+        padding: 0.25rem 0.75rem 0;
+    }
+
+    .table-header-control {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+
+    .table-header-control .table-filter-group {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .table-header-control .table-search-box {
+        max-width: none !important;
+        width: 100%;
+    }
+
+    .table-header-control .form-select {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .card.card-table-stack {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0;
+        overflow: visible;
+        margin-bottom: 0;
+    }
+
+    .table-stack {
+        display: block;
+        width: 100%;
+    }
+
+    .table-stack thead {
+        display: none;
+    }
+
+    .table-stack tbody {
+        display: block;
+        width: 100%;
+    }
+
+    .table-stack tbody tr {
+        display: block;
+        margin: 0.75rem;
+        padding: 0.9rem 1rem;
+        border: 1px solid rgba(11, 19, 15, 0.08);
+        border-radius: var(--radius-xl);
+        box-shadow: var(--shadow-sm);
+        background-color: #FFFFFF;
+    }
+
+    .table-stack tbody tr:first-child {
+        margin-top: 1rem;
+    }
+
+    .table-stack tbody tr:last-child {
+        margin-bottom: 1rem;
+    }
+
+    .table-stack tbody tr:hover {
+        background-color: #FFFFFF;
+    }
+
+    .table-stack td {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
+        padding: 0.5rem 0;
+        border-bottom: 1px dashed rgba(11, 19, 15, 0.06);
+        white-space: normal;
+        text-align: right;
+        min-height: 2rem;
+    }
+
+    .table-stack td:last-child {
+        border-bottom: none;
+    }
+
+    .table-stack td::before {
+        content: attr(data-label);
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: var(--text-muted-green);
+        flex-shrink: 0;
+        margin-right: auto;
+        text-align: left;
+    }
+
+    .table-stack td:empty::before {
+        content: '';
+    }
+
+    .table-stack td.member-cell .member-badges {
+        flex: 1 1 auto;
+        min-width: 0;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+/* ---------------------------------------------------------------------
+   25. Accessibility: Respect Reduced-Motion Preferences
+--------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .navbar-action-badge::after,
+    .alert-green-badge::after,
+    .footer-link .status-dot::after,
+    .footer-heart,
+    .error-title-huge .bi-asterisk {
+        animation: none !important;
     }
 }
 

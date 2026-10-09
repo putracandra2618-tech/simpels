@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Models\Borrowing;
 use App\Models\Laptop;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -96,6 +97,34 @@ class LaptopCrudTest extends TestCase
 
         $this->assertDatabaseMissing('laptops', ['id' => $laptop->id]);
         $this->assertFileDoesNotExist($qrFile);
+    }
+
+    public function test_admin_cannot_delete_laptop_that_is_borrowed(): void
+    {
+        $admin = User::factory()->admin()->create();
+        $laptop = Laptop::factory()->create();
+        Borrowing::factory()->create([
+            'laptop_id' => $laptop->id,
+            'status' => 'aktif',
+        ]);
+
+        $this->actingAs($admin)
+            ->delete(route('admin.laptop.destroy', $laptop))
+            ->assertRedirect(route('admin.laptop.index'))
+            ->assertSessionHas('error', "Laptop \"{$laptop->nama}\" tidak dapat dihapus karena sedang dipinjam.");
+
+        $this->assertDatabaseHas('laptops', ['id' => $laptop->id]);
+    }
+
+    public function test_qr_print_escapes_script_tags_in_laptop_name(): void
+    {
+        $admin = User::factory()->admin()->create();
+        $laptop = Laptop::factory()->create(['nama' => '</script><script>alert(1)</script>']);
+
+        $this->actingAs($admin)
+            ->get(route('admin.laptop.qr', $laptop))
+            ->assertOk()
+            ->assertDontSee('</script><script>alert(1)', false);
     }
 
     public function test_admin_can_print_multiple_qr_labels(): void

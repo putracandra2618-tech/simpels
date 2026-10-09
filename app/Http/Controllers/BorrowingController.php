@@ -43,8 +43,13 @@ class BorrowingController extends Controller
         return redirect()->route('pinjam.konfirmasi', $laptop);
     }
 
-    public function konfirmasi(Laptop $laptop): View
+    public function konfirmasi(Laptop $laptop): View|RedirectResponse
     {
+        if ($laptop->activeBorrowing() !== null) {
+            return redirect()->route('pinjam.scan')
+                ->with('error', "Laptop \"{$laptop->nama}\" sedang dipinjam.");
+        }
+
         $user = Auth::user();
 
         $activeStudentIds = BorrowingStudent::whereIn('borrowing_id', function ($query) {
@@ -131,7 +136,7 @@ class BorrowingController extends Controller
 
         $isMember = $borrowing->students->contains(fn ($student) => $student->id === Auth::id());
 
-        abort_if($borrowing->status === 'aktif' && ! $isMember, 403);
+        abort_unless($isMember, 403);
 
         return view('pinjam.bukti', compact('borrowing'));
     }

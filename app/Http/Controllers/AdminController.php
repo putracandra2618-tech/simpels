@@ -25,6 +25,10 @@ class AdminController extends Controller
             'admin_notes' => ['nullable', 'string', 'max:1000'],
         ]);
 
+        if ($returnRequest->status !== 'menunggu') {
+            return back()->with('error', 'Permintaan pengembalian ini sudah diproses.');
+        }
+
         $borrowing = $returnRequest->borrowing;
 
         if ($validated['keputusan'] === 'disetujui') {
@@ -85,7 +89,7 @@ class AdminController extends Controller
 
     public function laptopIndex(): View
     {
-        $laptops = Laptop::with('borrowings.students')
+        $laptops = Laptop::with('activeBorrowings.students')
             ->latest()
             ->get();
 
@@ -138,6 +142,11 @@ class AdminController extends Controller
 
     public function laptopDestroy(Laptop $laptop): RedirectResponse
     {
+        if ($laptop->activeBorrowing() !== null) {
+            return redirect()->route('admin.laptop.index')
+                ->with('error', "Laptop \"{$laptop->nama}\" tidak dapat dihapus karena sedang dipinjam.");
+        }
+
         $name = $laptop->nama;
 
         $laptop->delete();
@@ -266,12 +275,19 @@ class AdminController extends Controller
         }
 
         $data = $validated;
+        $passwordChanged = ! blank($data['password']);
 
-        if (blank($data['password'])) {
+        if ($passwordChanged) {
+            $user->setRememberToken(Str::random(60));
+        } else {
             unset($data['password']);
         }
 
         $user->update($data);
+
+        if ($passwordChanged) {
+            DB::table('sessions')->where('user_id', $user->id)->delete();
+        }
 
         return redirect()->route($this->userIndexRoute($scope))
             ->with('success', "Akun \"{$user->name}\" diperbarui.");
@@ -297,6 +313,10 @@ class AdminController extends Controller
 
         if ($scope === 'admin' && $user->isAdmin() && $this->privilegedUserCount() <= 1) {
             return back()->with('error', 'Minimal harus ada satu akun Admin/Super Admin.');
+        }
+
+        if ($user->borrowings()->whereIn('status', ['aktif', 'menunggu'])->exists()) {
+            return back()->with('error', "Akun \"{$name}\" tidak dapat dihapus karena masih terlibat dalam peminjaman aktif.");
         }
 
         $user->delete();

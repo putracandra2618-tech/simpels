@@ -45,7 +45,7 @@
     </div>
 
     <div class="table-responsive">
-      <table class="table-custom" id="user-table">
+      <table class="table-custom table-stack" id="user-table">
         <thead>
           <tr>
             <th>User</th>
@@ -62,19 +62,16 @@
           @forelse ($users as $user)
             <tr class="user-row" data-search="{{ strtolower($user->name.' '.$user->username.' '.$user->role) }}"
               data-role="{{ $user->role }}" data-kelas="{{ $user->kelas }}" data-jurusan="{{ $user->jurusan }}">
-              <td>
+              <td data-label="User">
                 <div class="table-user-cell">
-                  <span class="avatar-placeholder avatar-table" aria-label="Foto profil">
-                    <i class="bi bi-person-fill"></i>
-                  </span>
                   <div>
                     <div class="table-user-name">{{ $user->name }}</div>
                     <div class="table-user-sub">{{ $user->isAdmin() ? 'Admin Panel' : 'Portal Siswa' }}</div>
                   </div>
                 </div>
               </td>
-              <td class="table-product-name">{{ $user->username }}</td>
-              <td>
+              <td class="table-product-name" data-label="Username">{{ $user->username }}</td>
+              <td data-label="Role">
                 @if ($user->isSuperAdmin())
                   <span class="badge bg-forest-medium text-white">Super Admin</span>
                 @elseif ($user->isAdmin())
@@ -84,7 +81,7 @@
                 @endif
               </td>
               @if ($scope !== 'admin')
-                <td>
+                <td data-label="Kelas / Jurusan">
                   @if ($user->kelas || $user->jurusan)
                     {{ $user->kelas ?? '-' }} / {{ $user->jurusan ?? '-' }}
                   @else
@@ -92,14 +89,14 @@
                   @endif
                 </td>
               @endif
-              <td>
+              <td data-label="Peminjaman Aktif">
                 @if ($user->active_borrowings_count > 0)
                   <span class="badge-table pending">Dipinjam</span>
                 @else
                   <span class="badge-table success">Idle</span>
                 @endif
               </td>
-              <td>
+              <td data-label="Aksi">
                 <div class="d-flex justify-content-center gap-1">
                   <a href="{{ route($scope === 'admin' ? 'admin.adminuser.edit' : 'admin.user.edit', $user) }}" class="table-btn-action" title="Edit"><i class="bi bi-pencil"></i></a>
                   <form method="POST" action="{{ route($scope === 'admin' ? 'admin.adminuser.destroy' : 'admin.user.destroy', $user) }}"

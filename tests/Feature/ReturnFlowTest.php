@@ -169,4 +169,68 @@ class ReturnFlowTest extends TestCase
 
         Notification::assertSentTo($member, ReturnRequestNotification::class);
     }
+
+    public function test_rejection_note_is_shown_to_member(): void
+    {
+        Notification::fake();
+
+        $admin = User::factory()->admin()->create();
+        $member = User::factory()->siswa()->create();
+        $laptop = Laptop::factory()->create();
+
+        $borrowing = Borrowing::factory()->create([
+            'laptop_id' => $laptop->id,
+            'status' => 'menunggu',
+        ]);
+        $borrowing->students()->attach($member, ['created_at' => now(), 'updated_at' => now()]);
+        $laptop->update(['status' => 'dipinjam']);
+
+        $returnRequest = ReturnRequest::query()->create([
+            'borrowing_id' => $borrowing->id,
+            'status' => 'menunggu',
+            'requested_at' => now(),
+        ]);
+
+        $this->actingAs($admin)
+            ->post(route('admin.verifikasi', $returnRequest), [
+                'keputusan' => 'ditolak',
+                'admin_notes' => 'Baterai rusak, harap periksa kembali.',
+            ]);
+
+        $this->actingAs($member)
+            ->get(route('kembali.index'))
+            ->assertOk()
+            ->assertSee('Pengembalian ditolak')
+            ->assertSee('Baterai rusak, harap periksa kembali.');
+    }
+
+    public function test_verifikasi_is_rejected_when_request_already_processed(): void
+    {
+        Notification::fake();
+
+        $admin = User::factory()->admin()->create();
+        $member = User::factory()->siswa()->create();
+        $laptop = Laptop::factory()->create();
+
+        $borrowing = Borrowing::factory()->create([
+            'laptop_id' => $laptop->id,
+            'status' => 'menunggu',
+        ]);
+        $borrowing->students()->attach($member, ['created_at' => now(), 'updated_at' => now()]);
+
+        $returnRequest = ReturnRequest::query()->create([
+            'borrowing_id' => $borrowing->id,
+            'status' => 'disetujui',
+            'requested_at' => now(),
+            'responded_at' => now(),
+        ]);
+
+        $this->actingAs($admin)
+            ->from(route('admin.verifikasi.index'))
+            ->post(route('admin.verifikasi', $returnRequest), ['keputusan' => 'disetujui'])
+            ->assertRedirect(route('admin.verifikasi.index'))
+            ->assertSessionHas('error', 'Permintaan pengembalian ini sudah diproses.');
+
+        Notification::assertNothingSent();
+    }
 }

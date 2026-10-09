@@ -26,7 +26,7 @@
     </div>
  
     <div class="table-responsive">
-      <table class="table-custom" id="laptop-table">
+      <table class="table-custom table-stack" id="laptop-table">
         <thead>
           <tr>
             <th class="text-center"><input type="checkbox" id="check-all" title="Pilih semua"></th>
@@ -41,18 +41,18 @@
         <tbody>
           @forelse ($laptops as $laptop)
             @php
-              $active = $laptop->activeBorrowing();
+              $active = $laptop->activeBorrowings->sortByDesc('borrowed_at')->first();
               $count = $active ? $active->students->count() : 0;
             @endphp
             <tr class="laptop-row" data-search="{{ strtolower($laptop->nama.' '.$laptop->merek) }}">
-              <td class="text-center">
+              <td class="text-center" data-label="Pilih">
                 <input type="checkbox" class="laptop-check" value="{{ $laptop->id }}" aria-label="Pilih {{ $laptop->nama }}">
               </td>
-              <td>
+              <td data-label="QR">
                 <img src="{{ $laptop->qrImagePath() }}" alt="QR {{ $laptop->nama }}" width="56" height="56"
                   onerror="this.src='{{ asset('assets/images/avatar.png') }}'">
               </td>
-              <td>
+              <td data-label="Laptop">
                 <div class="table-user-cell">
                   <div>
                     <div class="table-user-name">{{ $laptop->nama }}</div>
@@ -60,24 +60,26 @@
                   </div>
                 </div>
               </td>
-              <td class="table-product-name">{!! Str::limit($laptop->spesifikasi ?? '-', 60) !!}</td>
-              <td>
+              <td class="table-product-name" data-label="Spesifikasi">{{ Str::limit($laptop->spesifikasi ?? '-', 60) }}</td>
+              <td data-label="Status">
                 @if ($laptop->status === 'dipinjam')
                   <span class="badge-table pending">Dipinjam {{ $count }}/5</span>
                 @else
                   <span class="badge-table success">Tersedia</span>
                 @endif
               </td>
-              <td>
+              <td class="member-cell" data-label="Peminjam">
                 @if ($active)
-                  @foreach ($active->students as $student)
-                    <span class="badge bg-forest-light text-lime me-1 mb-1">{{ $student->name }}</span>
-                  @endforeach
+                  <span class="member-badges">
+                    @foreach ($active->students as $student)
+                      <span class="badge bg-forest-light text-lime">{{ $student->name }}</span>
+                    @endforeach
+                  </span>
                 @else
                   <span class="text-muted">-</span>
                 @endif
               </td>
-              <td>
+              <td data-label="Aksi">
                 <div class="d-flex justify-content-center gap-1">
                   <a href="{{ route('admin.laptop.qr', $laptop) }}" class="table-btn-action" title="Cetak QR"><i class="bi bi-qr-code"></i></a>
                   <a href="{{ route('admin.laptop.edit', $laptop) }}" class="table-btn-action" title="Edit"><i class="bi bi-pencil"></i></a>

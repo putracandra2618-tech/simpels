@@ -8,13 +8,13 @@
 @section('content')
   <div class="row g-4">
     <div class="col-12">
-      <div class="card">
+      <div class="card card-table-stack">
         <div class="card-header">
           <h2 class="card-title">Antrian Verifikasi</h2>
           <span class="badge bg-forest-light text-lime">{{ $menungguVerifikasi }} menunggu</span>
         </div>
         <div class="table-responsive">
-          <table class="table table-hover align-middle mb-0">
+          <table class="table table-hover align-middle mb-0 table-stack">
             <thead class="table-light">
               <tr>
                 <th>Laptop</th>
@@ -26,17 +26,19 @@
             <tbody>
               @forelse ($returnRequests as $returnRequest)
                 <tr>
-                  <td class="fw-semibold">{{ $returnRequest->borrowing->laptop->nama }}</td>
-                  <td>
-                    @foreach ($returnRequest->borrowing->students->take(2) as $student)
-                      <span class="badge bg-forest-light text-lime me-1">{{ $student->name }}</span>
-                    @endforeach
+                  <td class="fw-semibold" data-label="Laptop">{{ $returnRequest->borrowing->laptop->nama }}</td>
+                  <td class="member-cell" data-label="Anggota">
+                    <span class="member-badges">
+                      @foreach ($returnRequest->borrowing->students->take(2) as $student)
+                        <span class="badge bg-forest-light text-lime">{{ $student->name }}</span>
+                      @endforeach
+                    </span>
                     @if ($returnRequest->borrowing->students->count() > 2)
                       <span class="text-muted small">+{{ $returnRequest->borrowing->students->count() - 2 }} lainnya</span>
                     @endif
                   </td>
-                  <td>{{ $returnRequest->requested_at->format('d M Y, H:i') }}</td>
-                  <td>
+                  <td data-label="Diminta">{{ $returnRequest->requested_at->format('d M Y, H:i') }}</td>
+                  <td data-label="Action">
                     <div class="d-flex justify-content-center gap-1">
                       <a href="#verifikasi-{{ $returnRequest->id }}" class="btn btn-sm btn-outline-success"
                          onclick="document.getElementById('verifikasi-{{ $returnRequest->id }}').scrollIntoView({behavior:'smooth'}); return false;">
