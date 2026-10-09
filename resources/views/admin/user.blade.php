@@ -9,40 +9,40 @@
 
 @section('content')
   <div class="table-card-custom">
-    <div class="table-header-control">
-      <div class="table-filter-group" style="flex-wrap:wrap;">
+    <form method="GET" action="{{ route($scope === 'admin' ? 'admin.adminuser.index' : 'admin.user.index') }}" class="table-header-control" data-filter-form>
+      <div class="table-filter-group">
         @if ($scope === 'admin')
-          <select class="form-select form-select-sm" id="filter-role" style="width:auto;">
+          <select class="form-select form-select-sm" id="filter-role" name="role">
             <option value="">Role: Semua</option>
-            <option value="admin">Admin</option>
-            <option value="superadmin">Super Admin</option>
+            <option value="admin" @selected(request('role') === 'admin')>Admin</option>
+            <option value="superadmin" @selected(request('role') === 'superadmin')>Super Admin</option>
           </select>
         @else
-          <select class="form-select form-select-sm" id="filter-kelas" style="width:auto;">
+          <select class="form-select form-select-sm" id="filter-kelas" name="kelas">
             <option value="">Kelas: Semua</option>
-            <option value="X">X</option>
-            <option value="XI">XI</option>
-            <option value="XII">XII</option>
+            <option value="X" @selected(request('kelas') === 'X')>X</option>
+            <option value="XI" @selected(request('kelas') === 'XI')>XI</option>
+            <option value="XII" @selected(request('kelas') === 'XII')>XII</option>
           </select>
-          <select class="form-select form-select-sm" id="filter-jurusan" style="width:auto;">
+          <select class="form-select form-select-sm" id="filter-jurusan" name="jurusan">
             <option value="">Jurusan: Semua</option>
             @foreach (['TKJ', 'RPL', 'TEI', 'TPSB', 'TB', 'TKR', 'TP'] as $jurusan)
-              <option value="{{ $jurusan }}">{{ $jurusan }}</option>
+              <option value="{{ $jurusan }}" @selected(request('jurusan') === $jurusan)>{{ $jurusan }}</option>
             @endforeach
           </select>
         @endif
-        <div class="table-search-box" style="max-width:260px;">
+        <div class="table-search-box">
           <i class="bi bi-search table-search-icon"></i>
-          <input type="text" class="table-search-input" id="user-search" placeholder="Cari nama atau username...">
+          <input type="text" name="q" value="{{ request('q') }}" class="table-search-input" id="user-search" placeholder="Cari nama atau username...">
         </div>
       </div>
       <div class="table-filter-group">
         <a href="{{ route($scope === 'admin' ? 'admin.adminuser.create' : 'admin.user.create') }}"
-          class="btn-table-action" style="color:#fff; background:#072F1F;">
+          class="btn-table-action btn-table-action-primary">
           <i class="bi bi-person-plus"></i> {{ $scope === 'admin' ? 'Tambah Admin' : 'Tambah User' }}
         </a>
       </div>
-    </div>
+    </form>
 
     <div class="table-responsive">
       <table class="table-custom table-stack" id="user-table">
@@ -60,8 +60,7 @@
         </thead>
         <tbody>
           @forelse ($users as $user)
-            <tr class="user-row" data-search="{{ strtolower($user->name.' '.$user->username.' '.$user->role) }}"
-              data-role="{{ $user->role }}" data-kelas="{{ $user->kelas }}" data-jurusan="{{ $user->jurusan }}">
+            <tr class="user-row">
               <td data-label="User">
                 <div class="table-user-cell">
                   <div>
@@ -118,48 +117,14 @@
         </tbody>
       </table>
     </div>
+
+    @if ($users->hasPages())
+      <div class="table-footer-control">
+        <div class="table-pagination-info">
+          Menampilkan {{ $users->firstItem() }}–{{ $users->lastItem() }} dari {{ $users->total() }} akun
+        </div>
+        {{ $users->links() }}
+      </div>
+    @endif
   </div>
 @endsection
-
-@push('scripts')
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const input = document.getElementById('user-search');
-      const filterRole = document.getElementById('filter-role');
-      const filterKelas = document.getElementById('filter-kelas');
-      const filterJurusan = document.getElementById('filter-jurusan');
-
-      const applyFilters = function () {
-        const q = input ? input.value.trim().toLowerCase() : '';
-        const role = filterRole ? filterRole.value : '';
-        const kelas = filterKelas ? filterKelas.value : '';
-        const jurusan = filterJurusan ? filterJurusan.value : '';
-
-        document.querySelectorAll('.user-row').forEach(function (row) {
-          const matchesText = (row.dataset.search || '').includes(q);
-          const matchesRole = role === '' || row.dataset.role === role;
-          const matchesKelas = kelas === '' || row.dataset.kelas === kelas;
-          const matchesJurusan = jurusan === '' || row.dataset.jurusan === jurusan;
-
-          row.style.display = matchesText && matchesRole && matchesKelas && matchesJurusan ? '' : 'none';
-        });
-      };
-
-      if (input) {
-        input.addEventListener('input', applyFilters);
-      }
-
-      if (filterRole) {
-        filterRole.addEventListener('change', applyFilters);
-      }
-
-      if (filterKelas) {
-        filterKelas.addEventListener('change', applyFilters);
-      }
-
-      if (filterJurusan) {
-        filterJurusan.addEventListener('change', applyFilters);
-      }
-    });
-  </script>
-@endpush

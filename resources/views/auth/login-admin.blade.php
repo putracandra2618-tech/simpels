@@ -12,17 +12,10 @@
 
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/login-admin.css') }}">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body class="login-admin">
 
     <div class="login-wrapper">
-        <div class="login-bg-shape login-bg-shape-1"></div>
-        <div class="login-bg-shape login-bg-shape-2"></div>
-
         <div class="login-card">
 
             <a href="{{ route('login.admin') }}" class="login-brand text-decoration-none">
@@ -75,7 +68,7 @@
             </form>
 
             <p class="login-footer-text mt-3">
-                Porta ke Siswa →<a href="{{ route('login') }}"> Masuk sebagai Siswa</a>
+                Belum punya akses?<a href="{{ route('login') }}"> Masuk sebagai Siswa</a>
             </p>
 
         </div>

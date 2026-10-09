@@ -16,10 +16,7 @@
                 <span class="stat-label">Sesi Aktif</span>
               </div>
               <div class="stat-value">{{ $sessionsAktif->count() }}</div>
-              <div class="trend-badge trend-up">
-                <i class="bi bi-arrow-up-right"></i>
-                <span>Laptop yang sedang dipinjam</span>
-              </div>
+              <div class="stat-sub">Laptop yang sedang dipinjam</div>
             </div>
           </div>
         </div>
@@ -30,10 +27,7 @@
                 <span class="stat-label">Selesai Dipinjam</span>
               </div>
               <div class="stat-value">{{ $sessionsSelesai->count() }}</div>
-              <div class="trend-badge trend-down">
-                <i class="bi bi-arrow-down-left"></i>
-                <span>Riwayat pengembalian</span>
-              </div>
+              <div class="stat-sub">Riwayat pengembalian</div>
             </div>
           </div>
         </div>

@@ -75,23 +75,33 @@ class AdminController extends Controller
         return back()->with('success', 'Pengembalian ditolak. Siswa dapat mengajukan kembali.');
     }
 
-    public function verifikasiIndex(): View
+    public function verifikasiIndex(Request $request): View
     {
         $returnRequests = ReturnRequest::where('status', 'menunggu')
             ->with(['borrowing.laptop', 'borrowing.students'])
             ->latest('requested_at')
-            ->get();
+            ->paginate(10)
+            ->withQueryString();
 
-        $menungguVerifikasi = $returnRequests->count();
+        $menungguVerifikasi = ReturnRequest::where('status', 'menunggu')->count();
 
         return view('admin.verifikasi', compact('returnRequests', 'menungguVerifikasi'));
     }
 
-    public function laptopIndex(): View
+    public function laptopIndex(Request $request): View
     {
+        $search = trim((string) $request->query('q', ''));
+
         $laptops = Laptop::with('activeBorrowings.students')
+            ->when($search !== '', function ($query) use ($search) {
+                $query->where(function ($query) use ($search) {
+                    $query->where('nama', 'like', "%{$search}%")
+                        ->orWhere('merek', 'like', "%{$search}%");
+                });
+            })
             ->latest()
-            ->get();
+            ->paginate(10)
+            ->withQueryString();
 
         return view('admin.laptop', compact('laptops'));
     }
@@ -196,18 +206,43 @@ class AdminController extends Controller
     public function userIndex(Request $request): View
     {
         $scope = $this->userScope($request);
-        $query = User::query();
+        $search = trim((string) $request->query('q', ''));
+
+        $query = User::query()
+            ->when($scope === 'admin', fn ($query) => $query->whereIn('role', ['admin', 'superadmin']))
+            ->when($scope !== 'admin', fn ($query) => $query->where('role', 'siswa'))
+            ->when($search !== '', function ($query) use ($search) {
+                $query->where(function ($query) use ($search) {
+                    $query->where('name', 'like', "%{$search}%")
+                        ->orWhere('username', 'like', "%{$search}%");
+                });
+            });
 
         if ($scope === 'admin') {
-            $query->whereIn('role', ['admin', 'superadmin']);
+            $role = $request->query('role');
+
+            if (in_array($role, ['admin', 'superadmin'], true)) {
+                $query->where('role', $role);
+            }
         } else {
-            $query->where('role', 'siswa');
+            $kelas = $request->query('kelas');
+
+            if (in_array($kelas, ['X', 'XI', 'XII'], true)) {
+                $query->where('kelas', $kelas);
+            }
+
+            $jurusan = $request->query('jurusan');
+
+            if (in_array($jurusan, ['TKJ', 'RPL', 'TEI', 'TPSB', 'TB', 'TKR', 'TP'], true)) {
+                $query->where('jurusan', $jurusan);
+            }
         }
 
         $users = $query
             ->withCount(['borrowings as active_borrowings_count' => fn ($query) => $query->whereIn('status', ['aktif', 'menunggu'])])
             ->latest()
-            ->get();
+            ->paginate(10)
+            ->withQueryString();
 
         return view('admin.user', compact('users', 'scope'));
     }

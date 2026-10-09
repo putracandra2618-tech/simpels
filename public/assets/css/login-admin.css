@@ -1,20 +1,16 @@
 /* ========================================================================
-   PEMLAPTEX - ADMIN LOGIN (tema biru)
-   Override tema hijau login admin di main.css — mirror login siswa.
+   SIMPELS - ADMIN LOGIN
+   Latar terang dengan kartu login terpusat; meng-override tema login di main.css.
    Hanya dipakai di resources/views/auth/login-admin.blade.php (body .login-admin).
    ======================================================================== */
 
 body.login-admin {
-    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     overflow-x: hidden;
 }
 
 body.login-admin .login-wrapper {
     background-color: #f3f6f9;
-}
-
-body.login-admin .login-bg-shape {
-    background: radial-gradient(circle, rgba(103, 192, 144, 0.18) 0%, rgba(103, 192, 144, 0) 70%);
 }
 
 body.login-admin .login-card {

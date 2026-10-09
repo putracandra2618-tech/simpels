@@ -33,6 +33,7 @@ class DashboardController extends Controller
         $returnRequests = ReturnRequest::where('status', 'menunggu')
             ->with(['borrowing.laptop', 'borrowing.students'])
             ->latest('requested_at')
+            ->take(5)
             ->get();
 
         $recentBorrowings = Borrowing::with(['laptop', 'students'])

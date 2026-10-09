@@ -11,10 +11,10 @@
       <div class="row g-4">
         @php
           $stats = [
-            ['label' => 'Total Laptop', 'value' => $totalLaptops, 'sub' => 'Seluruh laptop terdaftar', 'up' => true],
-            ['label' => 'Tersedia', 'value' => $laptopsTersedia, 'sub' => 'Siap dipinjam', 'up' => true],
-            ['label' => 'Dipinjam', 'value' => $laptopsDipinjam, 'sub' => 'Sedang dipakai sesi', 'up' => false],
-            ['label' => 'Menunggu Verifikasi', 'value' => $menungguVerifikasi, 'sub' => 'Permintaan pengembalian', 'up' => false],
+            ['label' => 'Total Laptop', 'value' => $totalLaptops, 'sub' => 'Seluruh laptop terdaftar'],
+            ['label' => 'Tersedia', 'value' => $laptopsTersedia, 'sub' => 'Siap dipinjam'],
+            ['label' => 'Dipinjam', 'value' => $laptopsDipinjam, 'sub' => 'Sedang dipinjam'],
+            ['label' => 'Menunggu Verifikasi', 'value' => $menungguVerifikasi, 'sub' => 'Permintaan pengembalian'],
           ];
         @endphp
         @foreach ($stats as $stat)
@@ -25,9 +25,7 @@
                   <span class="stat-label">{{ $stat['label'] }}</span>
                 </div>
                 <div class="stat-value">{{ $stat['value'] }}</div>
-                <div class="trend-badge {{ $stat['up'] ? 'trend-up' : 'trend-down' }}">
-                  <span>{{ $stat['sub'] }}</span>
-                </div>
+                <div class="stat-sub">{{ $stat['sub'] }}</div>
               </div>
             </div>
           </div>
@@ -85,40 +83,6 @@
             </tbody>
           </table>
         </div>
-        @foreach ($returnRequests as $returnRequest)
-          <div id="verifikasi-{{ $returnRequest->id }}" class="p-3 border-top">
-            <div class="d-flex justify-content-between align-items-start mb-2">
-              <div>
-                <strong>{{ $returnRequest->borrowing->laptop->nama }}</strong>
-                <div class="text-muted small">
-                  Dipinjam {{ $returnRequest->borrowing->borrowed_at->format('d M Y, H:i') }} oleh
-                  {{ $returnRequest->borrowing->students->pluck('name')->join(', ') }}.
-                </div>
-              </div>
-              <span class="badge-table pending">Menunggu</span>
-            </div>
-            <form method="POST" action="{{ route('admin.verifikasi', $returnRequest) }}" class="row g-2">
-              @csrf
-              <input type="hidden" name="keputusan" value="disetujui" id="keputusan-{{ $returnRequest->id }}">
-              <div class="col-md-4">
-                <input type="text" name="condition" class="form-control form-control-sm" placeholder="Kondisi laptop (mis. Baik, Rusak ringan)">
-              </div>
-              <div class="col-md-4">
-                <input type="text" name="admin_notes" class="form-control form-control-sm" placeholder="Catatan (opsional)">
-              </div>
-              <div class="col-md-4 d-flex gap-2">
-                <button type="submit" class="btn btn-sm btn-success flex-fill"
-                  onclick="document.getElementById('keputusan-{{ $returnRequest->id }}').value='disetujui';">
-                  <i class="bi bi-check-lg"></i> Setujui
-                </button>
-                <button type="submit" class="btn btn-sm btn-outline-danger flex-fill"
-                  onclick="document.getElementById('keputusan-{{ $returnRequest->id }}').value='ditolak';">
-                  <i class="bi bi-x-lg"></i> Tolak
-                </button>
-              </div>
-            </form>
-          </div>
-        @endforeach
       </div>
     </div>
 

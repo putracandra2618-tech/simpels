@@ -7,23 +7,22 @@
 
 @section('content')
   <div class="table-card-custom">
-    <div class="table-header-control">
-      <div class="table-filter-group" style="flex-wrap:wrap;">
-        <div class="table-search-box" style="max-width:260px;">
+    <form method="GET" action="{{ route('admin.laptop.index') }}" class="table-header-control" data-filter-form>
+      <div class="table-filter-group">
+        <div class="table-search-box">
           <i class="bi bi-search table-search-icon"></i>
-          <input type="text" class="table-search-input" id="laptop-search" placeholder="Cari nama atau merek laptop...">
+          <input type="text" name="q" value="{{ request('q') }}" class="table-search-input" id="laptop-search" placeholder="Cari nama atau merek laptop...">
         </div>
-        <button type="button" class="btn-table-action" id="btn-print-selected"
-          style="color:#fff; background:#072F1F;" disabled>
+        <button type="button" class="btn-table-action btn-table-action-primary" id="btn-print-selected" disabled>
           <i class="bi bi-qr-code"></i> Cetak QR Terpilih
         </button>
       </div>
       <div class="table-filter-group">
-        <a href="{{ route('admin.laptop.create') }}" class="btn-table-action" style="color:#fff; background:#072F1F;">
+        <a href="{{ route('admin.laptop.create') }}" class="btn-table-action btn-table-action-primary">
           <i class="bi bi-plus-lg"></i> Tambah Laptop
         </a>
       </div>
-    </div>
+    </form>
  
     <div class="table-responsive">
       <table class="table-custom table-stack" id="laptop-table">
@@ -34,7 +33,7 @@
             <th>Laptop</th>
             <th>Spesifikasi</th>
             <th>Status</th>
-            <th>Siapa yang Pinjam</th>
+            <th>Siapa yang Meminjam</th>
             <th class="text-center">Aksi</th>
           </tr>
         </thead>
@@ -44,7 +43,7 @@
               $active = $laptop->activeBorrowings->sortByDesc('borrowed_at')->first();
               $count = $active ? $active->students->count() : 0;
             @endphp
-            <tr class="laptop-row" data-search="{{ strtolower($laptop->nama.' '.$laptop->merek) }}">
+            <tr class="laptop-row">
               <td class="text-center" data-label="Pilih">
                 <input type="checkbox" class="laptop-check" value="{{ $laptop->id }}" aria-label="Pilih {{ $laptop->nama }}">
               </td>
@@ -100,21 +99,24 @@
         </tbody>
       </table>
     </div>
+
+    @if ($laptops->hasPages())
+      <div class="table-footer-control">
+        <div class="table-pagination-info">
+          Menampilkan {{ $laptops->firstItem() }}–{{ $laptops->lastItem() }} dari {{ $laptops->total() }} laptop
+        </div>
+        {{ $laptops->links() }}
+      </div>
+    @endif
   </div>
 @endsection
 
 @push('scripts')
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      const input = document.getElementById('laptop-search');
       const checkAll = document.getElementById('check-all');
       const btnPrint = document.getElementById('btn-print-selected');
       const root = '{{ route('admin.laptop.print') }}';
-
-      function visibleRows() {
-        return Array.from(document.querySelectorAll('.laptop-row'))
-          .filter(function (row) { return row.style.display !== 'none'; });
-      }
 
       function updatePrintButton() {
         const ids = Array.from(document.querySelectorAll('.laptop-check:checked'))
@@ -125,25 +127,10 @@
           : 'Cetak QR Terpilih (' + ids.length + ')';
       }
 
-      if (input) {
-        input.addEventListener('input', function () {
-          const q = input.value.trim().toLowerCase();
-          visibleRows();
-          document.querySelectorAll('.laptop-row').forEach(function (row) {
-            row.style.display = (row.dataset.search || '').includes(q) ? '' : 'none';
-          });
-          if (checkAll) {
-            checkAll.disabled = visibleRows().length === 0;
-            checkAll.checked = false;
-          }
-          updatePrintButton();
-        });
-      }
-
       if (checkAll) {
         checkAll.addEventListener('change', function () {
-          visibleRows().forEach(function (row) {
-            row.querySelector('.laptop-check').checked = checkAll.checked;
+          document.querySelectorAll('.laptop-check').forEach(function (c) {
+            c.checked = checkAll.checked;
           });
           updatePrintButton();
         });

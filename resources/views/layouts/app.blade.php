@@ -11,7 +11,6 @@
 
   <link rel="stylesheet" href="{{ asset('assets/libs/bootstrap/css/bootstrap.min.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/libs/bootstrap-icons/bootstrap-icons.css') }}">
-  <link rel="stylesheet" href="{{ asset('assets/libs/apexcharts/apexcharts.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
   @stack('styles')
 </head>
@@ -217,8 +216,6 @@
   </div>
 
   <script src="{{ asset('assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-  <script src="{{ asset('assets/libs/apexcharts/apexcharts.min.js') }}"></script>
-  <script src="{{ asset('assets/libs/flatpickr/flatpickr.min.js') }}"></script>
   <script src="{{ asset('assets/js/dashboard.js') }}"></script>
   @stack('scripts')
 </body>
