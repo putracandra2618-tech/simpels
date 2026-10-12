@@ -4,6 +4,8 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BorrowingController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\JurusanController;
+use App\Http\Controllers\KelasController;
 use App\Http\Controllers\ReturnController;
 use Illuminate\Support\Facades\Route;
 
@@ -71,6 +73,20 @@ Route::middleware('auth')->group(function () {
             Route::get('/{user}/edit', [AdminController::class, 'userEdit'])->defaults('scope', 'admin')->name('edit');
             Route::put('/{user}', [AdminController::class, 'userUpdate'])->defaults('scope', 'admin')->name('update');
             Route::delete('/{user}', [AdminController::class, 'userDestroy'])->defaults('scope', 'admin')->name('destroy');
+        });
+
+        Route::prefix('kelas')->name('admin.kelas.')->controller(KelasController::class)->group(function () {
+            Route::get('/', 'index')->name('index');
+            Route::post('/', 'store')->name('store');
+            Route::put('/{kelas}', 'update')->name('update');
+            Route::delete('/{kelas}', 'destroy')->name('destroy');
+        });
+
+        Route::prefix('jurusan')->name('admin.jurusan.')->controller(JurusanController::class)->group(function () {
+            Route::get('/', 'index')->name('index');
+            Route::post('/', 'store')->name('store');
+            Route::put('/{jurusan}', 'update')->name('update');
+            Route::delete('/{jurusan}', 'destroy')->name('destroy');
         });
     });
 });

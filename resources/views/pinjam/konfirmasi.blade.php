@@ -44,16 +44,16 @@
               <div class="col-12 col-md-3">
                 <select class="form-select form-select-sm" id="filter-kelas">
                   <option value="">Kelas: Semua</option>
-                  <option value="X">Kelas X</option>
-                  <option value="XI">Kelas XI</option>
-                  <option value="XII">Kelas XII</option>
+                  @foreach ($kelas as $kelasItem)
+                    <option value="{{ $kelasItem->nama }}">Kelas {{ $kelasItem->nama }}</option>
+                  @endforeach
                 </select>
               </div>
               <div class="col-12 col-md-4">
                 <select class="form-select form-select-sm" id="filter-jurusan">
                   <option value="">Jurusan: Semua</option>
-                  @foreach (['TKJ', 'RPL', 'TEI', 'TPSB', 'TB', 'TKR', 'TP'] as $jurusan)
-                    <option value="{{ $jurusan }}">{{ $jurusan }}</option>
+                  @foreach ($jurusan as $jurusanItem)
+                    <option value="{{ $jurusanItem->kode }}">{{ $jurusanItem->kode }}</option>
                   @endforeach
                 </select>
               </div>
@@ -69,7 +69,7 @@
               <input class="form-check-input-custom" type="checkbox" id="member-me" checked disabled>
               <label class="form-check-label" for="member-me">
                 <strong>{{ $user->name }}</strong>
-                <span class="text-muted">— {{ $user->username }} • {{ $user->kelas }} {{ $user->jurusan }}
+                <span class="text-muted">— {{ $user->username }} • {{ $user->kelas?->nama }} {{ $user->jurusan?->kode }}
                   <span class="badge bg-forest-medium text-white ms-1">Anda (scan)</span></span>
               </label>
               <input type="hidden" name="member_ids[]" value="{{ $user->id }}">
@@ -80,11 +80,11 @@
                 <div class="form-check-custom member-item mb-1 border rounded p-2">
                   <input class="form-check-input-custom member-check" type="checkbox" name="member_ids[]"
                     id="member-{{ $student->id }}" value="{{ $student->id }}"
-                    data-search="{{ strtolower($student->username.' '.$student->name.' '.$student->kelas.' '.$student->jurusan) }}"
-                    data-kelas="{{ $student->kelas }}" data-jurusan="{{ $student->jurusan }}">
+                    data-search="{{ strtolower($student->username.' '.$student->name.' '.($student->kelas?->nama).' '.($student->jurusan?->kode)) }}"
+                    data-kelas="{{ $student->kelas?->nama }}" data-jurusan="{{ $student->jurusan?->kode }}">
                   <label class="form-check-label" for="member-{{ $student->id }}">
                     <strong>{{ $student->name }}</strong>
-                    <span class="text-muted">— {{ $student->username }} • {{ $student->kelas }} {{ $student->jurusan }}</span>
+                    <span class="text-muted">— {{ $student->username }} • {{ $student->kelas?->nama }} {{ $student->jurusan?->kode }}</span>
                   </label>
                 </div>
               @endforeach
@@ -163,6 +163,11 @@
 
         document.querySelectorAll('.member-item').forEach(function (item) {
           const checkbox = item.querySelector('.member-check');
+
+          if (!checkbox) {
+            return;
+          }
+
           const term = checkbox.dataset.search || '';
           const matchesText = term.includes(q);
           const matchesKelas = kelas === '' || checkbox.dataset.kelas === kelas;

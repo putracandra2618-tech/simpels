@@ -1,0 +1,308 @@
+- generic [active] [ref=f21e1]:
+  - banner [ref=f21e2]:
+    - link "Logo Simpels Simpels" [ref=f21e3] [cursor=pointer]:
+      - /url: http://localhost:8000/dashboard
+      - img "Logo Simpels" [ref=f21e4]
+      - generic [ref=f21e5]: Simpels
+    - generic [ref=f21e6]:
+      - button "" [ref=f21e8] [cursor=pointer]
+      - generic [ref=f21e10]:
+        - button "Foto profil " [ref=f21e11] [cursor=pointer]:
+          - generic "Foto profil" [ref=f21e12]: 
+          - generic [ref=f21e14]: 
+        - text: 
+  - generic [ref=f21e15]:
+    - generic [ref=f21e17]:
+      - heading "Konfirmasi Peminjaman" [level=1] [ref=f21e18]
+      - paragraph [ref=f21e19]: Periksa informasi laptop lalu pilih anggota peminjaman (maks 5 siswa).
+    - generic "Langkah peminjaman" [ref=f21e20]:
+      - generic [ref=f21e21]:
+        - generic [ref=f21e22]: 
+        - generic [ref=f21e25]: 
+        - generic [ref=f21e28]: 
+        - generic [ref=f21e31]: 
+      - generic [ref=f21e34]:
+        - text: "Langkah 2 dari 4:"
+        - strong [ref=f21e35]: Pilih Anggota
+    - main [ref=f21e36]:
+      - generic [ref=f21e37]:
+        - generic [ref=f21e39]:
+          - heading "Info Laptop" [level=2] [ref=f21e41]
+          - generic [ref=f21e42]:
+            - img "QR Dell Latitude 3420" [ref=f21e43]
+            - heading "Dell Latitude 3420" [level=4] [ref=f21e44]
+            - paragraph [ref=f21e45]: Dell
+            - generic [ref=f21e46]:
+              - term [ref=f21e47]: Spesifikasi
+              - definition [ref=f21e48]: Intel Core i5-1135G7 RAM 8 GB DDR4 SSD 256 GB Layar 14" HD
+              - term [ref=f21e49]: Status
+              - definition [ref=f21e50]:
+                - generic [ref=f21e51]: Tersedia
+        - generic [ref=f21e54]:
+          - generic [ref=f21e55]:
+            - heading "Pilih Anggota Peminjaman" [level=2] [ref=f21e56]
+            - generic [ref=f21e57]: 1/5
+          - generic [ref=f21e58]:
+            - generic [ref=f21e59]:
+              - combobox [ref=f21e61]:
+                - 'option "Kelas: Semua" [selected]'
+                - option "Kelas X"
+                - option "Kelas XI"
+                - option "Kelas XII"
+              - combobox [ref=f21e63]:
+                - 'option "Jurusan: Semua" [selected]'
+                - option "RPL"
+                - option "TB"
+                - option "TEI"
+                - option "TKJ"
+                - option "TKR"
+                - option "TP"
+                - option "TPSB"
+              - generic [ref=f21e65]:
+                - generic [ref=f21e66]: 
+                - textbox "Cari NIS, nama, kelas, atau jurusan..." [ref=f21e67]
+            - generic [ref=f21e68]:
+              - checkbox "ABRIANI AFNANSYAH — 2471021 • XII RPL Anda (scan)" [checked] [disabled] [ref=f21e69]
+              - generic [ref=f21e70]:
+                - strong [ref=f21e71]: ABRIANI AFNANSYAH
+                - generic [ref=f21e72]:
+                  - text: — 2471021 • XII RPL
+                  - generic [ref=f21e73]: Anda (scan)
+            - generic [ref=f21e74]:
+              - generic [ref=f21e75]:
+                - checkbox "DANJI DWI PRASETYO — 237891 • XII RPL" [ref=f21e76] [cursor=pointer]
+                - generic [ref=f21e77]:
+                  - strong [ref=f21e78]: DANJI DWI PRASETYO
+                  - text: — 237891 • XII RPL
+              - generic [ref=f21e79]:
+                - checkbox "AFIDATUNNISA — 2471022 • XII RPL" [ref=f21e80] [cursor=pointer]
+                - generic [ref=f21e81]:
+                  - strong [ref=f21e82]: AFIDATUNNISA
+                  - text: — 2471022 • XII RPL
+              - generic [ref=f21e83]:
+                - checkbox "AIMATUN NISA — 2471023 • XII RPL" [ref=f21e84] [cursor=pointer]
+                - generic [ref=f21e85]:
+                  - strong [ref=f21e86]: AIMATUN NISA
+                  - text: — 2471023 • XII RPL
+              - generic [ref=f21e87]:
+                - checkbox "ALMIRA SYAFAWIBOWO — 2471024 • XII RPL" [ref=f21e88] [cursor=pointer]
+                - generic [ref=f21e89]:
+                  - strong [ref=f21e90]: ALMIRA SYAFAWIBOWO
+                  - text: — 2471024 • XII RPL
+              - generic [ref=f21e91]:
+                - checkbox "ANDREA FRANCY MAYANEZTA — 2471025 • XII RPL" [ref=f21e92] [cursor=pointer]
+                - generic [ref=f21e93]:
+                  - strong [ref=f21e94]: ANDREA FRANCY MAYANEZTA
+                  - text: — 2471025 • XII RPL
+              - generic [ref=f21e95]:
+                - checkbox "APRILIA NURASY SYAHRANI — 2471026 • XII RPL" [ref=f21e96] [cursor=pointer]
+                - generic [ref=f21e97]:
+                  - strong [ref=f21e98]: APRILIA NURASY SYAHRANI
+                  - text: — 2471026 • XII RPL
+              - generic [ref=f21e99]:
+                - checkbox "BARRA ANDRACESA KHARISMA — 2471027 • XII RPL" [ref=f21e100] [cursor=pointer]
+                - generic [ref=f21e101]:
+                  - strong [ref=f21e102]: BARRA ANDRACESA KHARISMA
+                  - text: — 2471027 • XII RPL
+              - generic [ref=f21e103]:
+                - checkbox "CINTA DAMAI CAHYANI — 2471028 • XII RPL" [ref=f21e104] [cursor=pointer]
+                - generic [ref=f21e105]:
+                  - strong [ref=f21e106]: CINTA DAMAI CAHYANI
+                  - text: — 2471028 • XII RPL
+              - generic [ref=f21e107]:
+                - checkbox "DESQUINEO JAYANAGARA — 2471029 • XII RPL" [ref=f21e108] [cursor=pointer]
+                - generic [ref=f21e109]:
+                  - strong [ref=f21e110]: DESQUINEO JAYANAGARA
+                  - text: — 2471029 • XII RPL
+              - generic [ref=f21e111]:
+                - checkbox "DEWI ARUM SARI — 2471030 • XII RPL" [ref=f21e112] [cursor=pointer]
+                - generic [ref=f21e113]:
+                  - strong [ref=f21e114]: DEWI ARUM SARI
+                  - text: — 2471030 • XII RPL
+              - generic [ref=f21e115]:
+                - checkbox "ERISKA VALENCIA PUTRI — 2471031 • XII RPL" [ref=f21e116] [cursor=pointer]
+                - generic [ref=f21e117]:
+                  - strong [ref=f21e118]: ERISKA VALENCIA PUTRI
+                  - text: — 2471031 • XII RPL
+              - generic [ref=f21e119]:
+                - checkbox "FEBRIYAN ARBI UTAMA — 2471032 • XII RPL" [ref=f21e120] [cursor=pointer]
+                - generic [ref=f21e121]:
+                  - strong [ref=f21e122]: FEBRIYAN ARBI UTAMA
+                  - text: — 2471032 • XII RPL
+              - generic [ref=f21e123]:
+                - checkbox "HINDIANA SUKMA DEWI — 2471033 • XII RPL" [ref=f21e124] [cursor=pointer]
+                - generic [ref=f21e125]:
+                  - strong [ref=f21e126]: HINDIANA SUKMA DEWI
+                  - text: — 2471033 • XII RPL
+              - generic [ref=f21e127]:
+                - checkbox "IZZATI JAUHRUSYAFAR — 2471034 • XII RPL" [ref=f21e128] [cursor=pointer]
+                - generic [ref=f21e129]:
+                  - strong [ref=f21e130]: IZZATI JAUHRUSYAFAR
+                  - text: — 2471034 • XII RPL
+              - generic [ref=f21e131]:
+                - checkbox "KESYA AULIA AZ ZAHRA — 2471035 • XII RPL" [ref=f21e132] [cursor=pointer]
+                - generic [ref=f21e133]:
+                  - strong [ref=f21e134]: KESYA AULIA AZ ZAHRA
+                  - text: — 2471035 • XII RPL
+              - generic [ref=f21e135]:
+                - checkbox "LAUDYA CHINTIA BELLA — 2471036 • XII RPL" [ref=f21e136] [cursor=pointer]
+                - generic [ref=f21e137]:
+                  - strong [ref=f21e138]: LAUDYA CHINTIA BELLA
+                  - text: — 2471036 • XII RPL
+              - generic [ref=f21e139]:
+                - checkbox "LUTFI AJI SUTANSYAH — 2471037 • XII RPL" [ref=f21e140] [cursor=pointer]
+                - generic [ref=f21e141]:
+                  - strong [ref=f21e142]: LUTFI AJI SUTANSYAH
+                  - text: — 2471037 • XII RPL
+              - generic [ref=f21e143]:
+                - checkbox "MAULANA ZACKY PRATAMA — 2471038 • XII RPL" [ref=f21e144] [cursor=pointer]
+                - generic [ref=f21e145]:
+                  - strong [ref=f21e146]: MAULANA ZACKY PRATAMA
+                  - text: — 2471038 • XII RPL
+              - generic [ref=f21e147]:
+                - checkbox "MUHAMAD BAGUS PRABOWO PUTRO — 2471039 • XII RPL" [ref=f21e148] [cursor=pointer]
+                - generic [ref=f21e149]:
+                  - strong [ref=f21e150]: MUHAMAD BAGUS PRABOWO PUTRO
+                  - text: — 2471039 • XII RPL
+              - generic [ref=f21e151]:
+                - checkbox "MUHAMMAD ADRIAN MAULANA — 2471040 • XII RPL" [ref=f21e152] [cursor=pointer]
+                - generic [ref=f21e153]:
+                  - strong [ref=f21e154]: MUHAMMAD ADRIAN MAULANA
+                  - text: — 2471040 • XII RPL
+              - generic [ref=f21e155]:
+                - checkbox "MUHAMMAD ILYAS — 2471041 • XII RPL" [ref=f21e156] [cursor=pointer]
+                - generic [ref=f21e157]:
+                  - strong [ref=f21e158]: MUHAMMAD ILYAS
+                  - text: — 2471041 • XII RPL
+              - generic [ref=f21e159]:
+                - checkbox "MUHAMMAD ISNAN RAMADHAN — 2471042 • XII RPL" [ref=f21e160] [cursor=pointer]
+                - generic [ref=f21e161]:
+                  - strong [ref=f21e162]: MUHAMMAD ISNAN RAMADHAN
+                  - text: — 2471042 • XII RPL
+              - generic [ref=f21e163]:
+                - checkbox "MUHANNAD GUNTUR BINTANG PRATAMA — 2471043 • XII RPL" [ref=f21e164] [cursor=pointer]
+                - generic [ref=f21e165]:
+                  - strong [ref=f21e166]: MUHANNAD GUNTUR BINTANG PRATAMA
+                  - text: — 2471043 • XII RPL
+              - generic [ref=f21e167]:
+                - checkbox "NADINDRA SIYANNA PUTRA — 2471044 • XII RPL" [ref=f21e168] [cursor=pointer]
+                - generic [ref=f21e169]:
+                  - strong [ref=f21e170]: NADINDRA SIYANNA PUTRA
+                  - text: — 2471044 • XII RPL
+              - generic [ref=f21e171]:
+                - checkbox "NAJWA AULIA ZAHRA — 2471045 • XII RPL" [ref=f21e172] [cursor=pointer]
+                - generic [ref=f21e173]:
+                  - strong [ref=f21e174]: NAJWA AULIA ZAHRA
+                  - text: — 2471045 • XII RPL
+              - generic [ref=f21e175]:
+                - checkbox "NATASYA TRIA YUNIAR — 2471046 • XII RPL" [ref=f21e176] [cursor=pointer]
+                - generic [ref=f21e177]:
+                  - strong [ref=f21e178]: NATASYA TRIA YUNIAR
+                  - text: — 2471046 • XII RPL
+              - generic [ref=f21e179]:
+                - checkbox "NAYAKA NOVA TIRTHA — 2471047 • XII RPL" [ref=f21e180] [cursor=pointer]
+                - generic [ref=f21e181]:
+                  - strong [ref=f21e182]: NAYAKA NOVA TIRTHA
+                  - text: — 2471047 • XII RPL
+              - generic [ref=f21e183]:
+                - checkbox "NHEISYA LUNA ISMADILLA — 2471048 • XII RPL" [ref=f21e184] [cursor=pointer]
+                - generic [ref=f21e185]:
+                  - strong [ref=f21e186]: NHEISYA LUNA ISMADILLA
+                  - text: — 2471048 • XII RPL
+              - generic [ref=f21e187]:
+                - checkbox "NUR ALFA AL ZAHRA — 2471049 • XII RPL" [ref=f21e188] [cursor=pointer]
+                - generic [ref=f21e189]:
+                  - strong [ref=f21e190]: NUR ALFA AL ZAHRA
+                  - text: — 2471049 • XII RPL
+              - generic [ref=f21e191]:
+                - checkbox "NURITA — 2471050 • XII RPL" [ref=f21e192] [cursor=pointer]
+                - generic [ref=f21e193]:
+                  - strong [ref=f21e194]: NURITA
+                  - text: — 2471050 • XII RPL
+              - generic [ref=f21e195]:
+                - checkbox "PUTRA WIDI CANDRA KANTA — 2471051 • XII RPL" [ref=f21e196] [cursor=pointer]
+                - generic [ref=f21e197]:
+                  - strong [ref=f21e198]: PUTRA WIDI CANDRA KANTA
+                  - text: — 2471051 • XII RPL
+              - generic [ref=f21e199]:
+                - checkbox "RAFAEL LIONEL RINGGARD — 2471052 • XII RPL" [ref=f21e200] [cursor=pointer]
+                - generic [ref=f21e201]:
+                  - strong [ref=f21e202]: RAFAEL LIONEL RINGGARD
+                  - text: — 2471052 • XII RPL
+              - generic [ref=f21e203]:
+                - checkbox "RAKA ADITYA PUTRA — 2471053 • XII RPL" [ref=f21e204] [cursor=pointer]
+                - generic [ref=f21e205]:
+                  - strong [ref=f21e206]: RAKA ADITYA PUTRA
+                  - text: — 2471053 • XII RPL
+              - generic [ref=f21e207]:
+                - checkbox "REHAN SALIFFATIN MURTAZA — 2471054 • XII RPL" [ref=f21e208] [cursor=pointer]
+                - generic [ref=f21e209]:
+                  - strong [ref=f21e210]: REHAN SALIFFATIN MURTAZA
+                  - text: — 2471054 • XII RPL
+              - generic [ref=f21e211]:
+                - checkbox "REYHAN MARINO BUDIONO — 2471055 • XII RPL" [ref=f21e212] [cursor=pointer]
+                - generic [ref=f21e213]:
+                  - strong [ref=f21e214]: REYHAN MARINO BUDIONO
+                  - text: — 2471055 • XII RPL
+              - generic [ref=f21e215]:
+                - checkbox "SAFA ANNISA RAMADHANI — 2471056 • XII RPL" [ref=f21e216] [cursor=pointer]
+                - generic [ref=f21e217]:
+                  - strong [ref=f21e218]: SAFA ANNISA RAMADHANI
+                  - text: — 2471056 • XII RPL
+              - generic [ref=f21e219]:
+                - checkbox "SHERLY AULINA — 2471057 • XII RPL" [ref=f21e220] [cursor=pointer]
+                - generic [ref=f21e221]:
+                  - strong [ref=f21e222]: SHERLY AULINA
+                  - text: — 2471057 • XII RPL
+              - generic [ref=f21e223]:
+                - checkbox "SILVIA NIRMALA ROHMADHONA — 2471058 • XII RPL" [ref=f21e224] [cursor=pointer]
+                - generic [ref=f21e225]:
+                  - strong [ref=f21e226]: SILVIA NIRMALA ROHMADHONA
+                  - text: — 2471058 • XII RPL
+              - generic [ref=f21e227]:
+                - checkbox "TANIA BUDI NISRINA — 2471059 • XII RPL" [ref=f21e228] [cursor=pointer]
+                - generic [ref=f21e229]:
+                  - strong [ref=f21e230]: TANIA BUDI NISRINA
+                  - text: — 2471059 • XII RPL
+              - generic [ref=f21e231]:
+                - checkbox "YOSAFAT NICO CHANDRA PRASODJO — 2471060 • XII RPL" [ref=f21e232] [cursor=pointer]
+                - generic [ref=f21e233]:
+                  - strong [ref=f21e234]: YOSAFAT NICO CHANDRA PRASODJO
+                  - text: — 2471060 • XII RPL
+              - generic [ref=f21e235]:
+                - checkbox "AINA FAJAR RIZKIA — 2471061 • XII RPL" [ref=f21e236] [cursor=pointer]
+                - generic [ref=f21e237]:
+                  - strong [ref=f21e238]: AINA FAJAR RIZKIA
+                  - text: — 2471061 • XII RPL
+              - generic [ref=f21e239]:
+                - checkbox "pwertyuiohgfcv — candra • X RPL" [ref=f21e240] [cursor=pointer]
+                - generic [ref=f21e241]:
+                  - strong [ref=f21e242]: pwertyuiohgfcv
+                  - text: — candra • X RPL
+          - text:  
+    - generic [ref=f21e244]:
+      - generic [ref=f21e245]:
+        - generic [ref=f21e246]: 
+        - strong [ref=f21e247]: 1/5
+      - button "Konfirmasi Pinjam " [ref=f21e248] [cursor=pointer]:
+        - generic [ref=f21e249]: Konfirmasi Pinjam
+        - generic [ref=f21e250]: 
+    - contentinfo [ref=f21e251]:
+      - generic [ref=f21e252]:
+        - generic [ref=f21e253]:
+          - img "Logo Simpels" [ref=f21e254]
+          - text: Simpels
+        - generic [ref=f21e255]: © 2026 Peminjaman Laptop Sekolah
+  - navigation "Menu siswa" [ref=f21e256]:
+    - link " Dashboard" [ref=f21e257] [cursor=pointer]:
+      - /url: http://localhost:8000/dashboard
+      - generic [ref=f21e258]: 
+      - generic [ref=f21e259]: Dashboard
+    - link " Pinjam" [ref=f21e260] [cursor=pointer]:
+      - /url: http://localhost:8000/pinjam
+      - generic [ref=f21e261]: 
+      - generic [ref=f21e262]: Pinjam
+    - link " Kembalikan" [ref=f21e263] [cursor=pointer]:
+      - /url: http://localhost:8000/kembali
+      - generic [ref=f21e264]: 
+      - generic [ref=f21e265]: Kembalikan

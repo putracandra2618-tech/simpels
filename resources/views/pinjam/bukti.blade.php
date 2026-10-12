@@ -98,8 +98,8 @@
                     <td>{{ $index + 1 }}</td>
                     <td>{{ $student->username }}</td>
                     <td>{{ $student->name }}</td>
-                    <td>{{ $student->kelas ?? '-' }}</td>
-                    <td>{{ $student->jurusan ?? '-' }}</td>
+                    <td>{{ $student->kelas?->nama ?? '-' }}</td>
+                    <td>{{ $student->jurusan?->kode ?? '-' }}</td>
                   </tr>
                 @endforeach
               </tbody>
@@ -111,7 +111,7 @@
                 <span class="receipt-member-no">{{ $index + 1 }}</span>
                 <span class="receipt-member-info">
                   <strong>{{ $student->name }}</strong>
-                  <span class="text-muted">{{ $student->username }} • {{ $student->kelas ?? '-' }} {{ $student->jurusan ?? '-' }}</span>
+                  <span class="text-muted">{{ $student->username }} • {{ $student->kelas?->nama ?? '-' }} {{ $student->jurusan?->kode ?? '-' }}</span>
                 </span>
               </li>
             @endforeach

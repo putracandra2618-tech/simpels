@@ -1,0 +1,45 @@
+- generic [ref=f15e2]:
+  - generic [ref=f15e4]:
+    - heading "Login ke Simpels" [level=1] [ref=f15e5]
+    - paragraph [ref=f15e6]: sistem peminjaman laptop sekolah
+    - generic [ref=f15e7]:
+      - generic [ref=f15e8]:
+        - generic [ref=f15e9]: Username (NIS)
+        - generic [ref=f15e10]:
+          - generic: 
+          - textbox "Username (NIS)" [active] [ref=f15e11]:
+            - /placeholder: Masukkan NIS / username
+      - generic [ref=f15e12]:
+        - generic [ref=f15e13]: Password
+        - generic [ref=f15e14]:
+          - generic: 
+          - textbox "Password" [ref=f15e15]:
+            - /placeholder: ••••••••
+          - button "Show password" [ref=f15e16] [cursor=pointer]:
+            - generic [ref=f15e17]: 
+      - generic [ref=f15e19] [cursor=pointer]:
+        - checkbox "Ingat Saya" [ref=f15e20]
+        - generic [ref=f15e21]: Ingat Saya
+      - button "Login " [ref=f15e22] [cursor=pointer]:
+        - generic [ref=f15e23]: Login
+        - generic [ref=f15e24]: 
+  - generic [ref=f15e27]:
+    - img "Logo Simpels" [ref=f15e29]
+    - paragraph [ref=f15e30]: SIMPELS
+    - paragraph [ref=f15e31]: sistem peminjaman laptop sekolah
+    - generic [ref=f15e32]:
+      - generic [ref=f15e33]:
+        - generic [ref=f15e34]: 
+        - generic [ref=f15e35]:
+          - strong [ref=f15e36]: Scan QR
+          - generic [ref=f15e37]: Mulai pinjam lewat kode QR di laptop
+      - generic [ref=f15e38]:
+        - generic [ref=f15e39]: 
+        - generic [ref=f15e40]:
+          - strong [ref=f15e41]: Pinjam Bersama
+          - generic [ref=f15e42]: Anggota kelompok sekelas sekaligus
+      - generic [ref=f15e43]:
+        - generic [ref=f15e44]: 
+        - generic [ref=f15e45]:
+          - strong [ref=f15e46]: Kembali Cepat
+          - generic [ref=f15e47]: Serahkan kembali dan terverifikasi admin

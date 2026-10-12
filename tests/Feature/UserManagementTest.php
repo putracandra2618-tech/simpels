@@ -3,6 +3,8 @@
 namespace Tests\Feature;
 
 use App\Models\Borrowing;
+use App\Models\Jurusan;
+use App\Models\Kelas;
 use App\Models\Laptop;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -12,6 +14,19 @@ use Tests\TestCase;
 class UserManagementTest extends TestCase
 {
     use RefreshDatabase;
+
+    private function siswaPayload(array $overrides = []): array
+    {
+        return array_merge([
+            'name' => 'Siti Aminah',
+            'username' => '20240077',
+            'password' => 'rahasia123',
+            'password_confirmation' => 'rahasia123',
+            'role' => 'siswa',
+            'kelas_id' => Kelas::where('nama', 'XII')->value('id'),
+            'jurusan_id' => Jurusan::where('kode', 'RPL')->value('id'),
+        ], $overrides);
+    }
 
     public function test_admin_can_list_users(): void
     {
@@ -69,20 +84,47 @@ class UserManagementTest extends TestCase
             ->assertDontSee('Kelas / Jurusan');
     }
 
+    public function test_admin_can_filter_siswa_by_kelas_and_jurusan(): void
+    {
+        $admin = User::factory()->admin()->create();
+
+        $kelasXI = Kelas::where('nama', 'XI')->firstOrFail();
+        $jurusanTEI = Jurusan::where('kode', 'TEI')->firstOrFail();
+
+        $kelasXII = Kelas::where('nama', 'XII')->firstOrFail();
+        $jurusanRPL = Jurusan::where('kode', 'RPL')->firstOrFail();
+
+        User::factory()->siswa()->create([
+            'name' => 'Ayu',
+            'username' => '20240101',
+            'kelas_id' => $kelasXII->id,
+            'jurusan_id' => $jurusanRPL->id,
+        ]);
+        $siswaXITEI = User::factory()->siswa()->create([
+            'name' => 'Bagus',
+            'username' => '20240102',
+            'kelas_id' => $kelasXI->id,
+            'jurusan_id' => $jurusanTEI->id,
+        ]);
+
+        $this->actingAs($admin)
+            ->get(route('admin.user.index', ['kelas' => $kelasXI->id, 'jurusan' => $jurusanTEI->id]))
+            ->assertOk()
+            ->assertSee('Bagus')
+            ->assertSee('20240102')
+            ->assertDontSee('Ayu');
+
+        $siswaXITEI->refresh();
+        $this->assertSame('XI', $siswaXITEI->kelas?->nama);
+        $this->assertSame('TEI', $siswaXITEI->jurusan?->kode);
+    }
+
     public function test_siswa_scope_rejects_creating_admin_account(): void
     {
         $admin = User::factory()->admin()->create();
 
         $this->actingAs($admin)
-            ->post(route('admin.user.store'), [
-                'name' => 'Nyelip',
-                'username' => 'nyelip2000',
-                'password' => 'password',
-                'password_confirmation' => 'password',
-                'role' => 'admin',
-                'kelas' => 'X',
-                'jurusan' => 'RPL',
-            ])
+            ->post(route('admin.user.store'), $this->siswaPayload(['role' => 'admin', 'name' => 'Nyelip', 'username' => 'nyelip2000']))
             ->assertSessionHasErrors('role');
 
         $this->assertDatabaseMissing('users', ['username' => 'nyelip2000']);
@@ -93,15 +135,7 @@ class UserManagementTest extends TestCase
         $superadmin = User::factory()->create(['role' => 'superadmin', 'username' => 'bosbesar']);
 
         $this->actingAs($superadmin)
-            ->post(route('admin.adminuser.store'), [
-                'name' => 'Bukan Siswa',
-                'username' => 'bukanmurid',
-                'password' => 'password',
-                'password_confirmation' => 'password',
-                'role' => 'siswa',
-                'kelas' => 'X',
-                'jurusan' => 'RPL',
-            ])
+            ->post(route('admin.adminuser.store'), $this->siswaPayload(['role' => 'siswa', 'name' => 'Bukan Siswa', 'username' => 'bukanmurid']))
             ->assertSessionHasErrors('role');
 
         $this->assertDatabaseMissing('users', ['username' => 'bukanmurid']);
@@ -112,23 +146,15 @@ class UserManagementTest extends TestCase
         $admin = User::factory()->admin()->create();
 
         $this->actingAs($admin)
-            ->post(route('admin.user.store'), [
-                'name' => 'Siti Aminah',
-                'username' => '20240077',
-                'password' => 'rahasia123',
-                'password_confirmation' => 'rahasia123',
-                'role' => 'siswa',
-                'kelas' => 'XII',
-                'jurusan' => 'RPL',
-            ])
+            ->post(route('admin.user.store'), $this->siswaPayload())
             ->assertRedirect(route('admin.user.index'));
 
         $this->assertDatabaseHas('users', [
             'name' => 'Siti Aminah',
             'username' => '20240077',
             'role' => 'siswa',
-            'kelas' => 'XII',
-            'jurusan' => 'RPL',
+            'kelas_id' => Kelas::where('nama', 'XII')->value('id'),
+            'jurusan_id' => Jurusan::where('kode', 'RPL')->value('id'),
         ]);
     }
 
@@ -137,23 +163,25 @@ class UserManagementTest extends TestCase
         $admin = User::factory()->admin()->create();
         $siswa = User::factory()->siswa()->create(['username' => '20240066']);
 
+        $kelasXI = Kelas::where('nama', 'XI')->firstOrFail();
+        $jurusanTEI = Jurusan::where('kode', 'TEI')->firstOrFail();
+
         $this->actingAs($admin)
-            ->put(route('admin.user.update', $siswa), [
+            ->put(route('admin.user.update', $siswa), $this->siswaPayload([
                 'name' => 'Siti Amalia',
                 'username' => '20240066',
                 'password' => 'barubaru123',
                 'password_confirmation' => 'barubaru123',
-                'role' => 'siswa',
-                'kelas' => 'XI',
-                'jurusan' => 'TEI',
-            ])
+                'kelas_id' => $kelasXI->id,
+                'jurusan_id' => $jurusanTEI->id,
+            ]))
             ->assertRedirect(route('admin.user.index'));
 
         $siswa->refresh();
 
         $this->assertSame('Siti Amalia', $siswa->name);
-        $this->assertSame('XI', $siswa->kelas);
-        $this->assertSame('TEI', $siswa->jurusan);
+        $this->assertSame('XI', $siswa->kelas?->nama);
+        $this->assertSame('TEI', $siswa->jurusan?->kode);
         $this->assertTrue(Hash::check('barubaru123', $siswa->password));
     }
 
@@ -165,15 +193,12 @@ class UserManagementTest extends TestCase
         $oldToken = $siswa->remember_token;
 
         $this->actingAs($admin)
-            ->put(route('admin.user.update', $siswa), [
+            ->put(route('admin.user.update', $siswa), $this->siswaPayload([
                 'name' => $siswa->name,
                 'username' => $siswa->username,
                 'password' => 'newpassword123',
                 'password_confirmation' => 'newpassword123',
-                'role' => 'siswa',
-                'kelas' => 'X',
-                'jurusan' => 'RPL',
-            ])
+            ]))
             ->assertRedirect(route('admin.user.index'));
 
         $this->assertNotSame($oldToken, $siswa->fresh()->remember_token);
@@ -187,14 +212,11 @@ class UserManagementTest extends TestCase
         $oldToken = $siswa->remember_token;
 
         $this->actingAs($admin)
-            ->put(route('admin.user.update', $siswa), [
+            ->put(route('admin.user.update', $siswa), $this->siswaPayload([
                 'name' => 'Nama Baru',
                 'username' => $siswa->username,
                 'password' => null,
-                'role' => 'siswa',
-                'kelas' => 'X',
-                'jurusan' => 'RPL',
-            ])
+            ]))
             ->assertRedirect(route('admin.user.index'));
 
         $this->assertSame($oldToken, $siswa->fresh()->remember_token);
@@ -317,15 +339,10 @@ class UserManagementTest extends TestCase
         User::factory()->siswa()->create(['username' => '20240044']);
 
         $this->actingAs($admin)
-            ->post(route('admin.user.store'), [
+            ->post(route('admin.user.store'), $this->siswaPayload([
                 'name' => 'Duplikat',
                 'username' => '20240044',
-                'password' => 'password',
-                'password_confirmation' => 'password',
-                'role' => 'siswa',
-                'kelas' => 'X',
-                'jurusan' => 'RPL',
-            ])
+            ]))
             ->assertSessionHasErrors('username');
     }
 
@@ -334,15 +351,7 @@ class UserManagementTest extends TestCase
         $admin = User::factory()->admin()->create();
 
         $this->actingAs($admin)
-            ->post(route('admin.user.store'), [
-                'name' => 'Rendah',
-                'username' => '20240033',
-                'password' => '12345',
-                'password_confirmation' => '12345',
-                'role' => 'siswa',
-                'kelas' => 'X',
-                'jurusan' => 'RPL',
-            ])
+            ->post(route('admin.user.store'), $this->siswaPayload(['password' => '12345', 'password_confirmation' => '12345']))
             ->assertSessionHasErrors('password');
     }
 
@@ -358,7 +367,7 @@ class UserManagementTest extends TestCase
                 'password_confirmation' => 'password',
                 'role' => 'siswa',
             ])
-            ->assertSessionHasErrors(['kelas', 'jurusan']);
+            ->assertSessionHasErrors(['kelas_id', 'jurusan_id']);
 
         $this->assertDatabaseMissing('users', ['username' => '20240022']);
     }

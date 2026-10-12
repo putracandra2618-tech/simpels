@@ -20,14 +20,14 @@
         @else
           <select class="form-select form-select-sm" id="filter-kelas" name="kelas">
             <option value="">Kelas: Semua</option>
-            <option value="X" @selected(request('kelas') === 'X')>X</option>
-            <option value="XI" @selected(request('kelas') === 'XI')>XI</option>
-            <option value="XII" @selected(request('kelas') === 'XII')>XII</option>
+            @foreach ($kelas as $kelasItem)
+              <option value="{{ $kelasItem->id }}" @selected((string) request('kelas') === (string) $kelasItem->id)>{{ $kelasItem->nama }}</option>
+            @endforeach
           </select>
           <select class="form-select form-select-sm" id="filter-jurusan" name="jurusan">
             <option value="">Jurusan: Semua</option>
-            @foreach (['TKJ', 'RPL', 'TEI', 'TPSB', 'TB', 'TKR', 'TP'] as $jurusan)
-              <option value="{{ $jurusan }}" @selected(request('jurusan') === $jurusan)>{{ $jurusan }}</option>
+            @foreach ($jurusan as $jurusanItem)
+              <option value="{{ $jurusanItem->id }}" @selected((string) request('jurusan') === (string) $jurusanItem->id)>{{ $jurusanItem->kode }}</option>
             @endforeach
           </select>
         @endif
@@ -82,7 +82,7 @@
               @if ($scope !== 'admin')
                 <td data-label="Kelas / Jurusan">
                   @if ($user->kelas || $user->jurusan)
-                    {{ $user->kelas ?? '-' }} / {{ $user->jurusan ?? '-' }}
+                    {{ $user->kelas?->nama ?? '-' }} / {{ $user->jurusan?->kode ?? '-' }}
                   @else
                     <span class="text-muted">-</span>
                   @endif

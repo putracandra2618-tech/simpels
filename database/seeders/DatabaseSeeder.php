@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Jurusan;
+use App\Models\Kelas;
 use App\Models\Laptop;
 use App\Models\User;
 use Illuminate\Database\Seeder;
@@ -12,6 +14,8 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
+        $this->call(ReferenceSeeder::class);
+
         User::updateOrCreate(['username' => 'admin'], [
             'name' => 'Administrator',
             'email' => null,
@@ -71,14 +75,17 @@ class DatabaseSeeder extends Seeder
             '2471061' => 'AINA FAJAR RIZKIA',
         ];
 
+        $kelasId = Kelas::where('nama', 'XII')->value('id');
+        $jurusanId = Jurusan::where('kode', 'RPL')->value('id');
+
         foreach ($siswaData as $nis => $nama) {
             User::updateOrCreate(['username' => $nis], [
                 'name' => $nama,
                 'email' => null,
                 'password' => 'password',
                 'role' => 'siswa',
-                'kelas' => 'XII',
-                'jurusan' => 'RPL',
+                'kelas_id' => $kelasId,
+                'jurusan_id' => $jurusanId,
             ]);
         }
 

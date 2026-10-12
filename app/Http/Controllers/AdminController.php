@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Borrowing;
+use App\Models\Jurusan;
+use App\Models\Kelas;
 use App\Models\Laptop;
 use App\Models\ReturnRequest;
 use App\Models\User;
@@ -225,33 +227,34 @@ class AdminController extends Controller
                 $query->where('role', $role);
             }
         } else {
-            $kelas = $request->query('kelas');
+            $kelasId = $request->integer('kelas');
 
-            if (in_array($kelas, ['X', 'XI', 'XII'], true)) {
-                $query->where('kelas', $kelas);
+            if ($kelasId > 0) {
+                $query->where('kelas_id', $kelasId);
             }
 
-            $jurusan = $request->query('jurusan');
+            $jurusanId = $request->integer('jurusan');
 
-            if (in_array($jurusan, ['TKJ', 'RPL', 'TEI', 'TPSB', 'TB', 'TKR', 'TP'], true)) {
-                $query->where('jurusan', $jurusan);
+            if ($jurusanId > 0) {
+                $query->where('jurusan_id', $jurusanId);
             }
         }
 
         $users = $query
+            ->with(['kelas', 'jurusan'])
             ->withCount(['borrowings as active_borrowings_count' => fn ($query) => $query->whereIn('status', ['aktif', 'menunggu'])])
             ->latest()
             ->paginate(10)
             ->withQueryString();
 
-        return view('admin.user', compact('users', 'scope'));
+        return view('admin.user', [...$this->userFormData(), 'users' => $users, 'scope' => $scope]);
     }
 
     public function userCreate(Request $request): View
     {
         $scope = $this->userScope($request);
 
-        return view('admin.user-form', ['user' => null, 'scope' => $scope]);
+        return view('admin.user-form', [...$this->userFormData(), 'user' => null, 'scope' => $scope]);
     }
 
     public function userStore(Request $request): RedirectResponse
@@ -277,7 +280,7 @@ class AdminController extends Controller
 
         abort_if(! $this->userMatchesScope($user, $scope), 404);
 
-        return view('admin.user-form', compact('user', 'scope'));
+        return view('admin.user-form', [...$this->userFormData(), 'user' => $user, 'scope' => $scope]);
     }
 
     public function userUpdate(Request $request, User $user): RedirectResponse
@@ -365,6 +368,14 @@ class AdminController extends Controller
         return $request->route('scope', 'siswa') === 'admin' ? 'admin' : 'siswa';
     }
 
+    private function userFormData(): array
+    {
+        return [
+            'kelas' => Kelas::orderBy('nama')->get(),
+            'jurusan' => Jurusan::orderBy('kode')->get(),
+        ];
+    }
+
     private function userIndexRoute(string $scope): string
     {
         return $scope === 'admin' ? 'admin.adminuser.index' : 'admin.user.index';
@@ -387,12 +398,12 @@ class AdminController extends Controller
 
         if ($scope === 'admin') {
             $rules['role'] = ['required', Rule::in(['admin', 'superadmin'])];
-            $rules['kelas'] = ['nullable', 'string', 'max:255'];
-            $rules['jurusan'] = ['nullable', 'string', 'max:255'];
+            $rules['kelas_id'] = ['nullable', 'integer', Rule::exists('kelas', 'id')];
+            $rules['jurusan_id'] = ['nullable', 'integer', Rule::exists('jurusan', 'id')];
         } else {
             $rules['role'] = ['required', Rule::in(['siswa'])];
-            $rules['kelas'] = ['required', Rule::in(['X', 'XI', 'XII'])];
-            $rules['jurusan'] = ['required', Rule::in(['TKJ', 'RPL', 'TEI', 'TPSB', 'TB', 'TKR', 'TP'])];
+            $rules['kelas_id'] = ['required', 'integer', Rule::exists('kelas', 'id')];
+            $rules['jurusan_id'] = ['required', 'integer', Rule::exists('jurusan', 'id')];
         }
 
         return $request->validate($rules);

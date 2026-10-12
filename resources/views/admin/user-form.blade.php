@@ -60,28 +60,28 @@
             <div class="row g-3" id="kelas-jurusan">
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label for="kelas" class="form-label-custom">Kelas <span class="text-danger">*</span></label>
-                  <select class="form-select-custom @error('kelas') is-invalid-custom @enderror" id="kelas" name="kelas">
-                    <option value="" disabled {{ old('kelas', $user->kelas ?? '') === null ? 'selected' : '' }}>Pilih Kelas…</option>
-                    @foreach (['X', 'XI', 'XII'] as $kelas)
-                      <option value="{{ $kelas }}" @selected(old('kelas', $user->kelas ?? '') === $kelas)>{{ $kelas }}</option>
+                  <label for="kelas_id" class="form-label-custom">Kelas <span class="text-danger">*</span></label>
+                  <select class="form-select-custom @error('kelas_id') is-invalid-custom @enderror" id="kelas_id" name="kelas_id" required>
+                    <option value="" disabled {{ old('kelas_id', $user->kelas_id ?? '') === null ? 'selected' : '' }}>Pilih Kelas…</option>
+                    @foreach ($kelas as $kelasItem)
+                      <option value="{{ $kelasItem->id }}" @selected((string) old('kelas_id', $user->kelas_id ?? '') === (string) $kelasItem->id)>{{ $kelasItem->nama }}</option>
                     @endforeach
                   </select>
-                  @error('kelas')
+                  @error('kelas_id')
                     <div class="form-feedback-custom invalid-custom"><i class="bi bi-exclamation-circle-fill"></i> {{ $message }}</div>
                   @enderror
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label for="jurusan" class="form-label-custom">Jurusan <span class="text-danger">*</span></label>
-                  <select class="form-select-custom @error('jurusan') is-invalid-custom @enderror" id="jurusan" name="jurusan">
-                    <option value="" disabled {{ old('jurusan', $user->jurusan ?? '') === null ? 'selected' : '' }}>Pilih Jurusan…</option>
-                    @foreach (['TKJ', 'RPL', 'TEI', 'TPSB', 'TB', 'TKR', 'TP'] as $jurusan)
-                      <option value="{{ $jurusan }}" @selected(old('jurusan', $user->jurusan ?? '') === $jurusan)>{{ $jurusan }}</option>
+                  <label for="jurusan_id" class="form-label-custom">Jurusan <span class="text-danger">*</span></label>
+                  <select class="form-select-custom @error('jurusan_id') is-invalid-custom @enderror" id="jurusan_id" name="jurusan_id" required>
+                    <option value="" disabled {{ old('jurusan_id', $user->jurusan_id ?? '') === null ? 'selected' : '' }}>Pilih Jurusan…</option>
+                    @foreach ($jurusan as $jurusanItem)
+                      <option value="{{ $jurusanItem->id }}" @selected((string) old('jurusan_id', $user->jurusan_id ?? '') === (string) $jurusanItem->id)>{{ $jurusanItem->kode }}</option>
                     @endforeach
                   </select>
-                  @error('jurusan')
+                  @error('jurusan_id')
                     <div class="form-feedback-custom invalid-custom"><i class="bi bi-exclamation-circle-fill"></i> {{ $message }}</div>
                   @enderror
                 </div>

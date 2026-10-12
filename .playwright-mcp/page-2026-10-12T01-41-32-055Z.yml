@@ -1,0 +1,203 @@
+- generic [active] [ref=f7e1]:
+  - generic [ref=f7e2]:
+    - link "Logo Simpels Simpels" [ref=f7e3] [cursor=pointer]:
+      - /url: http://localhost:8000/dashboard
+      - img "Logo Simpels" [ref=f7e4]
+      - generic [ref=f7e5]: Simpels
+    - generic [ref=f7e7]:
+      - generic [ref=f7e8]: Menu
+      - list [ref=f7e9]:
+        - listitem [ref=f7e10]:
+          - link " Dashboard" [ref=f7e11] [cursor=pointer]:
+            - /url: http://localhost:8000/dashboard
+            - generic [ref=f7e12]: 
+            - generic [ref=f7e13]: Dashboard
+        - listitem [ref=f7e14]:
+          - link " Verifikasi" [ref=f7e15] [cursor=pointer]:
+            - /url: http://localhost:8000/admin/verifikasi
+            - generic [ref=f7e16]: 
+            - generic [ref=f7e17]: Verifikasi
+        - listitem [ref=f7e18]:
+          - link " Data Laptop" [ref=f7e19] [cursor=pointer]:
+            - /url: http://localhost:8000/admin/laptop
+            - generic [ref=f7e20]: 
+            - generic [ref=f7e21]: Data Laptop
+        - listitem [ref=f7e22]:
+          - link " Data User" [ref=f7e23] [cursor=pointer]:
+            - /url: http://localhost:8000/admin/user
+            - generic [ref=f7e24]: 
+            - generic [ref=f7e25]: Data User
+        - listitem [ref=f7e26]:
+          - link " Data Admin" [ref=f7e27] [cursor=pointer]:
+            - /url: http://localhost:8000/admin/admin-user
+            - generic [ref=f7e28]: 
+            - generic [ref=f7e29]: Data Admin
+        - listitem [ref=f7e30]:
+          - link " Kelas & Jurusan" [ref=f7e31] [cursor=pointer]:
+            - /url: http://localhost:8000/admin/referensi
+            - generic [ref=f7e32]: 
+            - generic [ref=f7e33]: Kelas & Jurusan
+    - generic [ref=f7e34]:
+      - generic "Foto profil" [ref=f7e35]: 
+      - generic [ref=f7e37]:
+        - generic [ref=f7e38]: Administrator
+        - generic [ref=f7e39]: admin
+  - generic [ref=f7e40]:
+    - banner [ref=f7e41]:
+      - generic [ref=f7e42]:
+        - text: 
+        - button "Toggle Navigation" [ref=f7e43] [cursor=pointer]:
+          - generic [ref=f7e44]: 
+      - generic [ref=f7e46]:
+        - generic [ref=f7e47]: 
+        - text: Peminjaman Laptop Sekolah
+      - generic [ref=f7e48]:
+        - generic [ref=f7e49]:
+          - button "" [ref=f7e50] [cursor=pointer]
+          - text:    
+        - generic [ref=f7e52]:
+          - button "Foto profil Administrator " [ref=f7e53] [cursor=pointer]:
+            - generic "Foto profil" [ref=f7e54]: 
+            - generic [ref=f7e56]: Administrator
+            - generic [ref=f7e57]: 
+          - text: 
+    - generic [ref=f7e58]:
+      - generic [ref=f7e59]:
+        - heading "Kelas & Jurusan" [level=1] [ref=f7e60]
+        - paragraph [ref=f7e61]: Kelola pilihan kelas dan jurusan yang tersedia untuk akun siswa.
+      - alert [ref=f7e62]:
+        - generic [ref=f7e63]: 
+        - text: Kelas "XIV" diperbarui.
+        - button "Close" [ref=f7e64] [cursor=pointer]
+    - main [ref=f7e65]:
+      - generic [ref=f7e66]:
+        - generic [ref=f7e68]:
+          - generic [ref=f7e69]:
+            - generic [ref=f7e70]:
+              - heading "Kelas" [level=6] [ref=f7e71]
+              - generic [ref=f7e72]: 3 tingkatan
+            - generic [ref=f7e73]:
+              - textbox "mis. XII" [ref=f7e74]
+              - button " Tambah" [ref=f7e75] [cursor=pointer]:
+                - generic [ref=f7e76]: 
+                - text: Tambah
+          - table [ref=f7e78]:
+            - rowgroup [ref=f7e79]:
+              - row [ref=f7e80]:
+                - columnheader "Nama" [ref=f7e81]
+                - columnheader "Jumlah Siswa" [ref=f7e82]
+                - columnheader "Aksi" [ref=f7e83]
+            - rowgroup [ref=f7e84]:
+              - row [ref=f7e85]:
+                - cell "X" [ref=f7e86]
+                - cell "1 siswa" [ref=f7e87]
+                - cell [ref=f7e88]:
+                  - generic [ref=f7e89]:
+                    - link "" [ref=f7e90] [cursor=pointer]:
+                      - /url: http://localhost:8000/admin/referensi?edit_kelas=1
+                    - button "" [ref=f7e93] [cursor=pointer]
+              - row [ref=f7e95]:
+                - cell "XII" [ref=f7e96]
+                - cell "42 siswa" [ref=f7e97]
+                - cell [ref=f7e98]:
+                  - generic [ref=f7e99]:
+                    - link "" [ref=f7e100] [cursor=pointer]:
+                      - /url: http://localhost:8000/admin/referensi?edit_kelas=3
+                    - button "" [ref=f7e103] [cursor=pointer]
+              - row [ref=f7e105]:
+                - cell "XIV" [ref=f7e106]
+                - cell "0 siswa" [ref=f7e107]
+                - cell [ref=f7e108]:
+                  - generic [ref=f7e109]:
+                    - link "" [ref=f7e110] [cursor=pointer]:
+                      - /url: http://localhost:8000/admin/referensi?edit_kelas=2
+                    - button "" [ref=f7e113] [cursor=pointer]
+        - generic [ref=f7e116]:
+          - generic [ref=f7e117]:
+            - generic [ref=f7e118]:
+              - heading "Jurusan" [level=6] [ref=f7e119]
+              - generic [ref=f7e120]: 7 jurusan
+            - generic [ref=f7e121]:
+              - textbox "Kode, mis. RPL" [ref=f7e122]
+              - textbox "Nama jurusan, mis. Rekayasa Perangkat Lunak" [ref=f7e123]
+              - button " Tambah" [ref=f7e124] [cursor=pointer]:
+                - generic [ref=f7e125]: 
+                - text: Tambah
+          - table [ref=f7e127]:
+            - rowgroup [ref=f7e128]:
+              - row [ref=f7e129]:
+                - columnheader "Kode" [ref=f7e130]
+                - columnheader "Nama" [ref=f7e131]
+                - columnheader "Jumlah Siswa" [ref=f7e132]
+                - columnheader "Aksi" [ref=f7e133]
+            - rowgroup [ref=f7e134]:
+              - row [ref=f7e135]:
+                - cell "RPL" [ref=f7e136]
+                - cell "Rekayasa Perangkat Lunak" [ref=f7e138]
+                - cell "43 siswa" [ref=f7e139]
+                - cell [ref=f7e140]:
+                  - generic [ref=f7e141]:
+                    - link "" [ref=f7e142] [cursor=pointer]:
+                      - /url: http://localhost:8000/admin/referensi?edit_jurusan=2
+                    - button "" [ref=f7e145] [cursor=pointer]
+              - row [ref=f7e147]:
+                - cell "TB" [ref=f7e148]
+                - cell "Tata Busana" [ref=f7e150]
+                - cell "0 siswa" [ref=f7e151]
+                - cell [ref=f7e152]:
+                  - generic [ref=f7e153]:
+                    - link "" [ref=f7e154] [cursor=pointer]:
+                      - /url: http://localhost:8000/admin/referensi?edit_jurusan=5
+                    - button "" [ref=f7e157] [cursor=pointer]
+              - row [ref=f7e159]:
+                - cell "TEI" [ref=f7e160]
+                - cell "Teknik Elektronika Industri" [ref=f7e162]
+                - cell "0 siswa" [ref=f7e163]
+                - cell [ref=f7e164]:
+                  - generic [ref=f7e165]:
+                    - link "" [ref=f7e166] [cursor=pointer]:
+                      - /url: http://localhost:8000/admin/referensi?edit_jurusan=3
+                    - button "" [ref=f7e169] [cursor=pointer]
+              - row [ref=f7e171]:
+                - cell "TKJ" [ref=f7e172]
+                - cell "Teknik Komputer dan Jaringan" [ref=f7e174]
+                - cell "0 siswa" [ref=f7e175]
+                - cell [ref=f7e176]:
+                  - generic [ref=f7e177]:
+                    - link "" [ref=f7e178] [cursor=pointer]:
+                      - /url: http://localhost:8000/admin/referensi?edit_jurusan=1
+                    - button "" [ref=f7e181] [cursor=pointer]
+              - row [ref=f7e183]:
+                - cell "TKR" [ref=f7e184]
+                - cell "Teknik Kendaraan Ringan" [ref=f7e186]
+                - cell "0 siswa" [ref=f7e187]
+                - cell [ref=f7e188]:
+                  - generic [ref=f7e189]:
+                    - link "" [ref=f7e190] [cursor=pointer]:
+                      - /url: http://localhost:8000/admin/referensi?edit_jurusan=6
+                    - button "" [ref=f7e193] [cursor=pointer]
+              - row [ref=f7e195]:
+                - cell "TP" [ref=f7e196]
+                - cell "Teknik Pemesinan" [ref=f7e198]
+                - cell "0 siswa" [ref=f7e199]
+                - cell [ref=f7e200]:
+                  - generic [ref=f7e201]:
+                    - link "" [ref=f7e202] [cursor=pointer]:
+                      - /url: http://localhost:8000/admin/referensi?edit_jurusan=7
+                    - button "" [ref=f7e205] [cursor=pointer]
+              - row [ref=f7e207]:
+                - cell "TPSB" [ref=f7e208]
+                - cell "Teknik Pemintalan Serat Buatan" [ref=f7e210]
+                - cell "0 siswa" [ref=f7e211]
+                - cell [ref=f7e212]:
+                  - generic [ref=f7e213]:
+                    - link "" [ref=f7e214] [cursor=pointer]:
+                      - /url: http://localhost:8000/admin/referensi?edit_jurusan=4
+                    - button "" [ref=f7e217] [cursor=pointer]
+    - contentinfo [ref=f7e219]:
+      - generic [ref=f7e220]:
+        - generic [ref=f7e221]:
+          - img "Logo Simpels" [ref=f7e222]
+          - text: Simpels
+        - generic [ref=f7e223]: "|"
+        - generic [ref=f7e224]: © 2026 Peminjaman Laptop Sekolah

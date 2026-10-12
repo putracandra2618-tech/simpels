@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Borrowing;
 use App\Models\BorrowingStudent;
+use App\Models\Jurusan;
+use App\Models\Kelas;
 use App\Models\Laptop;
 use App\Models\User;
 use Illuminate\Http\RedirectResponse;
@@ -61,10 +63,17 @@ class BorrowingController extends Controller
         $students = User::where('role', 'siswa')
             ->where('id', '!=', $user->id)
             ->whereNotIn('id', $activeStudentIds)
+            ->with(['kelas', 'jurusan'])
             ->orderBy('username')
             ->get();
 
-        return view('pinjam.konfirmasi', compact('laptop', 'students', 'user'));
+        return view('pinjam.konfirmasi', [
+            'laptop' => $laptop,
+            'students' => $students,
+            'user' => $user,
+            'kelas' => Kelas::orderBy('nama')->get(),
+            'jurusan' => Jurusan::orderBy('kode')->get(),
+        ]);
     }
 
     public function store(Request $request, Laptop $laptop): RedirectResponse
@@ -132,7 +141,7 @@ class BorrowingController extends Controller
 
     public function bukti(Borrowing $borrowing): View
     {
-        $borrowing->load(['laptop', 'students', 'leader']);
+        $borrowing->load(['laptop', 'students.kelas', 'students.jurusan', 'leader']);
 
         $isMember = $borrowing->students->contains(fn ($student) => $student->id === Auth::id());
 

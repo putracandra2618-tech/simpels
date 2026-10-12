@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use App\Models\Jurusan;
+use App\Models\Kelas;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
@@ -31,19 +33,21 @@ class UserFactory extends Factory
             'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
             'role' => 'siswa',
-            'kelas' => null,
-            'jurusan' => null,
+            'kelas_id' => null,
+            'jurusan_id' => null,
             'remember_token' => Str::random(10),
         ];
     }
 
     public function siswa(): static
     {
-        return $this->state(fn (array $attributes) => [
-            'role' => 'siswa',
-            'kelas' => fake()->randomElement(['X', 'XI', 'XII']),
-            'jurusan' => fake()->randomElement(['TKJ', 'RPL', 'TEI', 'TPSB', 'TB', 'TKR', 'TP']),
-        ]);
+        return $this->state(function (array $attributes) {
+            return [
+                'role' => 'siswa',
+                'kelas_id' => Kelas::query()->inRandomOrder()->value('id') ?? Kelas::factory()->create()->id,
+                'jurusan_id' => Jurusan::query()->inRandomOrder()->value('id') ?? Jurusan::factory()->create()->id,
+            ];
+        });
     }
 
     public function admin(): static
@@ -51,8 +55,8 @@ class UserFactory extends Factory
         return $this->state(fn (array $attributes) => [
             'role' => 'admin',
             'username' => 'admin',
-            'kelas' => null,
-            'jurusan' => null,
+            'kelas_id' => null,
+            'jurusan_id' => null,
         ]);
     }
 

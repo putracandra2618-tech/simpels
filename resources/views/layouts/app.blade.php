@@ -59,6 +59,18 @@
                 <span>Data Admin</span>
               </a>
             </li>
+            <li class="sidebar-menu-item">
+              <a href="{{ route('admin.kelas.index') }}" class="sidebar-menu-link {{ request()->routeIs('admin.kelas*') ? 'active' : '' }}" title="Data Kelas">
+                <i class="bi bi-mortarboard"></i>
+                <span>Data Kelas</span>
+              </a>
+            </li>
+            <li class="sidebar-menu-item">
+              <a href="{{ route('admin.jurusan.index') }}" class="sidebar-menu-link {{ request()->routeIs('admin.jurusan*') ? 'active' : '' }}" title="Data Jurusan">
+                <i class="bi bi-journal-text"></i>
+                <span>Data Jurusan</span>
+              </a>
+            </li>
           @else
             <li class="sidebar-menu-item">
               <a href="{{ route('pinjam.scan') }}" class="sidebar-menu-link {{ request()->routeIs('pinjam.*') ? 'active' : '' }}" title="Pinjam Laptop">

@@ -1,0 +1,116 @@
+- generic [active] [ref=f12e1]:
+  - generic [ref=f12e2]:
+    - link "Logo Simpels Simpels" [ref=f12e3] [cursor=pointer]:
+      - /url: http://localhost:8000/dashboard
+      - img "Logo Simpels" [ref=f12e4]
+      - generic [ref=f12e5]: Simpels
+    - generic [ref=f12e7]:
+      - generic [ref=f12e8]: Menu
+      - list [ref=f12e9]:
+        - listitem [ref=f12e10]:
+          - link " Dashboard" [ref=f12e11] [cursor=pointer]:
+            - /url: http://localhost:8000/dashboard
+            - generic [ref=f12e12]: 
+            - generic [ref=f12e13]: Dashboard
+        - listitem [ref=f12e14]:
+          - link " Verifikasi" [ref=f12e15] [cursor=pointer]:
+            - /url: http://localhost:8000/admin/verifikasi
+            - generic [ref=f12e16]: 
+            - generic [ref=f12e17]: Verifikasi
+        - listitem [ref=f12e18]:
+          - link " Data Laptop" [ref=f12e19] [cursor=pointer]:
+            - /url: http://localhost:8000/admin/laptop
+            - generic [ref=f12e20]: 
+            - generic [ref=f12e21]: Data Laptop
+        - listitem [ref=f12e22]:
+          - link " Data User" [ref=f12e23] [cursor=pointer]:
+            - /url: http://localhost:8000/admin/user
+            - generic [ref=f12e24]: 
+            - generic [ref=f12e25]: Data User
+        - listitem [ref=f12e26]:
+          - link " Data Admin" [ref=f12e27] [cursor=pointer]:
+            - /url: http://localhost:8000/admin/admin-user
+            - generic [ref=f12e28]: 
+            - generic [ref=f12e29]: Data Admin
+        - listitem [ref=f12e30]:
+          - link " Kelas & Jurusan" [ref=f12e31] [cursor=pointer]:
+            - /url: http://localhost:8000/admin/referensi
+            - generic [ref=f12e32]: 
+            - generic [ref=f12e33]: Kelas & Jurusan
+    - generic [ref=f12e34]:
+      - generic "Foto profil" [ref=f12e35]: 
+      - generic [ref=f12e37]:
+        - generic [ref=f12e38]: Administrator
+        - generic [ref=f12e39]: admin
+  - generic [ref=f12e40]:
+    - banner [ref=f12e41]:
+      - generic [ref=f12e42]:
+        - text: 
+        - button "Toggle Navigation" [ref=f12e43] [cursor=pointer]:
+          - generic [ref=f12e44]: 
+      - generic [ref=f12e46]:
+        - generic [ref=f12e47]: 
+        - text: Peminjaman Laptop Sekolah
+      - generic [ref=f12e48]:
+        - generic [ref=f12e49]:
+          - button "" [ref=f12e50] [cursor=pointer]
+          - text:    
+        - generic [ref=f12e52]:
+          - button "Foto profil Administrator " [ref=f12e53] [cursor=pointer]:
+            - generic "Foto profil" [ref=f12e54]: 
+            - generic [ref=f12e56]: Administrator
+            - generic [ref=f12e57]: 
+          - text: 
+    - generic [ref=f12e59]:
+      - heading "Tambah User" [level=1] [ref=f12e60]
+      - paragraph [ref=f12e61]: Buat akun siswa baru. Siswa login dengan kredensial ini.
+    - main [ref=f12e62]:
+      - generic [ref=f12e66]:
+        - generic [ref=f12e67]:
+          - generic [ref=f12e68]: Nama Lengkap *
+          - textbox "Nama Lengkap *" [ref=f12e69]:
+            - /placeholder: mis. Ahmad Fauzi
+        - generic [ref=f12e70]:
+          - generic [ref=f12e71]: Username *
+          - textbox "Username *" [ref=f12e72]:
+            - /placeholder: mis. 20240001
+        - generic [ref=f12e73]:
+          - generic [ref=f12e75]:
+            - generic [ref=f12e76]: Kelas *
+            - combobox "Kelas *" [ref=f12e77]:
+              - option "Pilih Kelas…" [disabled]
+              - option "X" [selected]
+              - option "XI"
+              - option "XII"
+          - generic [ref=f12e79]:
+            - generic [ref=f12e80]: Jurusan *
+            - combobox "Jurusan *" [ref=f12e81]:
+              - option "Pilih Jurusan…" [disabled]
+              - option "RPL" [selected]
+              - option "TB"
+              - option "TEI"
+              - option "TKJ"
+              - option "TKR"
+              - option "TP"
+              - option "TPSB"
+        - generic [ref=f12e82]:
+          - generic [ref=f12e84]:
+            - generic [ref=f12e85]: Password *
+            - textbox "Password *" [ref=f12e86]:
+              - /placeholder: Minimal 8 karakter
+          - generic [ref=f12e88]:
+            - generic [ref=f12e89]: Konfirmasi Password
+            - textbox "Konfirmasi Password" [ref=f12e90]
+        - generic [ref=f12e91]:
+          - link "Batal" [ref=f12e92] [cursor=pointer]:
+            - /url: http://localhost:8000/admin/user
+          - button "Buat Akun " [ref=f12e93] [cursor=pointer]:
+            - generic [ref=f12e94]: Buat Akun
+            - generic [ref=f12e95]: 
+    - contentinfo [ref=f12e96]:
+      - generic [ref=f12e97]:
+        - generic [ref=f12e98]:
+          - img "Logo Simpels" [ref=f12e99]
+          - text: Simpels
+        - generic [ref=f12e100]: "|"
+        - generic [ref=f12e101]: © 2026 Peminjaman Laptop Sekolah
