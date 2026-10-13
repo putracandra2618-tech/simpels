@@ -117,6 +117,29 @@
             @endforeach
           </ol>
 
+          @php $lastReturn = $borrowing->latestReturnRequest(); @endphp
+
+          @if ($lastReturn && in_array($lastReturn->status, ['disetujui', 'ditolak'], true))
+            <div class="alert {{ $lastReturn->status === 'disetujui' ? 'alert-success' : 'alert-danger' }} py-2 mb-4">
+              <div class="d-flex align-items-center mb-1">
+                @if ($lastReturn->status === 'disetujui')
+                  <i class="bi bi-check-circle-fill me-1"></i>
+                  <strong>Pengembalian Diverifikasi Admin</strong>
+                @else
+                  <i class="bi bi-x-circle-fill me-1"></i>
+                  <strong>Pengembalian Ditolak</strong>
+                @endif
+              </div>
+              <div class="mb-1">
+                <strong>Catatan Admin:</strong>
+                <span class="text-muted">{{ $lastReturn->admin_notes ?: 'Tidak ada catatan.' }}</span>
+              </div>
+              <div class="small text-muted">
+                Direspon pada {{ $lastReturn->responded_at?->format('d M Y, H:i:s') }}
+              </div>
+            </div>
+          @endif
+
           <hr>
 
           <div class="d-flex justify-content-between align-items-end">

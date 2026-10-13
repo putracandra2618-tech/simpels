@@ -204,6 +204,39 @@ class ReturnFlowTest extends TestCase
             ->assertSee('Baterai rusak, harap periksa kembali.');
     }
 
+    public function test_approval_note_is_shown_on_bukti_page(): void
+    {
+        Notification::fake();
+
+        $admin = User::factory()->admin()->create();
+        $member = User::factory()->siswa()->create();
+        $laptop = Laptop::factory()->create();
+
+        $borrowing = Borrowing::factory()->create([
+            'laptop_id' => $laptop->id,
+            'status' => 'menunggu',
+        ]);
+        $borrowing->students()->attach($member, ['created_at' => now(), 'updated_at' => now()]);
+
+        $returnRequest = ReturnRequest::query()->create([
+            'borrowing_id' => $borrowing->id,
+            'status' => 'menunggu',
+            'requested_at' => now(),
+        ]);
+
+        $this->actingAs($admin)
+            ->post(route('admin.verifikasi', $returnRequest), [
+                'keputusan' => 'disetujui',
+                'admin_notes' => 'Barang sudah dicek, kondisi lengkap.',
+            ]);
+
+        $this->actingAs($member)
+            ->get(route('pinjam.bukti', $borrowing))
+            ->assertOk()
+            ->assertSee('Pengembalian Diverifikasi Admin')
+            ->assertSee('Barang sudah dicek, kondisi lengkap.');
+    }
+
     public function test_verifikasi_is_rejected_when_request_already_processed(): void
     {
         Notification::fake();

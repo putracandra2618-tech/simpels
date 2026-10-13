@@ -141,7 +141,7 @@ class BorrowingController extends Controller
 
     public function bukti(Borrowing $borrowing): View
     {
-        $borrowing->load(['laptop', 'students.kelas', 'students.jurusan', 'leader']);
+        $borrowing->load(['laptop', 'students.kelas', 'students.jurusan', 'leader', 'returnRequests']);
 
         $isMember = $borrowing->students->contains(fn ($student) => $student->id === Auth::id());
 
